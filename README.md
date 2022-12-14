@@ -15,4 +15,4 @@ See the [Microsoft Tunnel for Mobile Application Management iOS SDK Developer Gu
 Supported Xcode and iOS versions:
 | Intune SDK Version  | MSAL SDK Version  | Supported iOS Versions  | Supported Xcode Version | Support Scope |
 | ----------------------- | ----------------------- | ---------------------------- | -----------------------------  | ----------------- |                         
-| 16.1.1+                     | 1.2.3+              | 14.0+                               | 14+                                       | Main release branch - supports all feature work and bug fixes |
+| 16.1.1+                     | 1.2.3+              | 15.0+                               | 14+                                       | Main release branch - supports all feature work and bug fixes |
