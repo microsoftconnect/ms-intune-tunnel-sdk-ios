@@ -1,3 +1,4 @@
+//  Licensed to Microsoft under Contract #7267038.
 /**
  * @file mapio.h
  *
