@@ -3,7 +3,7 @@
 //  mobile_mstapnext_core
 //
 //  Created by Nehal Odedra on 7/1/16.
-//
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #ifndef MstapNextServerCertProvider_h

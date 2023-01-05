@@ -3,7 +3,7 @@
 //  mobile_prometheus
 //
 //  Created by Dan Murphy on 6/14/15.
-//
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #ifndef __mobile_prometheus__IosVpnStateHandlerImpl__

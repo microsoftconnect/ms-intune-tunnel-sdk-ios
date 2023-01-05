@@ -3,7 +3,7 @@
 //  MAP-iOS
 //
 //  Created by Brian on 10/14/15.
-//
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #import <Foundation/Foundation.h>

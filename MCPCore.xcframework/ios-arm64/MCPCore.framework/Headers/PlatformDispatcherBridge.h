@@ -3,6 +3,7 @@
 //  mstapnext
 //
 //  Created by Richard Perry on 5/4/22.
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #include "CFSourceDispatchQueue.h"

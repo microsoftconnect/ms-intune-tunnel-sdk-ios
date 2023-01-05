@@ -3,7 +3,7 @@
 //  MAP-iOS
 //
 //  Created on 10/13/15.
-//
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 /**

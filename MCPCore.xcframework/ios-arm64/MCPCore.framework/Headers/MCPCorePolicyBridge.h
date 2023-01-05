@@ -3,6 +3,7 @@
 //  MCPCore
 //
 //  Created by Richard Perry on 4/28/22.
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #ifndef MCPCorePolicyBridge_hpp

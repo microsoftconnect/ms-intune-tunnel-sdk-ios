@@ -3,7 +3,7 @@
 //  mobile_prometheus
 //
 //  Created by Tim Champagne Jr. on 10/19/15.
-//
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 /**

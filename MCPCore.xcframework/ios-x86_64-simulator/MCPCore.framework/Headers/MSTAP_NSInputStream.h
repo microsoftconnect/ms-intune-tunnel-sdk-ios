@@ -3,7 +3,7 @@
 //  mstapnext_injectable_ios
 //
 //  Created on 9/29/15.
-//
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #import <Foundation/Foundation.h>

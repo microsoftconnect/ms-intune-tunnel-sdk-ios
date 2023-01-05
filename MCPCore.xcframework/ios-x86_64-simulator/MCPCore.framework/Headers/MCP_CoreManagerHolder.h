@@ -3,6 +3,7 @@
 //  MCPCore
 //
 //  Created by Richard Perry on 3/29/22.
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #ifndef MCP_CoreManagerHolder_h

@@ -3,6 +3,7 @@
 //  MCPCore
 //
 //  Created by Tim Champagne Jr on 5/2/22.
+//  Licensed to Microsoft under Contract #7267038.
 //
 
 #ifndef MCPUIApplicationDelegateLayer_h
