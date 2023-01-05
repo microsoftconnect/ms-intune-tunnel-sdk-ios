@@ -1,0 +1,11 @@
+framework module MSTAPNextPluginSwiftSupport {
+  umbrella header "MSTAPNextPluginSwiftSupport.h"
+
+  export *
+  module * { export * }
+}
+
+module MSTAPNextPluginSwiftSupport.Swift {
+  header "MSTAPNextPluginSwiftSupport-Swift.h"
+  requires objc
+}
