@@ -1,3 +1,4 @@
+//  Licensed to Microsoft under Contract #7267038.
 #ifndef __BYPASS_H_
 #define __BYPASS_H_
 
