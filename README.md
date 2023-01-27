@@ -12,7 +12,7 @@ Microsoft Tunnel for Mobile Application Management iOS SDK further extends our V
 
 See the [Microsoft Tunnel for MAM iOS SDK Developer Guide](https://aka.ms/tunnelformamdeveloperguide) on how to integrate the SDK into your iOS app.
 
-Supported Xcode and iOS versions:
+Supported versions:
 | Intune SDK Version  | MSAL SDK Version  | Supported iOS Versions  | Supported Xcode Version | Support Scope |
 | ----------------------- | ----------------------- | ---------------------------- | -----------------------------  | ----------------- |                         
 | 16.1.1+                     | 1.2.3+              | 15.0+                               | 14+                                       | Main release branch - supports all feature work and bug fixes |
