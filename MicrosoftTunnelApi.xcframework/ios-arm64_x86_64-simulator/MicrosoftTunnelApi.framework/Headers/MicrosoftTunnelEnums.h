@@ -18,17 +18,17 @@
  * Status values used by the API that indicate the current status.  Often there are status values
  * indicating a transition but may also indicate and error occurred or user input is needed.
  * These values are reported by {@link MicrosoftTunnelDelegate#onReceivedEvent:} and
- * by invoking {@link MicrosoftTunnelAPI#getStatus}.
+ * by invoking {@link MicrosoftTunnel#getStatus}.
  */
-typedef enum MobileAccessStatus {
+typedef enum MicrosoftTunnelStatus {
     /**
      * The API has not yet been Initialized. The API must be initialized prior
-     * to invoking methods besides {@link MicrosoftTunnelAPI#init}} and
-     * {@link MicrosoftTunnelAPI#registerDelegate:}.
+     * to invoking methods besides {@link MicrosoftTunnel#init}} and
+     * {@link MicrosoftTunnel#registerDelegate:}.
      */
     Uninitialized = 0,
     /**
-     * The API has been initialized and is ready to accept {@link MicrosoftTunnelAPI#connect} calls.
+     * The API has been initialized and is ready to accept {@link MicrosoftTunnel#connect} calls.
      */
     Initialized,
     /**
@@ -37,7 +37,7 @@ typedef enum MobileAccessStatus {
     Connected,
     /**
      * The VPN session has been disconnected (user initiated or other failure)
-     * and is ready to accept {@link MicrosoftTunnelAPI#connect} calls.
+     * and is ready to accept {@link MicrosoftTunnel#connect} calls.
      */
     Disconnected,
     /**
@@ -53,14 +53,14 @@ typedef enum MobileAccessStatus {
      * An error was encountered.
      */
     ErrorEncountered
-} MobileAccessStatus;
+} MicrosoftTunnelStatus;
 
 /**
  * Error values used by the Microsoft Tunnel API.
- * The returned when invoking methods in {@link MicrosoftTunnelAPI} as well as by the callback method
+ * The returned when invoking methods in {@link MicrosoftTunnel} as well as by the callback method
  * {@link MicrosoftTunnelDelegate#onReceivedEvent:}.
  */
-typedef enum MobileAccessError {
+typedef enum MicrosoftTunnelError {
     /**
      * No error has occurred.
      */
@@ -85,7 +85,7 @@ typedef enum MobileAccessError {
      * An unexpected error occurred.
      */
     UnexpectedError
-} MobileAccessError;
+} MicrosoftTunnelError;
 
 /**
  * Config dictionary keys and values
@@ -94,8 +94,8 @@ typedef enum MobileAccessError {
 
 /**
  * Values used to configure the logging severity for individual log classes. To set log severity,
- * pass a config dictionary to {@link MicrosoftTunnelAPI#setConfig(Map)} or
- * {@link MicrosoftTunnelAPI#initialize(Application, MobileAccessListener, Map)} that includes that
+ * pass a config dictionary to {@link MicrosoftTunnel#setConfig(Map)} or
+ * {@link MicrosoftTunnel#initialize(Application, MobileAccessListener, Map)} that includes that
  * includes the log class as a key and the severity as a value for each desired log class.
  */
 // @{
@@ -107,7 +107,7 @@ static const char *kLoggingClassPacket = "Packet";
 static const char *kLoggingClassSocket = "Socket";
 static const char *kLoggingClassHttp = "HTTP";
 static const char *kLoggingClassIntune = "Intune";
-static const char *kLoggingClassMobileAccess = "MobileAccess";
+static const char *kLoggingClassMicrosoftTunnel = "MicrosoftTunnel";
 
 // Interception Log Config Values
 static const char *kLoggingSeverityDebug = "debug";

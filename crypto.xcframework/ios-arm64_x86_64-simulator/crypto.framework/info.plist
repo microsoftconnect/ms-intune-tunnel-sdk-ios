@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>crypto</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.bluecedar.crypto</string>
+	<string>com.microsoft-tunnel.crypto</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -15,8 +15,10 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
+	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<string>1.0.1</string>
+	<key>MinimumOSVersion</key>
+	<string>14.0</string>
 </dict>
 </plist>

@@ -14,25 +14,25 @@ typedef void (^TokenRequestCallback)(NSString* _Nonnull accessToken);
 
 /**
  * Callback interface for receiving API status events, notifications and errors.
- * To register for callbacks use {@link MicrosoftTunnelAPI#registerDelegate:} or
- * {@link MicrosoftTunnelAPI#initWithDelegate:logDelegate:config:}
+ * To register for callbacks use {@link MicrosoftTunnel#registerDelegate:} or
+ * {@link MicrosoftTunnel#initWithDelegate:logDelegate:config:}
  */
 @protocol MicrosoftTunnelDelegate <NSObject>
 
 /**
  * Callback indicating the various events in a single method.
  */
-- (void)onReceivedEvent:(MobileAccessStatus)event;
+- (void)onReceivedEvent:(MicrosoftTunnelStatus)event;
 
 /**
  * Callback indicating the API has successfully been initialized.
- * Expected after invoking {@link MicrosoftTunnelAPI#init:} or one of its variants.
+ * Expected after invoking {@link MicrosoftTunnel#init:} or one of its variants.
  */
 - (void)onInitialized;
 
 /**
  * Callback indicating the VPN session was successfully established.
- * Expected after invoking {@link MicrosoftTunnelAPI#connect()}.
+ * Expected after invoking {@link MicrosoftTunnel#connect()}.
  */
 - (void)onConnected;
 
@@ -49,14 +49,14 @@ typedef void (^TokenRequestCallback)(NSString* _Nonnull accessToken);
 
 /**
  * Callback indicating VPN has disconnected.
- * Expected after invoking {@link MicrosoftTunnelAPI#disconnect()}.
+ * Expected after invoking {@link MicrosoftTunnel#disconnect()}.
  */
 - (void)onDisconnected;
 
 /**
  * Callback indicating an error has ben encountered.
  */
-- (void)onError:(MobileAccessError)error;
+- (void)onError:(MicrosoftTunnelError)error;
 
 
 @optional
@@ -74,9 +74,9 @@ typedef void (^TokenRequestCallback)(NSString* _Nonnull accessToken);
 
 /**
  * Delgate for receiving API log messages.
- * To register for callbacks use {@link MicrosoftTunnelAPI#registerLogDelegate:}
+ * To register for callbacks use {@link MicrosoftTunnel#registerLogDelegate:}
  * or pass a MobileAccessLogListener to
- * {@link MicrosoftTunnelAPI#initWithDelegate:logDelegate:config:}
+ * {@link MicrosoftTunnel#initWithDelegate:logDelegate:config:}
  */
 @protocol MicrosoftTunnelLogDelegate <NSObject>
 
@@ -97,10 +97,9 @@ typedef void (^TokenRequestCallback)(NSString* _Nonnull accessToken);
  * registering for API callbacks.
  */
 __attribute__ ((visibility ("default")))
-@interface MicrosoftTunnelAPI : NSObject
+@interface MicrosoftTunnel : NSObject
 
-@property(class, nonatomic, readonly, strong) MicrosoftTunnelAPI* _Nonnull sharedInstance;
-
+@property(class, nonatomic, readonly, strong) MicrosoftTunnel* _Nonnull sharedInstance;
 @property(nonatomic, assign)id<MicrosoftTunnelDelegate> _Nonnull delegate;
 @property(nonatomic, assign)id<MicrosoftTunnelLogDelegate> _Nullable logDelegate;
 
@@ -113,18 +112,18 @@ __attribute__ ((visibility ("default")))
 /**
  * Initializes Microsoft Tunnel API infrastructure.
  *
- * @return An API error {@link MobileAccessError}
+ * @return An API error {@link MicrosoftTunnelError}
  */
-- (MobileAccessError)mobileAccessInitialize;
+- (MicrosoftTunnelError)microsoftTunnelInitialize;
 
 /**
  * Initializes Microsoft Tunnel API infrastructure.
  *
  * @param delegate Delegate for events {@link MicrosoftTunnelDelegate}
  * @param configDictionary Configuration items used to determine what is to be logged, intercepted, and values for Tunnel connection to be established
- * @return An API error {@link MobileAccessError}
+ * @return An API error {@link MicrosoftTunnelError}
  */
-- (MobileAccessError)mobileAccessInitializeWithDelegate:(nonnull id<MicrosoftTunnelDelegate>)delegate config:(nonnull NSDictionary <NSString *, NSString*>*)config;
+- (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nonnull id<MicrosoftTunnelDelegate>)delegate config:(nonnull NSDictionary <NSString *, NSString*>*)config;
 
 /**
  * Initializes Microsoft Tunnel API infrastructure.
@@ -134,15 +133,15 @@ __attribute__ ((visibility ("default")))
  * @param configDictionary Configuration items used to determine what is to be logged, intercepted, and values for Tunnel connection to be established
  * @return The initialized instance, or nil on an error
  */
-- (MobileAccessError)mobileAccessInitializeWithDelegate:(nonnull id<MicrosoftTunnelDelegate>)delegate logDelegate:(nonnull id<MicrosoftTunnelLogDelegate>)logDelegate config:(nonnull NSDictionary <NSString *, NSString*>*)config;
+- (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nonnull id<MicrosoftTunnelDelegate>)delegate logDelegate:(nonnull id<MicrosoftTunnelLogDelegate>)logDelegate config:(nonnull NSDictionary <NSString *, NSString*>*)config;
 
 /**
  * Set configuration values. See {@link MicrosoftTunnelEnums.h} for configuration keys and values.
  *
  * @param configDictionary Configuration items used to determine what is to be logged, intercepted, and values for Tunnel connection to be established
- * @return An API error {@link MobileAccessError}
+ * @return An API error {@link MicrosoftTunnelError}
  */
-- (MobileAccessError)setConfig:(nonnull NSDictionary <NSString *, NSString*>*)configDictionary;
+- (MicrosoftTunnelError)setConfig:(nonnull NSDictionary <NSString *, NSString*>*)configDictionary;
 
 /**
  * Register the API status listener.
@@ -164,31 +163,31 @@ __attribute__ ((visibility ("default")))
 /**
  * Initiate establishment of the VPN session and enables interception.
  *
- * @return An API error {@link MobileAccessError}
+ * @return An API error {@link MicrosoftTunnelError}
  */
-- (MobileAccessError)connect;
+- (MicrosoftTunnelError)connect;
 /**
  * Disconnect an active VPN session and disables interception.
  *
  * @return An API error
  */
-- (MobileAccessError)disconnect;
+- (MicrosoftTunnelError)disconnect;
 /**
  * Get the current API status.
  *
- * @return The API status {@link MobileAccessStatus}
+ * @return The API status {@link MicrosoftTunnelStatus}
  */
-- (MobileAccessStatus)getStatus;
+- (MicrosoftTunnelStatus)getStatus;
 
 /**
  * Get the current API status as a string
  *
- * @return The API status {@link MobileAccessStatus} as a string
+ * @return The API status {@link MicrosoftTunnelStatus} as a string
  */
 - (NSString * _Nonnull)getStatusString;
 
 /**
- * Get the MicrosoftTunnelAPI version string.
+ * Get the MicrosoftTunnel version string.
  * @return The MobieAccessAPI versionString
  */
 - (NSString * _Nonnull)getVersionString;
@@ -199,10 +198,16 @@ __attribute__ ((visibility ("default")))
 - (BOOL)launchEnrollment;
 
 /**
+ * Launches enrollment for MAM enrollment
+ * 
+ * @param doWipe If YES, selectively wipe the user's corporate data
+ */
+- (BOOL)launchUnenrollment:(BOOL)doWipe;
+
+/**
  * Proxy handling of MSAL response to push to MSAL library
  */
 - (BOOL)handleMSALResponse:(nonnull NSURL *)response sourceApplication:(nullable NSString *)sourceApplication;
 
 @end
-
 #pragma GCC visibility pop
