@@ -33,7 +33,8 @@ function mstobject() {  // eslint-disable-line no-unused-vars
         webkit.messageHandlers.mstCallbackHandler.postMessage({ 'action': 'log', 'content': log });
     }
 
-    function interceptBody(body, input, options) {
+    function interceptBody(body, input, options, reenter, passthrough) {
+
         if ((undefined === body) || (null === body)) {
             body = '';
         }
@@ -48,170 +49,6 @@ function mstobject() {  // eslint-disable-line no-unused-vars
         }
 
         if (typeof body === "object") {
-            if (body instanceof FormData) {
-                var boundary = function () {
-                    function s4() {
-                        var n = Math.floor((1 + Math.random()) * 0x10000);
-                        return n.toString(16).substring(1);
-                    }
-                    return "----WebKitFormBoundary" + s4() + s4() + s4() + s4();
-                }();
-
-                var CRLF = '\r\n';
-                var blob_parts = [];
-                var entries_it = body.entries();
-                while (true) {                      // eslint-disable-line no-constant-condition 
-                    var it = entries_it.next();
-                    if (it.done) {
-                        break;
-                    }
-                    var key = it.value[0];
-                    var value = it.value[1];
-                    blob_parts.push('--' + boundary + CRLF);
-                    blob_parts.push('Content-Disposition: form-data; name="' + key + '"');
-                    if (value instanceof Blob) {
-                        var blobContentType = value.type || 'application/octet-stream';
-                        blob_parts.push('; filename="' + value.name + '"' + CRLF);
-                        blob_parts.push('Content-Type: ' + blobContentType + CRLF + CRLF);
-                        blob_parts.push(value);
-                        blob_parts.push(CRLF);
-                    } else {
-                        blob_parts.push(CRLF + CRLF + value + CRLF);
-                    }
-                }
-                blob_parts.push('--' + boundary + '--' + CRLF);
-                sendBody = new Blob(blob_parts);
-            }
-            if (body instanceof ReadableStream) {
-                // TODO: implement stream requests in an async manner, which we don't have a good way to do currently.
-                return;
-            }
-            if (body instanceof Blob) {
-                var outerThis = this;
-                var filereader = new FileReader();
-                filereader.onload = function () {
-                    if ((undefined === options) || (null === options)) {
-                        input.body = this.result;
-                    } else {
-                        options.body = this.result;
-                    }
-                    outerThis.fetch(input, options);
-                };
-                filereader.readAsArrayBuffer(body);
-                // The FileReader load is async, so bail from here.
-                // The recursive call will send in an ArrayBuffer
-                return;
-            }
-
-            // ArrayBufferView is a namesake, the real classes are
-            if (body instanceof Int8Array ||
-                body instanceof Uint8Array ||
-                body instanceof Uint8ClampedArray ||
-                body instanceof Int16Array ||
-                body instanceof Uint16Array ||
-                body instanceof Int32Array ||
-                body instanceof Uint32Array ||
-                body instanceof Float32Array ||
-                body instanceof Float64Array) {
-                // Get the underlying ArrayBuffer, allow next if statement to process
-                sendBody = body.buffer;
-            }
-
-            if (body instanceof ArrayBuffer) {
-                var bytes = new Uint8Array(body);
-                // Cast off original for actual call to send
-                sendBody = JSON.parse('{"bytes":[' + bytes.toString() + ']}');
-            }
-        }
-
-        if (typeof (body) === "string") {
-            webkit.messageHandlers.mstCallbackHandler.postMessage({ 'action': 'ajaxSend', 'tag': this.__mstUrl, 'method': this.__mstMethod, 'content': body });
-        } else if (typeof (body) === "object") {
-            webkit.messageHandlers.mstCallbackHandler.postMessage({ 'action': 'ajaxSend', 'tag': this.__mstUrl, 'method': this.__mstMethod, 'content': JSON.stringify(body) });
-            // Reset original for actual call to send.
-            // Only benefit here is that Web Inspector shows a more accurate result
-            body = sendBody;
-        }
-        return sendBody;
-    }
-
-    self.mstFetch = self.fetch;
-    self.fetch = function (input, options) {
-        // spec found here: https://fetch.spec.whatwg.org/
-        var body = "";
-
-        if (typeof input === typeof "") {
-            __mstLog("fetch with URL")
-            // input is url
-            this.__mstUrl = input;
-
-            if ((undefined === options) || (null === options)) {
-                // no body, no headers, just send the request.
-                return this.mstFetch(input)
-            }
-
-            body = options.body;
-        } else {
-            __mstLog("fetch with Request")
-            this.__mstUrl = input.url;
-            body = input.body;
-        }
-
-        var result = interceptBody(body, input, options);
-
-        if ((undefined === result) || (null === result)) {
-            return;
-        }
-
-        return this.mstFetch(input, options);
-    }
-
-    XMLHttpRequest.prototype.mstOpen = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function () {
-        // remember the request tag and method for sending to the UIProcess
-        // This tag will be set as a MST-Request header that we will strip out in the ProxmetheusURLProtocol
-        // Beacause we aren't actually modifying anything, access what we need by position
-        // and then forward the whole Arguments object.
-        // METHOD ( arguments[0] ) and URL (arguments[1] ) are guaranteed to be present,
-        // async ( arguments[2] ), username ( arguments[3] ), and password ( arguments[4] ) are all optional
-        this.__mstTag = __mstGetTag();
-        this.__mstMethod = arguments[0];
-        this.__mstUrl = arguments[1];
-        __mstLog('Tagging url: ' + arguments[1] + ' with tag: ' + this.__mstTag);
-        return this.mstOpen.apply(this, arguments);
-    };
-
-    XMLHttpRequest.prototype.mstSend = XMLHttpRequest.prototype.send;
-    XMLHttpRequest.prototype.send = function (body) {
-        // Send can be called without a body, which can result in a 411 if the content length is not set to 0.
-        // To fix this, we need to set the body to be empty ("") which causes the client to do the right thing.
-        if ((undefined === body) || (null === body)) {
-            body = "";
-        }
-
-        // Add code to monitor and honor failed CORS requests here
-        // Code used to exist that watched for exceptions and attempted to forward events, 
-        // however the existing code was causing issues with SAP apps for both Colgate and Molex.
-        // Created AC-5156 to track this task.
-
-        // There are a few types of input body types:
-        // - string
-        // - Document (convert to string)
-        // - Blob (convert to ArrayBuffer via FileReader)
-        // - ArrayBufferView (convert to ArrayBuffer)
-        // - ArrayBuffer (convert to byte array)
-        // - FormData (needs proper construction)
-
-        var sendBody = null;
-        if (body instanceof Document) {
-            if (body.documentElement !== null) {
-                body = body.documentElement.outerHTML;
-            } else {
-                body = '';
-            }
-        }
-
-        if (typeof (body) === "object") {
             if (body instanceof FormData) {
                 var boundary = function () {
                     function s4() {
@@ -244,18 +81,33 @@ function mstobject() {  // eslint-disable-line no-unused-vars
                     }
                 }
                 blob_parts.push('--' + boundary + '--' + CRLF);
-                body = new Blob(blob_parts);
+                sendBody = new Blob(blob_parts);
+            }
+            if (body instanceof ReadableStream && input instanceof Request) {
+                var original = input.clone();
+                return input.text()
+                    .then(b => {
+                        if (!options) {
+                            options = {};
+                        }
+                        options.__mstReadableStreamConvertedToString = b;
+                        return reenter(body, original, options);
+                    });
             }
             if (body instanceof Blob) {
-                var outerThis = this;
-                var filereader = new FileReader();
-                filereader.onload = function () {
-                    outerThis.send(this.result);
-                };
-                filereader.readAsArrayBuffer(body);
-                // The FileReader load is async, so bail from here.
-                // The recursive call will send in an ArrayBuffer
-                return;
+                return new Promise((resolve) => {
+                    var filereader = new FileReader();
+                    filereader.onload = function () {
+                        if (input && (undefined === options) || (null === options)) {
+                            input.body = this.result;
+                        } else {
+                            options.body = this.result;
+                        }
+                        reenter(body, input, options);
+                        resolve();
+                    };
+                    filereader.readAsArrayBuffer(body);
+                });
             }
 
             // ArrayBufferView is a namesake, the real classes are
@@ -269,8 +121,9 @@ function mstobject() {  // eslint-disable-line no-unused-vars
                 body instanceof Float32Array ||
                 body instanceof Float64Array) {
                 // Get the underlying ArrayBuffer, allow next if statement to process
-                body = body.buffer;
+                sendBody = body.buffer;
             }
+
             if (body instanceof ArrayBuffer) {
                 var bytes = new Uint8Array(body);
                 // Cast off original for actual call to send
@@ -288,7 +141,61 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             body = sendBody;
         }
 
-        this.mstSend(body);
+        return passthrough(body, input, options);
+    }
+
+    self.mstFetch = self.fetch;
+    self.fetch = function (input, options) {
+        // spec found here: https://fetch.spec.whatwg.org/
+        var body = "";
+
+        if (typeof input === typeof "") {
+            __mstLog("fetch with URL")
+            // input is url
+            this.__mstUrl = input;
+
+            if ((undefined === options) || (null === options)) {
+                // no body, no headers, just send the request.
+                return this.mstFetch(input)
+            }
+
+            body = options.body;
+        } else {
+            __mstLog("fetch with Request")
+            this.__mstUrl = input.url;
+            body = input.body;
+        }
+
+        if (options && options.__mstReadableStreamConvertedToString) {
+            body = options.__mstReadableStreamConvertedToString;
+        }
+
+        return interceptBody(body, input, options,
+            (b, i, o) => self.fetch(i, o),
+            (b, i, o) => self.mstFetch(i, o));
+    }
+
+    XMLHttpRequest.prototype.mstOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function () {
+        // remember the request tag and method for sending to the UIProcess
+        // This tag will be set as a MST-Request header that we will strip out in the ProxmetheusURLProtocol
+        // Beacause we aren't actually modifying anything, access what we need by position
+        // and then forward the whole Arguments object.
+        // METHOD ( arguments[0] ) and URL (arguments[1] ) are guaranteed to be present,
+        // async ( arguments[2] ), username ( arguments[3] ), and password ( arguments[4] ) are all optional
+        this.__mstTag = __mstGetTag();
+        this.__mstMethod = arguments[0];
+        this.__mstUrl = arguments[1];
+        __mstLog('Tagging url: ' + arguments[1] + ' with tag: ' + this.__mstTag);
+        return this.mstOpen.apply(this, arguments);
+    };
+
+    XMLHttpRequest.prototype.mstSend = XMLHttpRequest.prototype.send;
+    XMLHttpRequest.prototype.send = function (body) {
+        var outerThis = this;
+        return interceptBody(body, null, null,
+            (b) => outerThis.send(b),
+            (b) => outerThis.mstSend(b));
     };
 
     // Save original HTMLFormElement functions to call submit for non-events

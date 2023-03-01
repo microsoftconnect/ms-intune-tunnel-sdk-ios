@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MicrosoftTunnel.h</key>
 		<data>
-		YwhATv9gMF5jaGTnhEP7JwnLroE=
+		BcfKrocsxHkwxlo2M8rbkxhJKtw=
 		</data>
 		<key>Headers/MicrosoftTunnelApi.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Headers/MicrosoftTunnelEnums.h</key>
 		<data>
-		lfpillVd9I8cSaPZptrUR6XddZ4=
+		HS4XgsEVOBF0kdQRL0FNMGH+Osw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oSFL30PM/iHkjhgSzbjfPfcFkH0=
+		LYMKPBOb8BdrDzJTHFTjnFcmrJ4=
 		</data>
 		<key>LICENSE.json</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>static_policy.json</key>
 		<data>
-		P1R+LyitMFAXvIC7EfQGjs4dhSs=
+		SWCvv+pX7A6JI2Y1w6PpU5YYyV8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			igiYcu4rxtctywDsTH+Rz0+rLFB+dcVF1a4tg3kpv0Q=
+			jWVqmFOFzEjZda03O7NOAgsUSiN9NbslERggN/yEJsI=
 			</data>
 		</dict>
 		<key>Headers/MicrosoftTunnelApi.h</key>
@@ -53,7 +53,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/2BFkClSV1F60VJXHyOymLnvhihh9oacQYJYRWpbcis=
+			VPWiMj08euaun4hH8uVZyzzJKr1hrfN6FSOTfzKNbTo=
 			</data>
 		</dict>
 		<key>LICENSE.json</key>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BvaKMgcjU1FBWs106W3Yt2NiNn+cgP6BRokHMsPKqJM=
+			tZN1homGCbNMZqaERuLM1LFxsjodzJx30hpzNkchdT8=
 			</data>
 		</dict>
 	</dict>
