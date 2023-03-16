@@ -125,6 +125,7 @@ static const char *kProxyAddress   = "com.microsoft.tunnel.proxy_address";
 static const char *kProxyPort      = "com.microsoft.tunnel.proxy_port";
 static const char *kPacUrl         = "com.microsoft.tunnel.proxy_pacurl";
 static const char *kTrustedCertificates = "com.microsoft.tunnel.trusted_root_certificates";
+static const char *kCustomConfig   = "com.microsoft.tunnel.custom_configuration";
 
 
 // @}
