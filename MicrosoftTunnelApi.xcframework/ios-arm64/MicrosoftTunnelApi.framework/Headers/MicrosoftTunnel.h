@@ -12,6 +12,29 @@
 #pragma GCC visibility push(default)
 typedef void (^TokenRequestCallback)(NSString* _Nonnull accessToken);
 
+@interface MicrosoftTunnelSplitConfiguration : NSObject
+@property(readonly, strong) NSString* _Nonnull ipAddress;
+@property(readonly) unsigned int prefix;
+@end
+
+
+@interface MicrosoftTunnelConfiguration : NSObject
+@property(readonly, strong) NSString* _Nonnull remoteIpAddress;
+
+@property(readonly, strong) NSString* _Nonnull tunnelIpAddress;
+@property(readonly, strong) NSString* _Nonnull tunnelNetmask;
+
+@property(readonly) unsigned int mtu;
+@property(readonly, strong) NSArray<NSString*>* _Nonnull dnsServers;
+@property(readonly, strong) NSString* _Nonnull dnsDomain;
+@property(readonly, strong) NSArray<NSString*>* _Nonnull dnsSearchEntries;
+
+@property(readonly, strong) NSArray<MicrosoftTunnelSplitConfiguration*>* _Nonnull splitConfigurationIncludeEntries;
+@property(readonly, strong) NSArray<MicrosoftTunnelSplitConfiguration*>* _Nonnull splitConfigurationExcludeEntries;
+@property(readonly) bool splitTunnelingEnabled;
+
+@end
+
 /**
  * Callback interface for receiving API status events, notifications and errors.
  * To register for callbacks use {@link MicrosoftTunnel#registerDelegate:} or
@@ -70,6 +93,10 @@ typedef void (^TokenRequestCallback)(NSString* _Nonnull accessToken);
  */
 - (UIViewController* _Nonnull)onPresentationViewControllerRequired;
 
+/**
+ * Callback when the tunnel configuration is available from the connection
+ */
+- (void)onTunnelConfigurationAvailable:(MicrosoftTunnelConfiguration*) config;
 @end
 
 /**

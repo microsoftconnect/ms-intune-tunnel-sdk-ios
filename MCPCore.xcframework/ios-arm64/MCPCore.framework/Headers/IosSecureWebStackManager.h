@@ -46,6 +46,8 @@ public:
     
     virtual void EnableInterception() override;
     
+    virtual void ClearConnectionCache() override;
+    
     virtual ACSTATUS ShouldInterceptWebView() override;
 
     virtual void OnSecureWebStackPolicyChanged() override;
