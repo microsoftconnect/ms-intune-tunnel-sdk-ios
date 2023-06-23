@@ -12,12 +12,13 @@
 #pragma GCC visibility push(default)
 typedef void (^TokenRequestCallback)(NSString* _Nonnull accessToken);
 
+__attribute__ ((visibility ("default")))
 @interface MicrosoftTunnelSplitConfiguration : NSObject
 @property(readonly, strong) NSString* _Nonnull ipAddress;
 @property(readonly) unsigned int prefix;
 @end
 
-
+__attribute__ ((visibility ("default")))
 @interface MicrosoftTunnelConfiguration : NSObject
 @property(readonly, strong) NSString* _Nonnull remoteIpAddress;
 

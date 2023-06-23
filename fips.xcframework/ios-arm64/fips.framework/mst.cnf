@@ -1,0 +1,24 @@
+openssl_conf = openssl_init
+
+[fips_sect]
+activate = 1
+conditional-errors = 1
+security-checks = 1
+module-mac = 3F:95:A5:AA:E7:76:89:55:0E:A3:86:B9:73:7A:70:98:E6:90:5B:56:DD:D4:CD:AA:33:1A:4E:33:78:D0:00:A4
+module-start = 28672
+module-end = 1322216
+module = fips.framework/fips
+
+[openssl_init]
+providers = provider_sect
+alg_section = algorithm_sect
+
+[provider_sect]
+fips = fips_sect
+default = default_sect
+
+[default_sect]
+activate = 1
+
+[algorithm_sect]
+default_properties = fips=yes
