@@ -170,7 +170,7 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             body = options.__mstReadableStreamConvertedToString;
         }
 
-        return interceptBody(body, input, options,
+        return interceptBody.bind(this)(body, input, options,
             (b, i, o) => self.fetch(i, o),
             (b, i, o) => self.mstFetch(i, o));
     }
@@ -193,7 +193,7 @@ function mstobject() {  // eslint-disable-line no-unused-vars
     XMLHttpRequest.prototype.mstSend = XMLHttpRequest.prototype.send;
     XMLHttpRequest.prototype.send = function (body) {
         var outerThis = this;
-        return interceptBody(body, null, null,
+        return interceptBody.bind(this)(body, null, null,
             (b) => outerThis.send(b),
             (b) => outerThis.mstSend(b));
     };
