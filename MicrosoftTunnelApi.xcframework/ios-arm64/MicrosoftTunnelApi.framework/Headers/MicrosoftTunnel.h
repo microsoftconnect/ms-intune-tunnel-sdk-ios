@@ -145,6 +145,13 @@ __attribute__ ((visibility ("default")))
 - (MicrosoftTunnelError)microsoftTunnelInitialize;
 
 /**
+ * Deinitializes Microsoft Tunnel API infrastructure.
+ *
+ * @return An API error {@link MicrosoftTunnelError}
+ */
+- (MicrosoftTunnelError)microsoftTunnelDeinitialize;
+
+/**
  * Initializes Microsoft Tunnel API infrastructure.
  *
  * @param delegate Delegate for events {@link MicrosoftTunnelDelegate}
