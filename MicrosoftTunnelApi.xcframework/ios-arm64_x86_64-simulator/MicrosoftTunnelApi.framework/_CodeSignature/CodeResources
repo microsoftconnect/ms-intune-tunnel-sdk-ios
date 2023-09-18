@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MicrosoftTunnel.h</key>
 		<data>
-		2X7DYJ5yK5BxWKApEL6K5B2dScs=
+		iiG2/5hjhN0yr3zLz1773HUbBJo=
 		</data>
 		<key>Headers/MicrosoftTunnelApi.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HgdM+awzOvliqJF51Qd2WHO5UPo=
+		gI12mqOB2BkeC66rhJbKdxB0ADc=
 		</data>
 		<key>LICENSE.json</key>
 		<data>
-		7zuMmhWcDP6qa26FUoDQabQG6OE=
+		83pVSL1HrOfpEDOoY0ezreJY5Fw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dzognncvSELv6FuAqkMMthCcyS8mzIVMT7V3D9QNfEU=
+			u6m1yEqeEyY5Kakay7NY/rNAa4dvucj5629WqXU0/Ho=
 			</data>
 		</dict>
 		<key>Headers/MicrosoftTunnelApi.h</key>
@@ -60,7 +60,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NAVpt3DBS8k58S/fWEad5KQEZgkbsLiteKBrmoY2xU0=
+			LouhRSl1D3i+E3l1s2eFFAPgtiuKnqbE15Lb17rDft8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
