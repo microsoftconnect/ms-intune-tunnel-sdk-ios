@@ -97,7 +97,7 @@ __attribute__ ((visibility ("default")))
 /**
  * Callback when the tunnel configuration is available from the connection
  */
-- (void)onTunnelConfigurationAvailable:(MicrosoftTunnelConfiguration*) config;
+- (void)onTunnelConfigurationAvailable:(MicrosoftTunnelConfiguration* _Nonnull) config;
 @end
 
 /**
