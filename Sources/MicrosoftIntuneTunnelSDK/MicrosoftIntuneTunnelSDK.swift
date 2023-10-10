@@ -30,7 +30,7 @@ open class MicrosoftTunnelDelegate : NSObject, MicrosoftTunnelApi.MicrosoftTunne
         }
     }
     
-    public func handleMSALResponse(_ response: URL, _ sourceApplication: String) -> Bool {
+    public func handleMSALResponse(_ response: URL, _ sourceApplication: String?) -> Bool {
         return api.handleMSALResponse(response, sourceApplication: sourceApplication)
     }
     
