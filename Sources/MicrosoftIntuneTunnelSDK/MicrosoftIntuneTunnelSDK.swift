@@ -3,7 +3,7 @@ import MicrosoftTunnelApi
 
 open class MicrosoftTunnelDelegate : NSObject, MicrosoftTunnelApi.MicrosoftTunnelDelegate {
    
-    static var instance: MicrosoftTunnelDelegate = MicrosoftTunnelDelegate()
+    public static var instance: MicrosoftTunnelDelegate = MicrosoftTunnelDelegate()
     
     private let config: NSMutableDictionary = NSMutableDictionary.init()
     private let api: MicrosoftTunnel = MicrosoftTunnel.sharedInstance
@@ -12,7 +12,7 @@ open class MicrosoftTunnelDelegate : NSObject, MicrosoftTunnelApi.MicrosoftTunne
         super.init()
     }
     
-    public func launch(){
+    open func launch(){
         if !api.launchEnrollment()  {
             let error = api.microsoftTunnelInitialize(with: self, logDelegate: LogDelegate(), config: (self.config as! [String : String]))
             if error != NoError {
@@ -21,7 +21,7 @@ open class MicrosoftTunnelDelegate : NSObject, MicrosoftTunnelApi.MicrosoftTunne
         }
     }
     
-    public func signout(){
+    open func signout(){
         if !api.launchUnenrollment(true)  {
             let error = api.microsoftTunnelInitialize(with: self, logDelegate: LogDelegate(), config: (self.config as! [String : String]))
             if error != NoError {
