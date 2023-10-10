@@ -12,7 +12,17 @@ let package = Package(
             targets: ["MicrosoftIntuneTunnelSDK"]),
     ],
     targets: [
-        .target(name: "MicrosoftIntuneTunnelSDK", dependencies: ["MicrosoftTunnelApi"]),
+        .target(name: "MicrosoftIntuneTunnelSDK",
+                dependencies: [
+                    "ssl",
+                    "crypto",
+                    "MCPCommon",
+                    "MCPCore",
+                    "MCPPluginUnencryptedFile",
+                    "MSTAPNextPluginSecurityOpenssl",
+                    "MSTAPNextPluginVpnMicrosoftTunnel",
+                    "MicrosoftTunnelApi"
+                ]),
         .binaryTarget(name: "ssl", path: "ssl.xcframework"),
         .binaryTarget(name: "crypto", path: "crypto.xcframework"),
         .binaryTarget(name: "MCPCommon", path: "MCPCommon.xcframework"),
