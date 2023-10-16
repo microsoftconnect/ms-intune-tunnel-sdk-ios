@@ -24,7 +24,7 @@
 extern "C" {
 #endif
 
-@class MSTAP_NSInputStream_Prox;
+@class MAP_NSInputStream_Prox;
 
 void MAP_CFReadStreamClassInit(void);
 
