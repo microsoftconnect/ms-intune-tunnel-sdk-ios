@@ -1,6 +1,6 @@
 # Microsoft Tunnel for Mobile Application Management iOS SDK 
 
-Version [1.0.11](https://github.com/msintuneappsdk/ms-intune-tunnel-sdk-ios/releases/tag/1.0.11)
+Version [1.0.12](https://github.com/msintuneappsdk/ms-intune-tunnel-sdk-ios/releases/tag/1.0.12)
 
 See [release notes](https://github.com/msintuneappsdk/ms-intune-tunnel-sdk-ios/releases) for more information. GitHub users can recieve email notifications for new releases to this repo by clicking on **Releases only** from the "Watch" drop-down menu in the upper right-hand corner.
 
