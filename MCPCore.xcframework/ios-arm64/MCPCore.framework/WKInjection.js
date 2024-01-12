@@ -1,5 +1,12 @@
+//
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+
 // Designed to be visible to other apps, hence outside the anonymous function
 // Currently being used by the PTA/automation for a sanity test
+
+/* jshint esversion: 6 */
+/* jslint bitwise: true */
 function mstobject() {  // eslint-disable-line no-unused-vars
     return window.mstobject;
 }
@@ -94,6 +101,11 @@ function mstobject() {  // eslint-disable-line no-unused-vars
                         return reenter(body, original, options);
                     });
             }
+            if (body instanceof ReadableStream && typeof (input) === "string") {
+                options.body = body;
+                var request = new Request(input, options);
+                return reenter(body, request);
+            }
             if (body instanceof Blob) {
                 return new Promise((resolve) => {
                     var filereader = new FileReader();
@@ -150,20 +162,22 @@ function mstobject() {  // eslint-disable-line no-unused-vars
         var body = "";
 
         if (typeof input === typeof "") {
-            __mstLog("fetch with URL")
+            __mstLog("fetch with URL");
             // input is url
             this.__mstUrl = input;
 
             if ((undefined === options) || (null === options)) {
                 // no body, no headers, just send the request.
-                return this.mstFetch(input)
+                return this.mstFetch(input);
             }
 
             body = options.body;
+            this.__mstMethod = options.method;
         } else {
-            __mstLog("fetch with Request")
+            __mstLog("fetch with Request");
             this.__mstUrl = input.url;
             body = input.body;
+            this.__mstMethod = input.method;
         }
 
         if (options && options.__mstReadableStreamConvertedToString) {
@@ -173,7 +187,7 @@ function mstobject() {  // eslint-disable-line no-unused-vars
         return interceptBody.bind(this)(body, input, options,
             (b, i, o) => self.fetch(i, o),
             (b, i, o) => self.mstFetch(i, o));
-    }
+    };
 
     XMLHttpRequest.prototype.mstOpen = XMLHttpRequest.prototype.open;
     XMLHttpRequest.prototype.open = function () {

@@ -66,6 +66,10 @@ public:
     virtual void backgroundFetchTimedOut() = 0;
     
     virtual void transitionApp() = 0;
+    
+    virtual pthread_key_t GetAppDelegateBypassKey() = 0;
+    virtual pthread_key_t GetSceneDelegateBypassKey() = 0;
+
 
 protected:
     IAppDelegateService() = default;

@@ -1,0 +1,10 @@
+{
+  "certificateTrust": {
+    "globalAnchorCertificates": [
+      {
+        "certB64": "test",
+        "certLabel": "another optional cert label"
+      }
+    ]
+  }
+}

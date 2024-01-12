@@ -22,11 +22,11 @@ protected:
     virtual std::string loadPolicyFile(std::string fileName) override;
     virtual std::string makeLogDir() override;
     virtual IPluginObserver *GetPluginObserver() override;
-    virtual ACSTATUS onPostStart(MstapNextCoreManager &mapNextCoreManager) override;
+    virtual ACSTATUS onPostStart(MstapNextCoreManager &mstapNextCoreManager) override;
     virtual ACSTATUS OnPluginLoaderInitialized() override;
-    virtual ACSTATUS OnCoreManagerCreated(MstapNextCoreManager &mapNextCoreManager) override;
-    virtual ACSTATUS OnCoreManagerInitialized(MstapNextCoreManager &mapNextCoreManager) override;
-    virtual ACSTATUS OnDeliveredInitialPolicy(MstapNextCoreManager &mapNextCoreManager) override;
+    virtual ACSTATUS OnCoreManagerCreated(MstapNextCoreManager &mstapNextCoreManager) override;
+    virtual ACSTATUS OnCoreManagerInitialized(MstapNextCoreManager &mstapNextCoreManager) override;
+    virtual ACSTATUS OnDeliveredInitialPolicy(MstapNextCoreManager &mstapNextCoreManager) override;
     
     virtual IPlatformLifecycleForwarder *GetLifecycleForwarder() override;
     virtual IDispatcher *GetDispatcher() override;
@@ -45,12 +45,13 @@ protected:
     virtual const std::string &GetMapSubDir() override;
     virtual const std::string &GetStaticPolicyJson() override;
     virtual const std::string &GetInjectableVersionInfoJson() override;
+    virtual const std::string &GetCertificatePolicyJson() override;
     virtual const std::string &GetInternalDatastoreSubDir() override;
     virtual const std::string &GetLogsDirPath() override;
     virtual MstapNextInterception *GetMstapNextInterception() override;
     
-    virtual ACSTATUS AddPolicyGates(MstapNextCoreManager &mapNextCoreManager) override;
-    virtual std::string GetLicenseJson(MstapNextCoreManager &mapNextCoreManager) override;
+    virtual ACSTATUS AddPolicyGates(MstapNextCoreManager &mstapNextCoreManager) override;
+    virtual std::string GetLicenseJson(MstapNextCoreManager &mstapNextCoreManager) override;
     
     virtual void OnOpeningPlugin(const std::string &libraryName) override;
 private:
@@ -65,7 +66,3 @@ __attribute__ ((visibility ("default")))
 - (void)startSDK:(NSBundle *)sdkBundle;
 - (void)setPluginPaths:(std::vector<std::string>)pluginPaths;
 @end
-
-
-
-

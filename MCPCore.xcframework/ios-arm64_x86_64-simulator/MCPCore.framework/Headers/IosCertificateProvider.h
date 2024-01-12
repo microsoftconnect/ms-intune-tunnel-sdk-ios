@@ -25,15 +25,17 @@ public:
     virtual ~IosCertificateProvider() override = default;
 
     // IPlatformCertificateProvider virtual method overrides
-    virtual ACSTATUS ProvisionTrustedServerCerts(const AtlasTrustedServerCertCollection &serverCerts,
-                                                 bool blockNetworkResources) override;
     virtual IExternalCertificateStore *GetExternalCertificateStore() override;
 
     // IExternalCertificateStore virtual method overrides
     virtual ACSTATUS VerifyCertificateTrust(const std::vector<std::vector<uint8_t>> &certChain,
-                                            const std::vector<std::vector<uint8_t>> &extraCACerts,
                                             const char *unusedHostnameOrAddrStr,
-                                            const char *unusedCipherSpec) override;
+                                            const char *unusedCipherSpec,
+                                            int unusedPort) override;
+    virtual ACSTATUS PostVerificationPolicyCheck(const std::string &host,
+                                                 const std::vector<std::vector<uint8_t>> &certChain,
+                                                 bool verificationSucceeded) override;
+    virtual std::vector<std::vector<uint8_t>> GetTrustCertsForHost(const char *hostnameOrAddrStr) override;
 };
 #pragma GCC visibility pop
 #endif /* IosCertificateProvider_h */

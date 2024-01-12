@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 #import "MCP.h"
 #import "JRSwizzle.h"
-#import "MSTAP_Foundation.h"
+#import "MAP_Foundation.h"
 
 #ifdef __cplusplus
 extern "C" {

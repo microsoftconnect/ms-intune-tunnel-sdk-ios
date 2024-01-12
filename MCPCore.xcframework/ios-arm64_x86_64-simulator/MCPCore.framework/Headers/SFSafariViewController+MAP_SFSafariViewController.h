@@ -8,7 +8,7 @@
 //
 
 #import <SafariServices/SFSafariViewController.h>
-#import "MSTAP_Foundation.h"
+#import "MAP_Foundation.h"
 
 @interface SFSafariViewController (MAP_SFSafariViewController)
 

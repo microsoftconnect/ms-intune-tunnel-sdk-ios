@@ -12,6 +12,10 @@
 		<data>
 		dOL/EJSRrI/9Mm197ZgsZme/qiw=
 		</data>
+		<key>Headers/InitializeSwizzler.h</key>
+		<data>
+		DtewBRRCWCZJa6z3uvB7pPXVFno=
+		</data>
 		<key>Headers/IosMCPServicesLoader.h</key>
 		<data>
 		058WyGLX1N5v4l0GjZKlajGWt3g=
@@ -46,7 +50,11 @@
 		</data>
 		<key>Headers/Relinker.h</key>
 		<data>
-		YkpFdauKR2sgFBKV8Dn0yvSfo08=
+		Zhv4OeJxwa8tn3ZGygPsxC+EtKI=
+		</data>
+		<key>Headers/SwizzleInfo.h</key>
+		<data>
+		EDXL2hepe0kT7oudpe/2a6ll/es=
 		</data>
 		<key>Headers/SwizzledClassDepot.h</key>
 		<data>
@@ -66,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mhCGLymPglprivaPZId5zIUnTig=
+		8Y48Vk18gY+hziFMZTynuRTKm6k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,6 +95,13 @@
 			<key>hash2</key>
 			<data>
 			6nCzP/sP8sfjzrSEtaQ8PWJj1l7n6B7WhYJ1O9svkes=
+			</data>
+		</dict>
+		<key>Headers/InitializeSwizzler.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E+RglKdaNu6sFlx+dYnih5B3sjfpBRXkwiaz9fj6Du0=
 			</data>
 		</dict>
 		<key>Headers/IosMCPServicesLoader.h</key>
@@ -149,7 +164,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gQmElMQO/qwwovyf3mmtVkbTQSuSRZl2niQgWHnN4Kk=
+			m9IreDz77Rh6F/c44pAWMrk5Nxt/54cHhjDlaL3WLpI=
+			</data>
+		</dict>
+		<key>Headers/SwizzleInfo.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UNyOX3ld1PRWhBea8KWPj5wbYatV91yhL2J4MfT/xp4=
 			</data>
 		</dict>
 		<key>Headers/SwizzledClassDepot.h</key>

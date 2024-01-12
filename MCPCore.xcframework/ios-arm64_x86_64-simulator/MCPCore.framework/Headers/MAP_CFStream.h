@@ -11,7 +11,7 @@
 #define MAP_CFStream_h
 
 #include <CoreFoundation/CoreFoundation.h>
-#include "MSTAP_NSStream.h"
+#include "MAP_NSStream.h"
 
 #ifdef __cplusplus
 extern "C" {
