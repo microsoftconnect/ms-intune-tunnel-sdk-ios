@@ -14,7 +14,7 @@
 
 void forceLinkNSURLSessionConfiguration(void);
 
-@interface NSURLSessionConfiguration (MAP_NSURLSessionConfiguration)
+@interface NSURLSessionConfiguration (MSTAP_NSURLSessionConfiguration)
 
 + (void)mapInitNSURLSessionConfiguration;
 

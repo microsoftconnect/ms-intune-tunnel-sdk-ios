@@ -1,5 +1,5 @@
 //
-//  NSNotificationCenter+MAP_NSNotificationCenter.h
+//  NSNotificationCenter+MSTAP_NSNotificationCenter.h
 //  mstapnext_injectable_ios
 //
 //  Created by Vadim Lozko on 8/23/16.
@@ -10,16 +10,16 @@
 #import <UIKit/UIKit.h>
 
 __attribute__ ((visibility ("default")))
-@interface MAP_NSAppNotificationCenter : NSNotificationCenter
+@interface MSTAP_NSAppNotificationCenter : NSNotificationCenter
 
-+ (MAP_NSAppNotificationCenter *)appDefaultCenter;
++ (MSTAP_NSAppNotificationCenter *)appDefaultCenter;
 
 - (void)postDeferredNotificationWithName:(NSNotificationName)aName;
 - (void)receivedMstNotification:(NSNotification *)notification;
 
 @end
 
-@interface NSNotificationCenter (MAP_NSNotificationCenter)
+@interface NSNotificationCenter (MSTAP_NSNotificationCenter)
 
 + (void)disableNotification:(NSNotificationName)name;
 + (void)enableNotification:(NSNotificationName)name;
@@ -41,7 +41,7 @@ __attribute__ ((visibility ("default")))
  *   replacing, "defaultCenter", which means that we don't need to shift the
  *   entire application binary to accomodate a different length string.
  */
-+ (MAP_NSAppNotificationCenter *)mstDfltCenter;
++ (MSTAP_NSAppNotificationCenter *)mstDfltCenter;
 
 - (BOOL)isNotificationDisabled:(NSNotificationName)aName;
 

@@ -146,8 +146,10 @@ __attribute__ ((visibility ("default")))
 
 /**
  * Deinitializes Microsoft Tunnel API infrastructure.
+ *
+ * @return An API error {@link MicrosoftTunnelError}
  */
-- (void)microsoftTunnelDeinitialize;
+- (MicrosoftTunnelError)microsoftTunnelDeinitialize;
 
 /**
  * Initializes Microsoft Tunnel API infrastructure.
@@ -192,11 +194,6 @@ __attribute__ ((visibility ("default")))
  * @param logDelegate Log Class that implements the {@link MicrosoftTunnelLogDelegate} protocol.
  */
 - (void)registerLogDelegate:(nonnull id<MicrosoftTunnelLogDelegate>)logDelegate;
-
-/**
- * Unregister a log delegate.
- */
-- (void)unregisterLogDelegate;
 
 /**
  * Initiate establishment of the VPN session and enables interception.

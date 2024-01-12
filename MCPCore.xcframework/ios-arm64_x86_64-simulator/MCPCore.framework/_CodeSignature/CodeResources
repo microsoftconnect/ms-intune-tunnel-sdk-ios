@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/IosMCPPolicyBridge.h</key>
 		<data>
-		xhT77ebdUMuDhMZOIs9NaTIcVPw=
+		/AhZA+se8iBfaYcTNAo9A+roskQ=
 		</data>
 		<key>Headers/IosNetworkReachabilityImpl.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/MAP_CFReadStream.h</key>
 		<data>
-		KsbjfWxr+TnKjfL/KQgjpQHZ/oc=
+		aNPIs5Uqf/qUzDUFpvi+wq/92t0=
 		</data>
 		<key>Headers/MAP_CFRuntimeBase.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/MAP_CFStream.h</key>
 		<data>
-		D6XdA2pBDyAYEmcUwe32JssrMVw=
+		s11jM52p9TOycTSukar8hCG5ziE=
 		</data>
 		<key>Headers/MAP_CFWriteStream.h</key>
 		<data>
@@ -128,42 +128,6 @@
 		<data>
 		oZbduFp8AhkpMsW+wv2yfdl16o0=
 		</data>
-		<key>Headers/MAP_Foundation.h</key>
-		<data>
-		4iNexVaos4/CDdIR24dm/jZaivc=
-		</data>
-		<key>Headers/MAP_HTTPCacheFixup.h</key>
-		<data>
-		96NKxBuucXVxNGnWXOU6ZENLGUA=
-		</data>
-		<key>Headers/MAP_NSBundle.h</key>
-		<data>
-		XxX/M1LVtXYpTAOHFcyxYtQW7Hk=
-		</data>
-		<key>Headers/MAP_NSHTTPCookieStorage.h</key>
-		<data>
-		aruN9D3+vPJQzPc7YIlHDlF+RVE=
-		</data>
-		<key>Headers/MAP_NSInputStream.h</key>
-		<data>
-		8ufLZOz6IaThut1UvDGjITyHnmg=
-		</data>
-		<key>Headers/MAP_NSObject.h</key>
-		<data>
-		dztlc5ONvroze8UYgJZVPQ7HZIM=
-		</data>
-		<key>Headers/MAP_NSOutputStream.h</key>
-		<data>
-		/xP/rjUiVNBR5LkdseAvZ2AqC6k=
-		</data>
-		<key>Headers/MAP_NSStream.h</key>
-		<data>
-		BfSI9Q2pyOvZ2B0pF56WXT8hPCw=
-		</data>
-		<key>Headers/MAP_SocketStream.h</key>
-		<data>
-		I5oJ6fTxSvy9KNag/pP3Fqb0AbM=
-		</data>
 		<key>Headers/MCPColorUtils.h</key>
 		<data>
 		zDuCdhEOUbIH3J/MGx61v8SkxtU=
@@ -178,7 +142,7 @@
 		</data>
 		<key>Headers/MCPCorePolicyBridge.h</key>
 		<data>
-		Spz9meNfE4fDP6rnQmsX3HFOS68=
+		vrB9E5SEe7zmcuZNcG2Ukm7P+fU=
 		</data>
 		<key>Headers/MCPDirectoryUtils.h</key>
 		<data>
@@ -194,7 +158,7 @@
 		</data>
 		<key>Headers/MCP_BackgroundTasks.h</key>
 		<data>
-		R56GtEqWcYLLH73hHt6/lVvuwXM=
+		ObY2JI+bpuemjF7jkDzRT5+qios=
 		</data>
 		<key>Headers/MCP_CoreManagerHolder.h</key>
 		<data>
@@ -208,17 +172,53 @@
 		<data>
 		K5qoVToeQvyer9p6ulijUCNeRiQ=
 		</data>
+		<key>Headers/MSTAP_Foundation.h</key>
+		<data>
+		xR+6zNioSUM1q7D76UqkuYqMvAc=
+		</data>
+		<key>Headers/MSTAP_HTTPCacheFixup.h</key>
+		<data>
+		s3PgqQGaf5UbeBvTDIHWw8+uzDU=
+		</data>
+		<key>Headers/MSTAP_NSBundle.h</key>
+		<data>
+		hPmi5nBqq0oIPF77sxLrJtXK5Xo=
+		</data>
+		<key>Headers/MSTAP_NSHTTPCookieStorage.h</key>
+		<data>
+		BB0mAzRtHL++QYg8ld1twN/mEOA=
+		</data>
+		<key>Headers/MSTAP_NSInputStream.h</key>
+		<data>
+		1CoADT1/w5dhMTsWTU8uAkWq46g=
+		</data>
+		<key>Headers/MSTAP_NSObject.h</key>
+		<data>
+		gRUKLSty9gmZAXBHSzjbSDw+Qhs=
+		</data>
+		<key>Headers/MSTAP_NSOutputStream.h</key>
+		<data>
+		bN8OC0+zAwFLQz62DkcIHNkIkHc=
+		</data>
+		<key>Headers/MSTAP_NSStream.h</key>
+		<data>
+		r5eijA/mCQfYJHTVUAwGryJovA0=
+		</data>
+		<key>Headers/MSTAP_SocketStream.h</key>
+		<data>
+		xIhrYccIi2b2CXMb2qlTaeavN4c=
+		</data>
 		<key>Headers/MST_WebKit.h</key>
 		<data>
-		9X7gqLx33HGUVeLHPMAn22eHDaQ=
+		hIM0gxWmg5XmE9wUtSOIjSVQjlk=
 		</data>
 		<key>Headers/MstapNextServerCertProvider.h</key>
 		<data>
 		PC25J+6q5We8/GiQn1QoT3Zty8A=
 		</data>
-		<key>Headers/NSNotificationCenter+MAP_NSNotificationCenter.h</key>
+		<key>Headers/NSNotificationCenter+MSTAP_NSNotificationCenter.h</key>
 		<data>
-		795eAwzQtV4phQdD6yvvzKBrveQ=
+		vGT7jFBXS1oTJRyTmNqH/EIAH6E=
 		</data>
 		<key>Headers/NSStream+MCP_SocketStream.h</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
 		<data>
-		BLOA+gO1RlzEKS1oqX4LZQzvEPc=
+		gO/DQOK16ZYFD6bb2kIQwxJxHHM=
 		</data>
 		<key>Headers/SocketStreamConnectorBase.h</key>
 		<data>
@@ -266,7 +266,7 @@
 		</data>
 		<key>Headers/SwizzleNSURLSessionConfiguration.h</key>
 		<data>
-		mxbQItEpbiot6EwoJKOlsCw2VLU=
+		qXAaE1yoa6F71r22NCjVLcEb4Gc=
 		</data>
 		<key>Headers/WKUserContentController+MST_WKUserContentController.h</key>
 		<data>
@@ -358,11 +358,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wOvFHCSYPMBm8cTPcY/GUum8bG0=
-		</data>
-		<key>MediaInjection.js</key>
-		<data>
-		Q6suNZgqGYBnFfxHhsUbamqCn8Y=
+		FI6lZaiJhzH+AxF2YBqhX31yx3Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -477,7 +473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikrYd/g/4JBd2db5ENfvxkccTmxteCPUEf4WkcJ200E=
+			Dyybsag0C3OC641QJW1PnJ7UC9sWoj//fdwNZ3C41qA=
 			</data>
 		</dict>
 		<key>Headers/IosNetworkReachabilityImpl.h</key>
@@ -533,7 +529,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x/E0kPHqL8AL4E/oSDGjxOE6TvXY4fXDqgPYepH3/IM=
+			iPk94wq9Y1wJjY08oTPN7DQR9ZTVGJDPaKUfQMcPkps=
 			</data>
 		</dict>
 		<key>Headers/MAP_CFRuntimeBase.h</key>
@@ -554,7 +550,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xiQeCWbJqgLOM/9QXATXEAT7an+up7re+LPZ+w7FS1g=
+			4ykeRcKQm1sJ1/WeJywkrH2sAs/KBGOoI6p8WPnsVbY=
 			</data>
 		</dict>
 		<key>Headers/MAP_CFWriteStream.h</key>
@@ -592,69 +588,6 @@
 			N66VxTEEfcOvJRadVDjVMwel1HFmtAOPitjoBsmWydQ=
 			</data>
 		</dict>
-		<key>Headers/MAP_Foundation.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Yu8v68oT6EOmDgCA0tScy7NyXfxAjlsDs5XvqH9dCdU=
-			</data>
-		</dict>
-		<key>Headers/MAP_HTTPCacheFixup.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jBzgFVKWJo/urRXrYMqttFfXup3oQhWiPY7XxwqRbTc=
-			</data>
-		</dict>
-		<key>Headers/MAP_NSBundle.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NOzmu453zDoRkvAw1xUpEI97ibCZgCRVJ/iceZcRyXk=
-			</data>
-		</dict>
-		<key>Headers/MAP_NSHTTPCookieStorage.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			cP15ihIig6iwWRl0zDfnFXeZW3mxTNMsRCT8Z/M2GJM=
-			</data>
-		</dict>
-		<key>Headers/MAP_NSInputStream.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2zLnMXbeT5atz1163FXcMW6vgLBGdWd1+xHDB5b+E94=
-			</data>
-		</dict>
-		<key>Headers/MAP_NSObject.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GsLsGHVhv5bR+GnFkartxYcTMMF9mZbxV9lN8pjJ3BI=
-			</data>
-		</dict>
-		<key>Headers/MAP_NSOutputStream.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TyGzSFaLKRTsKMvUiy4AtVkTNYuiY7udPLuV4zA9pB4=
-			</data>
-		</dict>
-		<key>Headers/MAP_NSStream.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NpIs0Iwy1Dc618/LJZPjTQ/GbZ8OPhdPMeXshEwys54=
-			</data>
-		</dict>
-		<key>Headers/MAP_SocketStream.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ry5Niq4hLFUV5r/MgeuHUopPUsfmr8BytfuY/HCVzSU=
-			</data>
-		</dict>
 		<key>Headers/MCPColorUtils.h</key>
 		<dict>
 			<key>hash2</key>
@@ -680,7 +613,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UWvdiZN1MjREzpmpyVV/PEMsw+DuUxFc7+FunApQP5Y=
+			6+p7vZfR2S0/AH1hKlDYqR8ogxYIihOglCB0u9ZQa4I=
 			</data>
 		</dict>
 		<key>Headers/MCPDirectoryUtils.h</key>
@@ -708,7 +641,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IHxGmrylXySvIeYnalTM3oG5IiZ48Qy5xM/idCuT33E=
+			WoZrad4nW6FlpQvSXraSsf+kmyXplbYLwEwK89aFZxM=
 			</data>
 		</dict>
 		<key>Headers/MCP_CoreManagerHolder.h</key>
@@ -732,11 +665,74 @@
 			0nRuUr605ALDDIaYW2Rft9rA35SrW5iJyBpf8ZPJBZo=
 			</data>
 		</dict>
+		<key>Headers/MSTAP_Foundation.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1eVU/IbajE1Libjn5P7EdHSj2QPtrqXWI0J0cc+o0SY=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_HTTPCacheFixup.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XWrSOmFCjI0CMCb2FyJT/dKCi5IGLBUrcQPtPye3Wiw=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_NSBundle.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DZPH0Uq555WnD6hBbL581bxzefCGcMYacCTpxJAmB3k=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_NSHTTPCookieStorage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			23ilLySCLpqvXIt3apu7FYprVmHDre96BgLP3AUEK9Q=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_NSInputStream.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hxR1gf3pxDWIMEmGRXojxLIMl+AtmG4ZcF1vTZ25Nh4=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_NSObject.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2nrpIVWjhyWey2I5rKoCDTon2xsV5GP+g7Tnpz4EtQs=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_NSOutputStream.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Vzq823XRRcrfnkG8bhT4+8xVlrS8jtyVqJORtGYOFP0=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_NSStream.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ltzAFmOe3O9IuTTU0R6ZtHViNxJmuvD6IR/NvVK0Sqg=
+			</data>
+		</dict>
+		<key>Headers/MSTAP_SocketStream.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VI7H5vthqcrtLS6+oPT4umNGnHqhgbO16rRK/RtEPXw=
+			</data>
+		</dict>
 		<key>Headers/MST_WebKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4U8B8zp5KZlx8QF6S4a/jfVX7fkmSJz9J3aWHMP9WgY=
+			svIti763EdNkm7RbMvk3ulhH45Qbon6iWhQ9jOQABDQ=
 			</data>
 		</dict>
 		<key>Headers/MstapNextServerCertProvider.h</key>
@@ -746,11 +742,11 @@
 			uIG6jttlbnrguwR0j9nXN/TPm/e7jrwvlRabb54b6EE=
 			</data>
 		</dict>
-		<key>Headers/NSNotificationCenter+MAP_NSNotificationCenter.h</key>
+		<key>Headers/NSNotificationCenter+MSTAP_NSNotificationCenter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N95z2nurU8Ip4mbMDQWacRivvhhQN9kLrbAXQF7fXqc=
+			cMKBHrT4nByoa+kwm8G4bFRuIbq2PysAXfX+XbJbR+M=
 			</data>
 		</dict>
 		<key>Headers/NSStream+MCP_SocketStream.h</key>
@@ -799,7 +795,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kOMlmoUVpqD2DshzEO6QAvVEtRL+yCjJjayRn/Mk6hU=
+			LL1awh5DASE7enjzvGaq6/tkK1gzL5zpptSqWBju+oM=
 			</data>
 		</dict>
 		<key>Headers/SocketStreamConnectorBase.h</key>
@@ -834,7 +830,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PdPy/DlW2jZOSDV8ewtOQkOoe/vo77zMsaJsD5Vk0/0=
+			/bARpKfo8pxbcxYKfg05UkGL45ECbSh/Cim+geaaxsc=
 			</data>
 		</dict>
 		<key>Headers/WKUserContentController+MST_WKUserContentController.h</key>
@@ -989,13 +985,6 @@
 			<key>hash2</key>
 			<data>
 			3Zza/3I45qusngkZyfHLaiTQZRw4Fo0rgQCnJ6/9RFQ=
-			</data>
-		</dict>
-		<key>MediaInjection.js</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FTsORz86WAWyxmsVq7nuHRrruDMKgc/hB28UMzxTWZ8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

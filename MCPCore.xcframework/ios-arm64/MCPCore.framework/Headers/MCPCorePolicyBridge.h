@@ -41,7 +41,7 @@ protected:
     virtual std::string getServiceKey() const = 0;
     virtual std::string loadPolicyFile(std::string fileName) = 0;
     virtual std::string makeLogDir() = 0;
-    virtual ACSTATUS onPostStart(MstapNextCoreManager &mstapNextCoreManager) = 0;
+    virtual ACSTATUS onPostStart(MstapNextCoreManager &mapNextCoreManager) = 0;
     // strongly owned
     SmarterPtr<MstapNextCoreManager> m_upMstapNextCoreManager;
     PlatformNetworkReachabilityPtr m_upReachability;

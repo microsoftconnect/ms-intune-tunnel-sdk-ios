@@ -1,5 +1,5 @@
 //
-//  MAP_HTTPCacheFixup.h
+//  MSTAP_HTTPCacheFixup.h
 //  mstapnext_injectable_ios
 //
 //  Created by Brian Pescatore on 11/5/15.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MAP_HTTPCacheFixup : NSURLProtocol
+@interface MSTAP_HTTPCacheFixup : NSURLProtocol
 
 + (void) registerProtocol;
 

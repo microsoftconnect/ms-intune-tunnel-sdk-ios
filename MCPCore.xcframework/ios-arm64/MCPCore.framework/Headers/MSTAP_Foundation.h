@@ -1,13 +1,13 @@
 //
-//  MAP_Foundation.h
+//  MSTAP_Foundation.h
 //  mstapnext_injectable_ios
 //
 //  Created on 9/29/15.
 //
 //
 
-#ifndef MAP_Foundation_h
-#define MAP_Foundation_h
+#ifndef MSTAP_Foundation_h
+#define MSTAP_Foundation_h
 
 #import <Foundation/Foundation.h>
 
@@ -32,11 +32,11 @@ extern "C" {
 
 class IMCPInterception;
 
-void MAP_FoundationInit(IMCPInterception *pInterception);
-void MAP_FoundationBlacklistInit(IMCPInterception *pInterception);
+void MSTAP_FoundationInit(IMCPInterception *pInterception);
+void MSTAP_FoundationBlacklistInit(IMCPInterception *pInterception);
 #endif
 
-void MAP_FoundationEarlyInit();
+void MSTAP_FoundationEarlyInit();
 
 #ifdef __cplusplus
 }
@@ -44,4 +44,4 @@ void MAP_FoundationEarlyInit();
 
 #pragma GCC visibility pop
 
-#endif /* MAP_Foundation_h */
+#endif /* MSTAP_Foundation_h */

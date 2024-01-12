@@ -1,5 +1,5 @@
 //
-//  MAP_NSStream.h
+//  MSTAP_NSStream.h
 //  mstapnext_injectable_ios
 //
 //  Created by Vadim Lozko on 1/25/16.
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "NSStream+MCP_SocketStream.h"
 
-@interface MAP_NSStream : NSObject
+@interface MSTAP_NSStream : NSObject
 
 @property NSStreamStatus streamStatus;
 @property (strong) NSError *streamError;
@@ -36,17 +36,17 @@
 
 @end
 
-@interface MAP_NSStream_File : MAP_NSStream
+@interface MSTAP_NSStream_File : MSTAP_NSStream
 
 @property (strong) NSString *path;
 @property FILE *file;
 
-- (MAP_NSStream_File *)initWithPath:(NSString *)path;
+- (MSTAP_NSStream_File *)initWithPath:(NSString *)path;
 - (void)openForMode:(NSString *)mode;
 
 @end
 
-@interface MAP_SocketStreamPair : NSObject <MCP_SocketStreamDelegate>
+@interface MSTAP_SocketStreamPair : NSObject <MCP_SocketStreamDelegate>
 
 @property (nonatomic, assign) CFRunLoopRef runLoop;
 // Set to weak so these can properly deallocate
@@ -74,13 +74,13 @@
 @end
 
 
-@interface MAP_NSStream_Sock : MAP_NSStream
+@interface MSTAP_NSStream_Sock : MSTAP_NSStream
 
-@property (nonatomic, strong) MAP_SocketStreamPair *socketPair;
+@property (nonatomic, strong) MSTAP_SocketStreamPair *socketPair;
 @property (nonatomic, strong) dispatch_queue_t queue;
 @property (nonatomic, strong) NSRunLoop *runLoop;
 
 - (void)setDispatchQueue:(dispatch_queue_t) queue;
-- (instancetype)initWithPair:(MAP_SocketStreamPair *)pair;
+- (instancetype)initWithPair:(MSTAP_SocketStreamPair *)pair;
 
 @end

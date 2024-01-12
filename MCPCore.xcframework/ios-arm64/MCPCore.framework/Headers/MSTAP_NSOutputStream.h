@@ -1,5 +1,5 @@
 //
-//  MAP_NSOutputStream.h
+//  MSTAP_NSOutputStream.h
 //  MAP-iOS
 //
 //  Created by Brian on 10/14/15.
@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MAP_NSStream.h"
+#import "MSTAP_NSStream.h"
 
 __attribute__ ((visibility ("default")))
-@interface MAP_NSOutputStream_File : MAP_NSStream_File
+@interface MSTAP_NSOutputStream_File : MSTAP_NSStream_File
 
 - (nullable instancetype)initToFileAtPath:(NSString *)path append:(BOOL)shouldAppend;
 
 @end
 
-@interface MAP_NSOutputStream_Sock : MAP_NSStream_Sock
+@interface MSTAP_NSOutputStream_Sock : MSTAP_NSStream_Sock
 
 // Required overrides
 - (NSInteger)write:(const uint8_t *)buffer maxLength:(NSUInteger)len;

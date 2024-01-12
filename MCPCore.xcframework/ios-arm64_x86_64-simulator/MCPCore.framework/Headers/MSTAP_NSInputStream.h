@@ -1,5 +1,5 @@
 //
-//  MAP_NSCFInputStream.h
+//  MSTAP_NSCFInputStream.h
 //  mstapnext_injectable_ios
 //
 //  Created on 9/29/15.
@@ -7,16 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MAP_NSStream.h"
+#import "MSTAP_NSStream.h"
 
 __attribute__ ((visibility ("default")))
-@interface MAP_NSInputStream_File : MAP_NSStream_File
+@interface MSTAP_NSInputStream_File : MSTAP_NSStream_File
 
 - (instancetype)initWithFileAtPath:(NSString *)path;
 
 @end
 
-@interface MAP_NSInputStream_Prox : MAP_NSStream
+@interface MSTAP_NSInputStream_Prox : MSTAP_NSStream
 
 @property CFTypeRef cfSelf;
 
@@ -29,7 +29,7 @@ __attribute__ ((visibility ("default")))
 
 @end
 
-@interface MAP_NSInputStream_Sock : MAP_NSStream_Sock
+@interface MSTAP_NSInputStream_Sock : MSTAP_NSStream_Sock
 
 - (BOOL)hasBytesAvailable;
 - (NSInteger)read:(UInt8 *)bytes maxLength:(NSUInteger)length;
