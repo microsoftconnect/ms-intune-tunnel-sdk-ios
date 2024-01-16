@@ -78,10 +78,6 @@ typedef uint8_t RelinkFlags;
 
 #ifdef __cplusplus
 
-#if defined(__RTOS_ANDROID__)
-#include <android/dlext.h>
-#endif
-
 #include <vector>
 #include <string>
 #include <map>
@@ -184,10 +180,6 @@ class Relinker
 
     MBSTATUS GetFunctionFromLibrary(const std::string &libraryName, const std::string &symbolName, void*& func);
 
-#if defined(__RTOS_ANDROID__)
-    void DisableAndroidLogging(bool disable) { sm_disableAndroidLogging = disable; }
-#endif
-
     MBSTATUS CheckSymbolExists(const std::string &libraryName, const std::string &symbolName, bool& result);
     MBSTATUS CheckAddressInLibrary(const std::string &libraryName, void *addr);
     MBSTATUS CheckAddressInOpaqueLibraryInfo(void *opaqueLibInfo, void *addr);
@@ -216,6 +208,11 @@ class Relinker
 
     static MBSTATUS setErrorListener(RelinkerErrorListener* cb);
 
+#if defined(__APPLE__)
+    virtual void* getCodeSignature(const std::string &libraryName) = 0;
+    virtual void* getEmbeddedEntitlements(const std::string &libraryName, uint32_t &size) = 0;
+#endif
+
     // Send error condition to listener and obtain flag whether the error should be ignored (result = true)
     static bool foundErrorCondition(unsigned int errorCode, const std::string& explanation);
 
@@ -228,6 +225,9 @@ class Relinker
     static int dlclose(void *pHdl);
 
     static void *dlsym(void *handle, const char *symbolName);
+
+    bool shouldIgnore(const std::string &lib,
+                      BaseRelinkTrigger::PartialRelinkType &outPartialRelinkType);
 
  protected:
     virtual std::string normalizeLibraryName(const std::string &library);
@@ -252,17 +252,6 @@ class Relinker
 
  private:
     static MBSTATUS removeRelinker(Relinker *relinker);
-
-#if defined(__RTOS_ANDROID__)
-    static void *android_dlopen_ext(const char* path, int flag, const android_dlextinfo* info);
-    static FILE *popen(const char *command, const char *type);
-    static int _rl_android_log_print(int prio, const char *tag,  const char *fmt, ...);
-
-    static int dl_iterate_phdr(int (*callback) (struct dl_phdr_info *info,
-                                                size_t size, void *data),
-                               void *data);
-#endif
-
     static MBSTATUS relinkDynamic(Relinker* rel,
                                   const std::string& library,
                                   const bool bypassLibrary,
@@ -310,16 +299,15 @@ class Relinker
 
     void saveLibHandle(void *pHdl, const std::string &libName);
     std::string findLibName(void *pHdl);
-    void removeLibHandle(void *pHdl);
+    bool removeLibHandle(void *pHdl);
 
     MBSTATUS performRelinkInternal(bool recordLinkedLibraries = true);
-    bool shouldIgnore(std::string &lib);
-    bool shouldIgnore(std::string &lib,
-                      BaseRelinkTrigger::PartialRelinkType &outPartialRelinkType);
+   
     MBSTATUS addIgnoreLibrary(const std::string &libraryName,
                               const BaseRelinkTrigger::PartialRelinkType partialRelinkType);
     MBSTATUS addIgnoreLibrary(BaseRelinkTrigger* tr);
 
+    bool shouldIgnore(const std::string &lib);
 
     /* Function used by unit tests to influence list of ignored libraries */
     static void SetupIgnoreLibraryList(const std::string &libraryName);
@@ -369,16 +357,26 @@ class Relinker
     std::map<BaseRelinkTrigger *, RelinkMap> m_addedRelinks;
 
     std::map<std::string, void *> m_originalFunctions;
-    std::map<void*, std::string> m_libHandles;
 
+    struct RefCountedLibName
+    {
+        RefCountedLibName(std::string libName)
+            : refCount(1), libName(libName)
+        {}
+        RefCountedLibName(const RefCountedLibName&) = delete;
+        RefCountedLibName(RefCountedLibName&&) = delete;
+
+        size_t incRefCount() { return ++refCount; }
+        size_t decRefCount() { return --refCount; }
+
+        size_t refCount;
+        const std::string libName;
+    };
+    std::map<void*, RefCountedLibName> m_libHandles;
     std::map<int, std::vector<IDeferredImageLoadCB *>> m_deferredImageInitCallbacks;
 
     static std::list<Violation> m_Violations;
     static bool                 m_ViolationsInited;
-
-#if defined(__RTOS_ANDROID__)
-    static bool sm_disableAndroidLogging;
-#endif
 
     friend class relink::RelinkerHelper;  // RelinkerHelper used for testing purposes only.
 
@@ -401,7 +399,9 @@ MBSTATUS RELINKER_AddExclusiveRelink(BaseRelinkTrigger *trigger, RelinkMap &reli
 MBSTATUS RELINKER_AddSupplementalRelink(BaseRelinkTrigger *trigger, RelinkMap &relinkEntries);
 MBSTATUS RELINKER_PerformForcedRelink(const std::string &imageName, RelinkMap &relinkEntries, BaseRelinkTrigger::PartialRelinkType partialType);
 MBSTATUS RELINKER_PerformForcedRelinkForAll(RelinkMap &relinkEntries, BaseRelinkTrigger::PartialRelinkType partialType);
-
+#if defined(__APPLE__)
+void *RELINKER_GetEmbeddedEntitlements(const char *libraryName, uint32_t &size);
+#endif
 /* Assign Relinker function pointers to passed in struct. */
 MBSTATUS RELINKER_setCallbacks(RELINKER_FUNCTION_CALLBACKS *pCallbacks);
 #endif
@@ -414,6 +414,7 @@ MBSTATUS RELINKER_PerformRelink();
 MBSTATUS RELINKER_PerformRelinksAgain();
 
 MBSTATUS RELINKER_AddIgnoreLibrary(const char *libraryName);
+bool RELINKER_ShouldIgnoreLibrary(const char *libraryName);
 MBSTATUS RELINKER_AddPartialIgnoreLibrary(const char *libraryName,
                                           uint32_t partialRelinkType);
 MBSTATUS RELINKER_AddIgnorePlugin(const char *libraryName,
@@ -428,9 +429,8 @@ MBSTATUS RELINKER_CheckAddressInLibrary(const char *libraryName, void *addr);
 MBSTATUS RELINKER_CheckAddressInOpaqueLibraryInfo(void *opaqueLibInfo, void *addr);
 void *RELINKER_GetOpaqueLibraryInfo(const char *libraryName);
 bool RELINKER_CheckSymbolExists(const char *libraryName, const char *symbolName);
-
-#if defined(__RTOS_ANDROID__)
-void RELINKER_DisableAndroidLogging(bool disable);
+#if defined(__APPLE__)
+void *RELINKER_GetCodeSignature(const char *libraryName);
 #endif
 
 #pragma GCC visibility pop

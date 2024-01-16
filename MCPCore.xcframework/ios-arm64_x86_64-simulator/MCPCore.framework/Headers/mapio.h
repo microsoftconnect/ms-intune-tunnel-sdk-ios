@@ -54,19 +54,6 @@
 typedef off_t off64_t;
 #endif
 
-#if defined(__ANDROID__)
-typedef void * android_net_context;
-typedef off64_t fpos64_t;
-#include <sys/select.h>
-
-#include <android/api-level.h>
-#if __ANDROID_API__ >= 21
-#define POST_ANDROID_L
-#else
-#define PRE_ANDROID_L
-#endif /* __ANDROID_API__ */
-
-#endif
 
 #pragma GCC visibility push(default)
 
@@ -90,15 +77,6 @@ void MAPIO_disablePAVE();
 void MAPIO_setExemptedPaths(const char* paths[], const size_t numPaths);
 void MAPIO_enablePluginIO(const unsigned int pioTypes);
 void MAPIO_disablePluginIO(const unsigned int pioTypes);
-#if defined(__ANDROID__)
-void MAPIO_addJNIClassReplacement(const char *originalFQClassName, const char *replacementFQClassName);
-void MAPIO_addJNIMethodReplacement(const char *originalFQClassName,
-                                   const char *originalMethodName,
-                                   const char *originalMethodSig,
-                                   const char *replacementFQClassName,
-                                   const char *replacementMethodName,
-                                   const char *replacementMethodSig);
-#endif
 bool MAPIO_isExempted(const char *path);
 
 // Used for Android only
@@ -113,9 +91,6 @@ void MAPIO_unlock_fd_public(int fd);
 void MAPIO_abort();
 
 int MAPIO_close(int fd);
-#ifdef __ANDROID__
-int MAPIO_android_fdsan_close_with_tag(int fd, uint64_t expected_tag);
-#endif
 
 int MAPIO_dup(int fd);
 int MAPIO_dup2(int fd, int fd2);
@@ -129,25 +104,6 @@ ssize_t MAPIO_write(int fd, const void *buf, size_t count);
 ssize_t MAPIO_writev(int fd, const struct iovec *iov, int iov_count);
 
 int MAPIO_fcntl64(int fd, int cmd, void* arg);
-
-#if defined(__ANDROID__)
-  /* FORTIFY */
-ssize_t MAPIO___read_chk(int fd, void *buf, size_t count, size_t buf_size);
-ssize_t MAPIO___recvfrom_chk(int s, void *mem, size_t len, size_t buflen, int flags,
-                             struct sockaddr *from, socklen_t *fromlen);
-ssize_t MAPIO___write_chk(int fd, const void* buf, size_t count, size_t buf_size);
-ssize_t MAPIO___sendto_chk(int socket, const void* buf, size_t len, size_t buflen,
-                           int flags, const struct sockaddr* dest_addr,
-                           socklen_t addrlen);
-
-int MAPIO_android_getaddrinfofornetcontext(const char * p1, const char *p2, const struct addrinfo *p3,
-                                           const android_net_context p4, struct addrinfo **p5);
-struct hostent *MAPIO_android_gethostbyaddrfornet(const void *p1, socklen_t p2, int p3, unsigned p4, unsigned p5);
-struct hostent *MAPIO_android_gethostbynamefornet(const char *p1, int p2, unsigned p3, unsigned p4);
-int MAPIO_sigaction(int p1, const struct sigaction* p2, struct sigaction* p3);
-int MAPIO_dladdr(void* p1, Dl_info *p2);
-void *MAPIO_dlvsym(void *p1, char *p2, char *p3);
-#endif
 
 #ifdef ATLAS_SOCKETS_LAYER
 /*
@@ -201,11 +157,6 @@ int MAPIO_android_getaddrinfo(const char *nodename, const char *servname,
                               const struct addrinfo *hints, unsigned int netid,
                               unsigned int mark, struct addrinfo **res);
 
-#if defined(__ANDROID__)
-struct hostent	*MAPIO_gethostbyaddr(const char *, int, int);
-int MAPIO_gethostbyname_r(const char *, struct hostent *, char *, size_t, struct hostent **, int *);
-struct hostent	*MAPIO_gethostbyname2(const char *, int);
-#endif
 int MAPIO_getnameinfo(const struct sockaddr *, socklen_t, char *, size_t, char *, size_t, int);
 
 

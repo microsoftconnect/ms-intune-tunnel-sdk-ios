@@ -1,3 +1,7 @@
+//
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+//
+
 /*
  * For consistency, make the entire script a single anonymous function.
  *

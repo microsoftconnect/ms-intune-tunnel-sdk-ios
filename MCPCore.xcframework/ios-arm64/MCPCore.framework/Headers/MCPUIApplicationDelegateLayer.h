@@ -26,6 +26,7 @@
 -(BOOL)actualAppDelegate:(id<UIApplicationDelegate>)delegate application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary<UIApplicationLaunchOptionsKey, id> *)launchOptions;
 -(void)actualAppDelegate:(id<UIApplicationDelegate>)delegate applicationDidFinishLaunching:(UIApplication *)application;
 
+- (void)installInitialAppDelegate:(id<UIApplicationDelegate>)newDelegate;
 - (BOOL)swapMCPSwizzleDelegate:(id<UIApplicationDelegate>)newDelegate;
 
 - (UIWindow *)UIWindowFromAlloc:(UIWindow *)windowFromAlloc initWithFrame:(CGRect)frame;

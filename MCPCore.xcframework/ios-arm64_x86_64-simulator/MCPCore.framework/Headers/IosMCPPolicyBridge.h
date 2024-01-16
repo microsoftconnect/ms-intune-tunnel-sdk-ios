@@ -45,6 +45,7 @@ protected:
     virtual const std::string &GetMapSubDir() override;
     virtual const std::string &GetStaticPolicyJson() override;
     virtual const std::string &GetInjectableVersionInfoJson() override;
+    virtual const std::string &GetCertificatePolicyJson() override;
     virtual const std::string &GetInternalDatastoreSubDir() override;
     virtual const std::string &GetLogsDirPath() override;
     virtual MstapNextInterception *GetMstapNextInterception() override;
@@ -65,7 +66,3 @@ __attribute__ ((visibility ("default")))
 - (void)startSDK:(NSBundle *)sdkBundle;
 - (void)setPluginPaths:(std::vector<std::string>)pluginPaths;
 @end
-
-
-
-

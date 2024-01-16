@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/IAppDelegateService.h</key>
 		<data>
-		XJDLIgAt1IFgcvndzP+i0Rc/4WU=
+		xaroPopsfzu79KcGt832aPghw98=
 		</data>
 		<key>Headers/IDataSharingService.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/IosCertificateProvider.h</key>
 		<data>
-		HOhPKuP7COWzL4xDGMWUthCDsU0=
+		9SyyY5HP2XYHGLzPsbFRbOGbK/s=
 		</data>
 		<key>Headers/IosInterceptionProvider.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/IosMCPPolicyBridge.h</key>
 		<data>
-		xhT77ebdUMuDhMZOIs9NaTIcVPw=
+		UGo/ZIIvT3wMDzUGAYEimoRyKFg=
 		</data>
 		<key>Headers/IosNetworkReachabilityImpl.h</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Headers/MCPCorePolicyBridge.h</key>
 		<data>
-		Spz9meNfE4fDP6rnQmsX3HFOS68=
+		DW0SJggdprlhfsnmFiSyyvDYi3I=
 		</data>
 		<key>Headers/MCPDirectoryUtils.h</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Headers/MCPUIApplicationDelegateLayer.h</key>
 		<data>
-		1KczsnXf4SeYJQlox0l6PoZrRi4=
+		Wo3mzu0bs23+TEq1F0xr28gQR78=
 		</data>
 		<key>Headers/MCP_BackgroundTasks.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Headers/MstapNextServerCertProvider.h</key>
 		<data>
-		PC25J+6q5We8/GiQn1QoT3Zty8A=
+		/Nys46P2HcXsFQWpcIrMD6CJx8w=
 		</data>
 		<key>Headers/NSNotificationCenter+MAP_NSNotificationCenter.h</key>
 		<data>
@@ -350,7 +350,7 @@
 		</data>
 		<key>Headers/mapio.h</key>
 		<data>
-		0SaQBsq6Yw0MGFEyHnoC/qLmklQ=
+		/QosIFh9GfvrFjnXDP5y0ZU6t+s=
 		</data>
 		<key>Headers/mapio_ios.h</key>
 		<data>
@@ -358,11 +358,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wOvFHCSYPMBm8cTPcY/GUum8bG0=
+		cizxMOF/dG9IQ0eO+fZ9NqP4TZY=
 		</data>
 		<key>MediaInjection.js</key>
 		<data>
-		Q6suNZgqGYBnFfxHhsUbamqCn8Y=
+		U0Wjv4y6N50hOpO10Wo3WMzcdKU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -370,7 +370,7 @@
 		</data>
 		<key>WKInjection.js</key>
 		<data>
-		J2/TAALvfrmFUR1dU/Zl9IrL9yQ=
+		GDoeCczZuAPeNwp2PH8lFYYTnpo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -393,7 +393,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OriEwEWB/LpvQZRf94IdNnwsoQCcZGf8yCmWDqhiwC8=
+			eVDp68kk0yrhlFMrztnV6jk1wciQVBbplbe7r0u9jDo=
 			</data>
 		</dict>
 		<key>Headers/IDataSharingService.h</key>
@@ -442,7 +442,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			II65cR8MbSScudWhD3Jyzmg+l+wc5me4tCstGgPObBk=
+			wo+o/qTMR4P7nMp31heaOTmpjlVfvvV3vnlAHDpkKvU=
 			</data>
 		</dict>
 		<key>Headers/IosInterceptionProvider.h</key>
@@ -477,7 +477,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikrYd/g/4JBd2db5ENfvxkccTmxteCPUEf4WkcJ200E=
+			Sb58wzzzb33cH3rKBaq7+0vDw4M6XAF2YGbaK4K0V7U=
 			</data>
 		</dict>
 		<key>Headers/IosNetworkReachabilityImpl.h</key>
@@ -680,7 +680,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UWvdiZN1MjREzpmpyVV/PEMsw+DuUxFc7+FunApQP5Y=
+			iuKou1emUpAB962Icl9gEx9z0omF0GByPhSLJl5JwpY=
 			</data>
 		</dict>
 		<key>Headers/MCPDirectoryUtils.h</key>
@@ -701,7 +701,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LfXNKyx9WJlGqUUNe/lSZ5nx8WTjDMyzuEuc7NQh2WM=
+			VYEsdA+3TVNcIGQra9ZvLaLGq3paVpuxeDmGJar4WtI=
 			</data>
 		</dict>
 		<key>Headers/MCP_BackgroundTasks.h</key>
@@ -743,7 +743,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uIG6jttlbnrguwR0j9nXN/TPm/e7jrwvlRabb54b6EE=
+			mfxxx4QuRm48uczZiSCpXjSmlqrE25e0gSEi9voCcDA=
 			</data>
 		</dict>
 		<key>Headers/NSNotificationCenter+MAP_NSNotificationCenter.h</key>
@@ -981,7 +981,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iT5X3kA30Yx/ujXIxLhlaBAqn9jFwy9bFel7EWk9R0Y=
+			vseDe/SAjsvZ88UtG/rYfVFXXrdcz85j24pcThDwGIM=
 			</data>
 		</dict>
 		<key>Headers/mapio_ios.h</key>
@@ -995,7 +995,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FTsORz86WAWyxmsVq7nuHRrruDMKgc/hB28UMzxTWZ8=
+			ZCCjAZCWYQ0gvRWNznDoBcYc/KuwqB3KWSm1gx45ws8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1009,7 +1009,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OW2QPpuLnZkdL0DqVGdPjXU3028mGWDHyBu3xQsEuU0=
+			8lpxTlsoG6FjPU/Bgu4iTsUWgYNZvKZhbQqnSJVbLCY=
 			</data>
 		</dict>
 	</dict>

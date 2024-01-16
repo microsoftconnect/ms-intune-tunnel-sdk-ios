@@ -70,6 +70,7 @@ protected:
     std::string m_mapSubDir;
     std::string m_staticPolicyJson;
     std::string m_injectableVersionInfoJson;
+    std::string m_certificatePolicyJson;
     std::string m_internalDatastoreSubDir;
     std::string m_logsDirPath;
     std::unique_ptr<MstapNextInterception> m_upMstapNextInterception;

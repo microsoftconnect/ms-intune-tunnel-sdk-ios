@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EPgr0TfUM6PmIMyWCyPKGQU/D84=
+		VdQ8au0l6D3FaCd9ftDUQ7GAuRg=
 		</data>
 		<key>LICENSE.json</key>
 		<data>
@@ -27,6 +27,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		IiGzVHW4Qty9oacqYqvSKNWHTVw=
+		</data>
+		<key>certificate_policy.json</key>
+		<data>
+		iFawP/VupJccK6ytrtMtgYp6XZk=
 		</data>
 		<key>static_policy.json</key>
 		<data>
@@ -68,6 +72,13 @@
 			<key>hash2</key>
 			<data>
 			BiLM1aa35AJsL46YFl0W8VNUWN163P6tjNRHQQrv5l0=
+			</data>
+		</dict>
+		<key>certificate_policy.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EXUykDSZIPCRVGpAzQ3Xtkof0rnknBOm6YnXkMJTdyE=
 			</data>
 		</dict>
 		<key>static_policy.json</key>
