@@ -4,13 +4,24 @@ on:
       - main
     types:
       - closed
-      
+
 jobs:
   if_merged:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Parse Version
+        id: parse_version
+        run: |
+          version=gh pr list -s closed --json "title" | jq -r ". | first | .title" | grep -Eo "[0-9]+\.[0-9]+\.[0-9]+(\.[0-9]+)?$"
+          if [[ -z "$version" ]]; then
+            echo "Version number could not be found"
+            exit 1;
+          fi
+          echo "release_version=$version" >> "$GITHUB_ENV"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout Code
         uses: actions/checkout@v2
       - name: Create Release
         id: create_release
@@ -18,8 +29,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ env.release_version }}
+          release_name: Release ${{ env.release_version }}
           body: |
             Changes in this Release
             - First Change
