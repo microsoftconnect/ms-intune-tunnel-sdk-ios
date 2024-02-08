@@ -1,33 +1,3 @@
-//
-//  ZZFileChannel.h
-//  ZipZap
-//
-//  Created by Glen Low on 12/01/13.
-//  Copyright (c) 2013, Pixelglow Software. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-
-#import "ZZChannel.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface ZZFileChannel : NSObject <ZZChannel>
-
-@property (readonly, nullable, nonatomic) NSURL* URL;
-
-- (instancetype)init NS_UNAVAILABLE;
-
-- (instancetype)initWithURL:(NSURL*)URL NS_DESIGNATED_INITIALIZER;
-
-- (nullable instancetype)temporaryChannel:(out NSError**)error;
-- (BOOL)replaceWithChannel:(id<ZZChannel>)channel
-					 error:(out NSError**)error;
-- (void)removeAsTemporary;
-
-- (nullable NSData*)newInput:(out NSError**)error;
-- (nullable id<ZZChannelOutput>)newOutput:(out NSError**)error;
-
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:99e7f4a5981d006963569984e95833a5b5f5a70f6cacf62975dea92c5c457b12
+size 756

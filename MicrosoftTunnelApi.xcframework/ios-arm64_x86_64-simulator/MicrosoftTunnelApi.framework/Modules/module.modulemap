@@ -1,6 +1,3 @@
-framework module MicrosoftTunnelApi {
-  umbrella header "MicrosoftTunnelApi.h"
-
-  export *
-  module * { export * }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0622ccd5a6b7e4026c2f8e98165d16f1535458dd7adcfead8cd447410aefe65d
+size 117

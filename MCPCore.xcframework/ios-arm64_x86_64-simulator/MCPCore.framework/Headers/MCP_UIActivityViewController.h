@@ -1,22 +1,3 @@
-//
-//  MCP_UIActivityViewController.h
-//  MSTAPNextLink
-//
-//  Created by Richard Perry on 1/19/21.
-//  Copyright © 2021 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <UIKit/UIKit.h>
-
-#import "MCP.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-MCP_EXPORT
-@interface MCP_UIActivityViewController : UIActivityViewController
--(instancetype)initWithActivityItems:(NSArray *)activityItems applicationActivities:(NSArray<__kindof UIActivity *> *)applicationActivities withBackingController:(UIActivityViewController*)backingController;
-- (NSArray *)MCP_availableActivitiesForItems:(NSArray *)items;
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2746e52beb4e402c30c86985b645fb7dac0df94ab5b9889c81a5ff193c9059a
+size 663

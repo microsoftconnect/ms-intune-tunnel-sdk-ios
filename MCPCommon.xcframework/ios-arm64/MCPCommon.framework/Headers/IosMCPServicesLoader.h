@@ -1,32 +1,3 @@
-//
-//  IosMCPServicesLoader.h
-//  MCPCommon
-//
-//  Created by Tim Champagne Jr on 2/28/22.
-//  Copyright © 2022 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-#ifndef IosMCPServicesLoader_h
-#define IosMCPServicesLoader_h
-
-#include <utility>
-
-#include "IMCPServices.h"
-#include "MCPServicesLoaderBase.h"
-
-MCP_BEGIN_EXPORT()
-
-class IosMCPServicesLoader : public MCPServicesLoaderBase
-{
-public:
-    IosMCPServicesLoader() = default;
-    virtual ~IosMCPServicesLoader() = default;
-
-protected:
-    // PluginLoader virtual method overrides
-    PluginLoader *createPluginLoader() override;
-};
-
-MCP_END_EXPORT()
-
-#endif  // IosMCPServicesLoader_h
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d6ee903ab573261f5af621d0487f63f42ad2c1e375d15042a40ba540ccce3c9
+size 689

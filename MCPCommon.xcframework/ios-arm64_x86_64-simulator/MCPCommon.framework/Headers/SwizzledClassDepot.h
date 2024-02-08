@@ -1,19 +1,3 @@
-//
-//  SwizzledClassDepot.h
-//  MSTAPNextLink
-//
-//  Created by Richard Perry on 7/16/21.
-//  Copyright © 2021 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-__attribute__ ((visibility ("default")))
-void MAP_initializeDepot();
-__attribute__ ((visibility ("default")))
-bool checkAndRegisterClassWithDepot(Class swizzledClass, NSString* swizzleType);
-
-@interface SwizzledClassDepot : NSObject
-
-@end
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:9cbe2196aded43f00c30076c49e13e3a87f7cd59993e0cac10cacf36bcbb27ea
+size 483

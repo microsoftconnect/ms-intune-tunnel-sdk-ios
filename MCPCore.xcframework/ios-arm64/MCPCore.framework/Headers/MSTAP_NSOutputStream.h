@@ -1,26 +1,3 @@
-//
-//  MSTAP_NSOutputStream.h
-//  MAP-iOS
-//
-//  Created by Brian on 10/14/15.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-#import "MSTAP_NSStream.h"
-
-__attribute__ ((visibility ("default")))
-@interface MSTAP_NSOutputStream_File : MSTAP_NSStream_File
-
-- (nullable instancetype)initToFileAtPath:(NSString *)path append:(BOOL)shouldAppend;
-
-@end
-
-@interface MSTAP_NSOutputStream_Sock : MSTAP_NSStream_Sock
-
-// Required overrides
-- (NSInteger)write:(const uint8_t *)buffer maxLength:(NSUInteger)len;
-- (BOOL) hasSpaceAvailable;
-
-@end
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:573abcdb75d145cadf9e41bc6e14f8fbcc5596b4bc8edc95a89391b4660e14fd
+size 577

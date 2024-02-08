@@ -1,17 +1,3 @@
-//
-//  SocketStreamConnectorSecure.h
-//  MSTAPNextLink
-//
-//  Created by Richard Perry on 3/13/19.
-//  Copyright © 2019 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-#import "SocketStreamConnectorBase.h"
-
-
-@interface SocketStreamConnectorSecure : SocketStreamConnectorBase
-
-@end
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:75a3a9b731855ed965110db1212c4fa7ac80e5bec1e72319d45f75e2d92ab6cd
+size 366

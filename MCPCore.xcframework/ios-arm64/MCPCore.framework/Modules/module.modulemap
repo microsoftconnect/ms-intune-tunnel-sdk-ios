@@ -1,6 +1,3 @@
-framework module MCPCore {
-  umbrella header "MCPCore.h"
-
-  export *
-  module * { export * }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e312f96e5550c117857cda93f491777ebfac8597e1e2dee21119f8ab7c8f601
+size 95

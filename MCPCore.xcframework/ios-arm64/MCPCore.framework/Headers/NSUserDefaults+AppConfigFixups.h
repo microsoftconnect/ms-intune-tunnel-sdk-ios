@@ -1,21 +1,3 @@
-//
-//  NSUserDefaults+AppConfigFixups.h
-//  MSTAPNextLink
-//
-//  Created by Connor Kelley on 2/18/21.
-//  Copyright © 2021 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-#import "NSObject+MAPSwizzle.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface NSUserDefaults (AppConfigFixups)
-
-+ (BOOL)performSwizzle;
-
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0ae46d4b5220ae393f48fe657062be4af9a87fb47bd4b4a6c52ebb022f4e8fc
+size 411

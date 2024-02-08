@@ -1,13 +1,3 @@
-//
-//  MSTAP_NSHTTPCookieStorage.h
-//  mstapnext_injectable_ios
-//
-//  Created by Tim Champagne Jr. on 9/24/15.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-
-@interface MSTAP_NSHTTPCookieStorage : NSHTTPCookieStorage
-
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:db78a52f24822e9aaf5c8b776a9bbb158a6b5661c3adef7a0602cfdc05042bd4
+size 267

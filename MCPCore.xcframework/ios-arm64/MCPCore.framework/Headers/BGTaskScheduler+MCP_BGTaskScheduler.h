@@ -1,20 +1,3 @@
-//
-//  BGTaskScheduler+MCP_BGTaskScheduler.h
-//  MSTAPNextLink
-//
-//  Created by Connor Kelley on 9/2/20.
-//  Copyright © 2020 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <BackgroundTasks/BackgroundTasks.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface BGTaskScheduler (MCP_BGTaskScheduler)
-
-+ (BOOL)performSwizzle;
-
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:beabe8f0ad72f079a3944d5e078930f7f03b893b0bcdcbc2bff3e2a9f10cb505
+size 398

@@ -1,32 +1,3 @@
-//
-//  ZZInflateInputStream.h
-//  ZipZap
-//
-//  Created by Glen Low on 29/09/12.
-//  Copyright (c) 2012, Pixelglow Software. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface ZZInflateInputStream : NSInputStream
-
-+ (nullable NSData*)decompressData:(NSData*)data
-	 withUncompressedSize:(NSUInteger)uncompressedSize;
-
-- (instancetype)initWithStream:(NSInputStream*)upstream;
-
-- (NSStreamStatus)streamStatus;
-- (nullable NSError*)streamError;
-
-- (void)open;
-- (void)close;
-
-- (NSInteger)read:(uint8_t*)buffer maxLength:(NSUInteger)len;
-- (BOOL)getBuffer:(uint8_t* _Nullable* _Nonnull)buffer length:(NSUInteger*)len;
-- (BOOL)hasBytesAvailable;
-
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:b24aa45dc5f653b45da5fdceb42f1e38eea51ff801604e5123cb6df2bf913be2
+size 715

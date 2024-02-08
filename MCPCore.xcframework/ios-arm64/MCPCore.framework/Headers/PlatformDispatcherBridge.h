@@ -1,32 +1,3 @@
-//
-//  PlatformDispatcherBridge.h
-//  mstapnext
-//
-//  Created by Richard Perry on 5/4/22.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#include "CFSourceDispatchQueue.h"
-#include "PlatformDispatcherBase.h"
-
-#ifndef PlatformDispatcherBridge_h
-#define PlatformDispatcherBridge_h
-
-// bridge from C++ to Objective-C
-class PlatformDispatcherBridge : public virtual IDispatcher,
-                                 public CFSourceDispatchQueue
-{
-public:
-    PlatformDispatcherBridge(CFRunLoopRef runLoop)
-        : CFSourceDispatchQueue(runLoop)
-    {
-        // Intentionally blank
-    }
-
-    virtual ~PlatformDispatcherBridge()
-    {
-        // Intentionally blank
-    }
-};
-
-#endif /* PlatformDispatcherBridge_h */
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa83c0f449cc98eb6707caf8145490543410a8b274051fb32ce975e6f0e9d9df
+size 719

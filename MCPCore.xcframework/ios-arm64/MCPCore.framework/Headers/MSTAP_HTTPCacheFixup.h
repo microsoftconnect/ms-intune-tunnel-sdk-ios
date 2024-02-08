@@ -1,15 +1,3 @@
-//
-//  MSTAP_HTTPCacheFixup.h
-//  mstapnext_injectable_ios
-//
-//  Created by Brian Pescatore on 11/5/15.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-
-@interface MSTAP_HTTPCacheFixup : NSURLProtocol
-
-+ (void) registerProtocol;
-
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d6ad23a61428c8d023026f6172253fdd2828b92062c152b7103ed3f27b75a2c
+size 277

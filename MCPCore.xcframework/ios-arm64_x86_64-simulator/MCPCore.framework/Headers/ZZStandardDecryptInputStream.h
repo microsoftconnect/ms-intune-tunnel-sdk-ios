@@ -1,34 +1,3 @@
-//
-//  ZZStandardDecryptInputStream.h
-//  ZipZap
-//
-//  Created by Daniel Cohen Gindi on 29/12/13.
-//  Copyright (c) 2013, Pixelglow Software. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface ZZStandardDecryptInputStream : NSInputStream
-
-- (nullable instancetype)initWithStream:(NSInputStream*)upstream
-							   password:(NSString*)password
-								 header:(uint8_t*)header
-								  check:(uint16_t)check
-								version:(uint8_t)version
-								  error:(out NSError**)error;
-
-- (void)open;
-- (void)close;
-
-- (NSStreamStatus)streamStatus;
-- (NSError*)streamError;
-
-- (NSInteger)read:(uint8_t*)buffer maxLength:(NSUInteger)len;
-- (BOOL)getBuffer:(uint8_t* _Nullable* _Nonnull)buffer length:(NSUInteger*)len;
-- (BOOL)hasBytesAvailable;
-
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba0d05e12a9faa9177f6ceac14017a9e86fbf27649d8e470e6aa3b7c4db5a62a
+size 812

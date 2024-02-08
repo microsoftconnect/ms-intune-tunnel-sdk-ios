@@ -1,16 +1,3 @@
-//
-//  MCPDirectoryUtils.h
-//  MCPCore
-//
-//  Created by Tim Champagne Jr on 4/27/22.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-
-__attribute__ ((visibility ("default")))
-@interface MCPDirectoryUtils : NSObject
-
-@property(class, strong, nonatomic, readonly) NSString *frameworkDirPath;
-
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:a32b59ba0d8d7425f115c50adc086a75dfcbaf6b336d4786f7ca1059891fa775
+size 338

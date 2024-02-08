@@ -1,29 +1,3 @@
-//
-//  IMCPPluginLoaderService.h
-//  MCPCommon
-//
-//  Created by Tim Champagne Jr on 2/28/22.
-//  Copyright © 2022 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-#ifndef IMCPPluginLoaderService_h
-#define IMCPPluginLoaderService_h
-
-#include "IMCPService.h"
-#include "PluginLoader.h"
-
-MCP_BEGIN_EXPORT()
-
-class IMCPPluginLoaderService : public IMCPService,
-                                public IPluginLoader
-{
-public:
-    virtual ~IMCPPluginLoaderService() = default;
-
-protected:
-    IMCPPluginLoaderService() = default;
-};
-
-MCP_END_EXPORT()
-
-#endif  // IMCPPluginLoaderService_h
+version https://git-lfs.github.com/spec/v1
+oid sha256:b38995c8c4570aefa875e11e4ad806df3be086e9debe3eb9a3fe59745d72ce66
+size 630

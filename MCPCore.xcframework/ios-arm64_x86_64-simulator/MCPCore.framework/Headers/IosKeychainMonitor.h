@@ -1,15 +1,3 @@
-//
-//  IosKeychainMonitor.h
-//  mstapnext_injectable_ios
-//
-//  Created by Brian Pescatore on 6/13/16.
-//  Copyright © 2016 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#ifndef IosKeychainMonitor_h
-#define IosKeychainMonitor_h
-
-int KeychainMonitor_enable(void);
-
-#endif /* IosKeychainMonitor_h */
+version https://git-lfs.github.com/spec/v1
+oid sha256:626597743851cc21d70c4f3ea49ed57cd89a2c5665bb364c96dc7c00dfa1ab09
+size 350

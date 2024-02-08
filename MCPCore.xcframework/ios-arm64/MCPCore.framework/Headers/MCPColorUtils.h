@@ -1,20 +1,3 @@
-//
-//  MCPColorUtils.h
-//  MCPCore
-//
-//  Created by Tim Champagne Jr on 4/27/22.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <UIKit/UIKit.h>
-
-#include <memory>
-
-#include "ConfigProfileElements.h"
-
-__attribute__ ((visibility ("default")))
-@interface MCPColorUtils : NSObject
-
-+ (UIColor *)convertOptionalColor:(std::shared_ptr<AtlasColor> &)spColor;
-
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:da5e7c7d90af9f0e5c5c417f44f843bab8c73b8dab59706790b19d3b912c371c
+size 375

@@ -1,28 +1,3 @@
-//
-//  IosAppConfigProvider.h
-//  mstapnext_injectable_ios
-//
-//  Created by Paul Tillotson 6/6/19.
-//  Copyright © 2019 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#ifndef IosAppConfigProvider_h
-#define IosAppConfigProvider_h
-
-#include "atlas_client_types.h"
-#include "IPlatformAppConfigProvider.h"
-
-#pragma GCC visibility push(default)
-class IosAppConfigProvider : public IPlatformAppConfigProvider
-{
-public:
-    IosAppConfigProvider() = default;
-    virtual ~IosAppConfigProvider() override = default;
-
-    virtual ACSTATUS ApplyAppConfig(const std::string &appConfigContents) override;
-    ACSTATUS ApplyAppConfig(NSDictionary *appConfigDict);
-};
-#pragma GCC visibility pop
-
-#endif /* IosAppConfigProvider_h */
+version https://git-lfs.github.com/spec/v1
+oid sha256:6269cc78e726dff82ed8b1172a18e13ebe4f5824ce327764dcdd4c3e2d3a4780
+size 769

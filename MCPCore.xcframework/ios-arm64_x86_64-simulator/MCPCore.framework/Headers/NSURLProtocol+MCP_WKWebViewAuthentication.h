@@ -1,21 +1,3 @@
-//
-//  NSURLProtocol+MCP_WKWebViewAuthentication.h
-//  MSTAPNextLink
-//
-//  Created by Connor Kelley on 6/22/20.
-//  Copyright © 2020 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-#import "NSObject+MAPSwizzle.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface NSURLProtocol (MCP_WKWebViewAuthentication)
-
-+ (BOOL) interceptAuthenticationRequests;
-
-@end
-
-NS_ASSUME_NONNULL_END
+version https://git-lfs.github.com/spec/v1
+oid sha256:d78905984aaec5fe70800290d0799ceabda963c3c8097f187bba5bd74e973df5
+size 451

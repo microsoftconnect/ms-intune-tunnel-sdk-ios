@@ -1,24 +1,3 @@
-//
-//  IosStorageLocationProvider.h
-//  MCPCore
-//
-//  Created by Richard Perry on 5/4/22.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#ifndef IosStorageLocationProvider_hpp
-#define IosStorageLocationProvider_hpp
-
-#include <string>
-#include "IStorageLocationProvider.h"
-
-#pragma GCC visibility push(default)
-class IosStorageLocationProvider : public IStorageLocationProvider
-{
-public:
-    std::string GetInternalStorageLocationPath() override;
-    std::string GetSharedStorageLocationPathForIdentifier(const std::string &identifier) override;
-};
-#pragma GCC visibility pop
-
-#endif /* IosStorageLocationProvider_hpp */
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae688164319642e609896c6d017c1e0031f515fdadcc8d8f50bdeb648732db1c
+size 629

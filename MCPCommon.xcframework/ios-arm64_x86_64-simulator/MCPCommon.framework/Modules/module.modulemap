@@ -1,6 +1,3 @@
-framework module MCPCommon {
-  umbrella header "MCPCommon.h"
-
-  export *
-  module * { export * }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5277fe3e8297f844ad05ee2011f801121df280f659aa33b37146939cdd0f656e
+size 99

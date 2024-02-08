@@ -1,24 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
-	<key>CFBundleExecutable</key>
-	<string>crypto</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.microsoft-tunnel.crypto</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>crypto</string>
-	<key>CFBundlePackageType</key>
-	<string>FMWK</string>
-	<key>CFBundleShortVersionString</key>
-	<string>3.1.2</string>
-	<key>CFBundleVersion</key>
-	<string>3.1.2</string>
-	<key>MinimumOSVersion</key>
-	<string>14.0</string>
-</dict>
-</plist>
+version https://git-lfs.github.com/spec/v1
+oid sha256:347fda5706d3c5b8892f1a8ee1768b4f8c404f81195656117a5f76e75621ae7e
+size 716

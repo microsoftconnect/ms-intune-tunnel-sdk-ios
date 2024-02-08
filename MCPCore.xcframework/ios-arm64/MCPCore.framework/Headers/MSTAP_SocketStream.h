@@ -1,20 +1,3 @@
-//
-//  MSTAP_SocketStream.h
-//  mstapnext_injectable_ios
-//
-//  Created by Connor Kelley on 2/4/19.
-//  Copyright © 2019 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#ifndef MSTAP_SocketStream_h
-#define MSTAP_SocketStream_h
-
-#import "NSStream+MCP_SocketStream.h"
-#import "SocketSSLConnector.h"
-
-@interface MSTAP_SocketStream : NSObject<MCP_SocketStreamProvider, SSLConnectorDelegate>
-
-@end
-
-#endif /* MSTAP_SocketStream_h */
+version https://git-lfs.github.com/spec/v1
+oid sha256:548ec7e6fb61a9caed2d2ebea0f4f8ba63469c7aa181b3b5eab44afd1b443d7c
+size 478

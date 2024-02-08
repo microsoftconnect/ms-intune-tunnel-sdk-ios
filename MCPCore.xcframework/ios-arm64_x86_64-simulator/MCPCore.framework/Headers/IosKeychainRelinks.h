@@ -1,22 +1,3 @@
-//
-//  IosKeychainRelinks.h
-//  MSTAPNextLink
-//
-//  Created by Richard Perry on 4/15/21.
-//  Copyright © 2021 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <Foundation/Foundation.h>
-#include "MstapNextServerCertProvider.h"
-#import "IosKeychainMonitor.h"
-
-#pragma GCC visibility push(default)
-
-void MAP_KeychainRelinkInit();
-
-#pragma GCC visibility pop
-
-@interface IosKeychainRelinks : NSObject
-
-@end
+version https://git-lfs.github.com/spec/v1
+oid sha256:86f0b4700cd5db31edca7e7526c6fb4c976d6a3461ced22d7e98ac915b270d47
+size 461

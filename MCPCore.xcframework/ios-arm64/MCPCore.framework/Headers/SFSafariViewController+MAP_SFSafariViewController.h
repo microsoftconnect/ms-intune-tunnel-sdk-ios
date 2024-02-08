@@ -1,18 +1,3 @@
-//
-//  SFSafariViewController+MAP_SFSafariViewController.h
-//  mstapnext_injectable_ios
-//
-//  Created by Connor Kelley on 9/5/17.
-//  Copyright © 2017 Blue Cedar Networks. All rights reserved.
-//  Licensed to Microsoft under Contract #7267038.
-//
-
-#import <SafariServices/SFSafariViewController.h>
-#import "MSTAP_Foundation.h"
-
-@interface SFSafariViewController (MAP_SFSafariViewController)
-
-+ (BOOL) performSwizzle;
-
-@end
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:2cbd5ac21e4301213b7a78f3bc66aaebfb642b58332f9ce9a6d4aa5818eefa83
+size 426
