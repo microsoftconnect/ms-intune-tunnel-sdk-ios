@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/IosMCPPolicyBridge.h</key>
 		<data>
-		UGo/ZIIvT3wMDzUGAYEimoRyKFg=
+		UyKr9Wy9ki3JxlGYsyw4IZ5n+yQ=
 		</data>
 		<key>Headers/IosNetworkReachabilityImpl.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/IosStorageLocationProvider.h</key>
 		<data>
-		f7trgH4udVo1xF4XQJkLF/ZN3SI=
+		80ujB6lKtcVSOgdXNpalWpIMe24=
 		</data>
 		<key>Headers/IosVpnStateHandlerImpl.h</key>
 		<data>
@@ -212,6 +212,10 @@
 		<data>
 		9X7gqLx33HGUVeLHPMAn22eHDaQ=
 		</data>
+		<key>Headers/MicrosoftTunnelEnums.h</key>
+		<data>
+		QDy/NFAxbbV9zAk/yi2klTfu9Lw=
+		</data>
 		<key>Headers/MstapNextServerCertProvider.h</key>
 		<data>
 		/Nys46P2HcXsFQWpcIrMD6CJx8w=
@@ -240,10 +244,6 @@
 		<data>
 		4I1B9sOE8Kn2LCRF2TPw/Bm4Lfs=
 		</data>
-		<key>Headers/ProxmetheusWKWebViewInterceptor.h</key>
-		<data>
-		eFRh4A4zwtyw2G6Siz60jqEfVkI=
-		</data>
 		<key>Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
 		<data>
 		BLOA+gO1RlzEKS1oqX4LZQzvEPc=
@@ -267,10 +267,6 @@
 		<key>Headers/SwizzleNSURLSessionConfiguration.h</key>
 		<data>
 		mxbQItEpbiot6EwoJKOlsCw2VLU=
-		</data>
-		<key>Headers/WKUserContentController+MST_WKUserContentController.h</key>
-		<data>
-		iR5m4dJP6I2ephwaTnw2li1vzjg=
 		</data>
 		<key>Headers/WKWebView+MAP_WKWebView.h</key>
 		<data>
@@ -358,7 +354,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cizxMOF/dG9IQ0eO+fZ9NqP4TZY=
+		KLqrxBmXhvKS7lpjVbmQly//4xI=
 		</data>
 		<key>MediaInjection.js</key>
 		<data>
@@ -477,7 +473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sb58wzzzb33cH3rKBaq7+0vDw4M6XAF2YGbaK4K0V7U=
+			F0Jsmc7aMPqog4PELoGNWy4QJi17f95iGqDNbanQrXs=
 			</data>
 		</dict>
 		<key>Headers/IosNetworkReachabilityImpl.h</key>
@@ -512,7 +508,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rmiBZDGWQuYJiWxtAXweADH1Ff2tzI2PUL3rZIcy2xw=
+			lHPhwX0JB42Zp6lMCa629pOZNSPsFaQAqEcy5jQ8Mfg=
 			</data>
 		</dict>
 		<key>Headers/IosVpnStateHandlerImpl.h</key>
@@ -739,6 +735,13 @@
 			4U8B8zp5KZlx8QF6S4a/jfVX7fkmSJz9J3aWHMP9WgY=
 			</data>
 		</dict>
+		<key>Headers/MicrosoftTunnelEnums.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			C9XWDZ8deRcXFDoLgUk0phcHo5TGLKbNbXZHfnGtRW8=
+			</data>
+		</dict>
 		<key>Headers/MstapNextServerCertProvider.h</key>
 		<dict>
 			<key>hash2</key>
@@ -788,13 +791,6 @@
 			Ol/8nl1VuddL4q6Upi2G2scL1c6gPIdX5aiV1ECngvE=
 			</data>
 		</dict>
-		<key>Headers/ProxmetheusWKWebViewInterceptor.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2MQoD+eUatiVdUuJLu0Yl0yijliMZJRy0iEHHpp0ffQ=
-			</data>
-		</dict>
 		<key>Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
 		<dict>
 			<key>hash2</key>
@@ -835,13 +831,6 @@
 			<key>hash2</key>
 			<data>
 			PdPy/DlW2jZOSDV8ewtOQkOoe/vo77zMsaJsD5Vk0/0=
-			</data>
-		</dict>
-		<key>Headers/WKUserContentController+MST_WKUserContentController.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pYf/x2hAcoB+G2K7+LzcYGuZ0uHtjcCGzr/9NTz73jQ=
 			</data>
 		</dict>
 		<key>Headers/WKWebView+MAP_WKWebView.h</key>

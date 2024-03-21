@@ -12,8 +12,8 @@
 class IosMCPPolicyBridge : public MCPCorePolicyBridge
 {
 public:
-    IosMCPPolicyBridge();
-    IosMCPPolicyBridge(NSBundle *appBundle);
+    IosMCPPolicyBridge(NSDictionary <NSString *, NSString*>* config);
+    IosMCPPolicyBridge(NSBundle *appBundle, NSDictionary<NSString *, NSString*>* config);
     void SetSDKBundle(NSBundle *sdkBundle);
     void SetPluginPaths(std::vector<std::string>pluginPaths);
     NSString *getPathForResource(const std::string &resource, NSString *type);
@@ -62,7 +62,7 @@ private:
 
 __attribute__ ((visibility ("default")))
 @interface IosMCPBridge : NSObject
-- (instancetype)initWithAppBundle:(NSBundle *)appBundle;
+- (instancetype)initWithAppBundle:(NSBundle *)appBundle config:(NSDictionary <NSString *, NSString*>*)config;
 - (void)startSDK:(NSBundle *)sdkBundle;
 - (void)setPluginPaths:(std::vector<std::string>)pluginPaths;
 @end

@@ -127,6 +127,8 @@ static const char *kPacUrl         = "com.microsoft.tunnel.proxy_pacurl";
 static const char *kTrustedCertificates = "com.microsoft.tunnel.trusted_root_certificates";
 static const char *kCustomConfig   = "com.microsoft.tunnel.custom_configuration";
 
+// Storage Config keys
+static const char *kStorageLocation = "StorageLocation";
 
 // @}
 

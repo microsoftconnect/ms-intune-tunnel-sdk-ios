@@ -14,15 +14,15 @@
 		</data>
 		<key>Headers/MicrosoftTunnelEnums.h</key>
 		<data>
-		IDZFsALyV/CHzi2zznwhxJlflN8=
+		QDy/NFAxbbV9zAk/yi2klTfu9Lw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VdQ8au0l6D3FaCd9ftDUQ7GAuRg=
+		uOX7UI7oshupGDMRxTYYugbXmV4=
 		</data>
 		<key>LICENSE.json</key>
 		<data>
-		83pVSL1HrOfpEDOoY0ezreJY5Fw=
+		78C3lY+7DDg96TTsFf5WKRF8ylY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>static_policy.json</key>
 		<data>
-		SWCvv+pX7A6JI2Y1w6PpU5YYyV8=
+		52qHLUds8siGEvVuzwsng7y8yJk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -57,14 +57,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S9pk+ddPssLHEf1GAo1WSCnvj1jT9Hvsnl4VeHtuJ10=
+			C9XWDZ8deRcXFDoLgUk0phcHo5TGLKbNbXZHfnGtRW8=
 			</data>
 		</dict>
 		<key>LICENSE.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LouhRSl1D3i+E3l1s2eFFAPgtiuKnqbE15Lb17rDft8=
+			c4GMnIqMPYG6cvH8J2pb4az6iLXoAFluJvWHN+goS30=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tZN1homGCbNMZqaERuLM1LFxsjodzJx30hpzNkchdT8=
+			Ce+vOKRGcaM1yjrE0ui9IKkB3dcBmQfIlZ81Va6itWU=
 			</data>
 		</dict>
 	</dict>
