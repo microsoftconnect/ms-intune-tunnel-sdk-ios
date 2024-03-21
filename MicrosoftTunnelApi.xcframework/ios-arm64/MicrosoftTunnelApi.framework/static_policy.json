@@ -1,6 +1,6 @@
 {
   "id": "7ae20eb3-4227-4d61-a2b2-08ceca5c8f55",
-  "desc": "Simple testing profile",
+  "desc": "Default configuration",
   "microsoftPolicy": {
       "enabled": true
   },
@@ -9,10 +9,10 @@
   },
   "diagnostics": {
     "forceSDKLogging": false,
-    "logClasses": [
+    "dynamicLogClasses": [
       {
         "name": "client",
-        "severity": "debug"
+        "severity": "info"
       },
       {
         "name": "connect",
@@ -20,55 +20,55 @@
       },
       {
         "name": "dsf",
-        "severity": "crit"
+        "severity": "major"
       },
       {
         "name": "acp",
-        "severity": "crit"
+        "severity": "major"
       },
       {
         "name": "vnet",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "packet",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "socket",
-        "severity": "debug"
+        "severity": "major"
       },
       {
         "name": "vsIp",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "vsTcp",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "vsUdp",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "vsInternal",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "vsSocket",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "vsDriver",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "driver",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "name": "policy",
-        "severity": "crit"
+        "severity": "info"
       },
       {
         "name": "default",
@@ -79,47 +79,47 @@
       {
         "index": 0,
         "name": "inj",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "index": 1,
         "name": "keystore",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "index": 2,
         "name": "foundation",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "index": 3,
         "name": "fileio",
-        "severity": "info"
+        "severity": "major"
       },
       {
         "index": 4,
         "name": "crypto",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 5,
         "name": "dar",
-        "severity": "crit"
+        "severity": "warn"
       },
       {
         "index": 6,
         "name": "http",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 7,
         "name": "sqlcipher",
-        "severity": "crit"
+        "severity": "major"
       },
       {
         "index": 8,
         "name": "asap",
-        "severity": "crit"
+        "severity": "major"
       },
       {
         "_index": 9,
@@ -129,7 +129,11 @@
       {
         "_index": 10,
         "name": "ping",
-        "severity": "crit"
+        "severity": "major"
+      },
+      {
+          "name": "mobileAccess",
+          "severity": "info"
       }
     ]
   }

@@ -9,6 +9,7 @@
 #ifndef IosStorageLocationProvider_hpp
 #define IosStorageLocationProvider_hpp
 
+#import <Foundation/Foundation.h>
 #include <string>
 #include "IStorageLocationProvider.h"
 
@@ -16,8 +17,11 @@
 class IosStorageLocationProvider : public IStorageLocationProvider
 {
 public:
+    IosStorageLocationProvider(NSDictionary <NSString *, NSString*>* config);
     std::string GetInternalStorageLocationPath() override;
     std::string GetSharedStorageLocationPathForIdentifier(const std::string &identifier) override;
+private:
+    std::string m_location;
 };
 #pragma GCC visibility pop
 
