@@ -59,10 +59,8 @@ typedef uint8_t RelinkFlags;
 #define STRING_VIOLATION_INTERNAL_ABINOTFOUND       "CPU ABI not found"
 #define STRING_VIOLATION_SDKNOTFOUND                "SDK Version not found"
 #define STRING_VIOLATION_DLSYM_RTLDDEFAULT_BROKEN   "Dlsym issue with RTLD_DEFAULT"
-#define STRING_QUIRK_DLOPEN_PREMARSHMALLOW          "Pre-Marshmallow"
 #define STRING_QUIRK_DLOPEN_PRIVATE_LIBRARY         "Dlopen of a private library"
 #define STRING_QUIRK_CHROME_INTERNAL_LIBRARY        "Chrome contains private library"
-#define STRING_QUIRK_DLOPEN_PRIVATE_API29_LIBRARY   "Dlopen of a private library Android 10 or greater"
 #define STRING_UNRECOGNIZED_ERROR                   "Error Unrecognized"
 
 //------------------------------------------//
