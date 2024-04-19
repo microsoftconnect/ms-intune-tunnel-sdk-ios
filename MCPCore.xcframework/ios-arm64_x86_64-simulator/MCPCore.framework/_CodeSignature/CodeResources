@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/IosAppState.h</key>
 		<data>
-		ynXlPDnpC/+ot6q6JLcKX1pK2pw=
+		EtvVxXw6CZrT+GsU6l9wndyV484=
 		</data>
 		<key>Headers/IosAssetProvider.h</key>
 		<data>
@@ -244,6 +244,10 @@
 		<data>
 		4I1B9sOE8Kn2LCRF2TPw/Bm4Lfs=
 		</data>
+		<key>Headers/ProxmetheusWKWebViewInterceptor.h</key>
+		<data>
+		eFRh4A4zwtyw2G6Siz60jqEfVkI=
+		</data>
 		<key>Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
 		<data>
 		BLOA+gO1RlzEKS1oqX4LZQzvEPc=
@@ -267,6 +271,10 @@
 		<key>Headers/SwizzleNSURLSessionConfiguration.h</key>
 		<data>
 		mxbQItEpbiot6EwoJKOlsCw2VLU=
+		</data>
+		<key>Headers/WKUserContentController+MST_WKUserContentController.h</key>
+		<data>
+		iR5m4dJP6I2ephwaTnw2li1vzjg=
 		</data>
 		<key>Headers/WKWebView+MAP_WKWebView.h</key>
 		<data>
@@ -346,7 +354,7 @@
 		</data>
 		<key>Headers/mapio.h</key>
 		<data>
-		/QosIFh9GfvrFjnXDP5y0ZU6t+s=
+		NgUVB9cYl1VQpePlN/jsBF3T9sE=
 		</data>
 		<key>Headers/mapio_ios.h</key>
 		<data>
@@ -354,7 +362,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KLqrxBmXhvKS7lpjVbmQly//4xI=
+		Xo3FaEDHbMHW6X7J8B794YK0STc=
 		</data>
 		<key>MediaInjection.js</key>
 		<data>
@@ -424,7 +432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			njAvQ1GExpUaz6JAsRtcbJI93LrHWtJLKZ16kMzhRDs=
+			35lUDeORAp2Rw8yzDZCeAU1JuK6+79/3F/C8dNxSxyI=
 			</data>
 		</dict>
 		<key>Headers/IosAssetProvider.h</key>
@@ -791,6 +799,13 @@
 			Ol/8nl1VuddL4q6Upi2G2scL1c6gPIdX5aiV1ECngvE=
 			</data>
 		</dict>
+		<key>Headers/ProxmetheusWKWebViewInterceptor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2MQoD+eUatiVdUuJLu0Yl0yijliMZJRy0iEHHpp0ffQ=
+			</data>
+		</dict>
 		<key>Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
 		<dict>
 			<key>hash2</key>
@@ -831,6 +846,13 @@
 			<key>hash2</key>
 			<data>
 			PdPy/DlW2jZOSDV8ewtOQkOoe/vo77zMsaJsD5Vk0/0=
+			</data>
+		</dict>
+		<key>Headers/WKUserContentController+MST_WKUserContentController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pYf/x2hAcoB+G2K7+LzcYGuZ0uHtjcCGzr/9NTz73jQ=
 			</data>
 		</dict>
 		<key>Headers/WKWebView+MAP_WKWebView.h</key>
@@ -970,7 +992,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vseDe/SAjsvZ88UtG/rYfVFXXrdcz85j24pcThDwGIM=
+			R3AzX2JMxBFTE5hRKT8S1MMMzZtrxw+IQQzfZYL4CgY=
 			</data>
 		</dict>
 		<key>Headers/mapio_ios.h</key>

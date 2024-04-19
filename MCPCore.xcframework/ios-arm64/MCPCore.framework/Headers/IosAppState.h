@@ -21,7 +21,6 @@ public:
     
     // IPlatformAppState
     virtual std::vector<std::string> getGroupedAppIds() override;
-    virtual std::vector<std::string> getAppPaths(std::vector<std::string> integrityFiles) override;
     virtual std::vector<std::string> getPluginPaths() override;
     virtual std::vector<std::string> getCleanupAppPathsIfNeeded() override;
     virtual void notifyAppUnblocked() override;

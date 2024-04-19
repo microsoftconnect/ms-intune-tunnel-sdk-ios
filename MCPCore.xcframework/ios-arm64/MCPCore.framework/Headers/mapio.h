@@ -34,17 +34,13 @@
 #include <sys/socket.h>
 #include <netdb.h>
 #include <dlfcn.h>
-
-#if defined(__APPLE__) || defined(TARGET_OS_MAC)
 #include <xlocale.h>
 #include <sys/syscall.h>
 #include <aio.h>
 #include <sys/event.h>
 #include <copyfile.h>
 #include <sys/mount.h>
-#else
-#include <sys/statfs.h>
-#endif
+
 
 #ifdef __cplusplus
 #include "IMCPInterception.h"
@@ -78,11 +74,6 @@ void MAPIO_setExemptedPaths(const char* paths[], const size_t numPaths);
 void MAPIO_enablePluginIO(const unsigned int pioTypes);
 void MAPIO_disablePluginIO(const unsigned int pioTypes);
 bool MAPIO_isExempted(const char *path);
-
-// Used for Android only
-pthread_key_t MAPIO_get_fork_and_exec_bypass_key();
-void MAPIO_acquireForkExecBypass(int *outWasPreviouslyAcquired);
-void MAPIO_resetForkExecBypass(int state);
 
 const char *MAPIO_get_tmp_dir_public();
 void MAPIO_lock_fd_public(int fd);
@@ -152,11 +143,6 @@ struct hostent *MAPIO_gethostbyname(const char *name);
 struct hostent *MAPIO_gethostbyname_cached(const char *name);
 void MAPIO_flush_host_cached_entry(const char *name);
 int MAPIO_set_external_cache_query_fp(struct hostent* (*gethostname_cached_fp)(const char* name));
-
-int MAPIO_android_getaddrinfo(const char *nodename, const char *servname,
-                              const struct addrinfo *hints, unsigned int netid,
-                              unsigned int mark, struct addrinfo **res);
-
 int MAPIO_getnameinfo(const struct sockaddr *, socklen_t, char *, size_t, char *, size_t, int);
 
 
