@@ -236,6 +236,12 @@ __attribute__ ((visibility ("default")))
 - (BOOL)launchEnrollment;
 
 /**
+ * Launches enrollment for MAM enrollment with a callback for acquiring a token
+ * If the callback returns a value of false, then the token acquisition will fall back to the default acquisition
+ */
+- (BOOL)launchEnrollment:(BOOL (^ __nonnull)(void (^ __nonnull)(NSString* accessToken)))tokenCallback;
+
+/**
  * Launches enrollment for MAM enrollment
  * 
  * @param doWipe If YES, selectively wipe the user's corporate data

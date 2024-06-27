@@ -27,7 +27,6 @@
 #include <stdarg.h>
 #include <stdbool.h>
 #include <wchar.h>
-
 #include <sys/types.h>
 #include <sys/uio.h>
 #include <sys/stat.h>
@@ -40,7 +39,6 @@
 #include <sys/event.h>
 #include <copyfile.h>
 #include <sys/mount.h>
-
 
 #ifdef __cplusplus
 #include "IMCPInterception.h"
@@ -74,6 +72,10 @@ void MAPIO_setExemptedPaths(const char* paths[], const size_t numPaths);
 void MAPIO_enablePluginIO(const unsigned int pioTypes);
 void MAPIO_disablePluginIO(const unsigned int pioTypes);
 bool MAPIO_isExempted(const char *path);
+
+pthread_key_t MAPIO_get_fork_and_exec_bypass_key();
+void MAPIO_acquireForkExecBypass(int *outWasPreviouslyAcquired);
+void MAPIO_resetForkExecBypass(int state);
 
 const char *MAPIO_get_tmp_dir_public();
 void MAPIO_lock_fd_public(int fd);
