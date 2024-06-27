@@ -354,7 +354,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/mapio.h</key>
 		<data>
-		NgUVB9cYl1VQpePlN/jsBF3T9sE=
+		LGk9ZaVZc9a0fUg21fNYvR0pogw=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/mapio_ios.h</key>
 		<data>
@@ -362,11 +362,11 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Info.plist</key>
 		<data>
-		+sH3fun2EbWPAMzbkPIS8sqny3c=
+		BUyrH50OlNpgBb3WSrRTLEocYCo=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<data>
-		FP5QjdG+CZfYWf+mjDODqECN/dA=
+		oQ3Z95EL9K1eHBZTH4SogtTtH20=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MediaInjection.js</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		JAPMT6FcpgUduRn9XqV2r12RSIk=
+		+Z4PDaFys/4rjKas8qtOTC+2zcg=
 		</data>
 		<key>ios-arm64/MCPCore.framework/WKInjection.js</key>
 		<data>
@@ -734,7 +734,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/mapio.h</key>
 		<data>
-		NgUVB9cYl1VQpePlN/jsBF3T9sE=
+		LGk9ZaVZc9a0fUg21fNYvR0pogw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/mapio_ios.h</key>
 		<data>
@@ -742,11 +742,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<data>
-		Xo3FaEDHbMHW6X7J8B794YK0STc=
+		tL1XH+pJ+fD/6ZFunlksj4uJigo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<data>
-		cbky8Hz+BiVLoYvdvOjx5KKDSS0=
+		+OmPhO4Uuqq6c2x/UkUCDVBDV8s=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MediaInjection.js</key>
 		<data>
@@ -758,7 +758,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		JAPMT6FcpgUduRn9XqV2r12RSIk=
+		+Z4PDaFys/4rjKas8qtOTC+2zcg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/WKInjection.js</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gqccRNbYtZBF+6cZBqAvqtwF2wg=
+		3ZV7TxYzx2F9Str4XTv9nWvJFr0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1732,11 +1732,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NgUVB9cYl1VQpePlN/jsBF3T9sE=
+			LGk9ZaVZc9a0fUg21fNYvR0pogw=
 			</data>
 			<key>hash2</key>
 			<data>
-			R3AzX2JMxBFTE5hRKT8S1MMMzZtrxw+IQQzfZYL4CgY=
+			3Qgu/pXYKlSQtNJJwW1WBwKfos/iWHAjV42BqT3fB7E=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Headers/mapio_ios.h</key>
@@ -1754,22 +1754,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+sH3fun2EbWPAMzbkPIS8sqny3c=
+			BUyrH50OlNpgBb3WSrRTLEocYCo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PjZiLoOZUO0RriewREM5NbSJ/UlFFW9oIL1DaLlKcnA=
+			FCCCLdWaE7HWP8U5PbSf3Q+oCk4YB6/i+bma5EwQDFQ=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FP5QjdG+CZfYWf+mjDODqECN/dA=
+			oQ3Z95EL9K1eHBZTH4SogtTtH20=
 			</data>
 			<key>hash2</key>
 			<data>
-			WI8UFDmIPeIhjMrb01RysOjmAjlA8vOFDwMaxVsRv48=
+			4d6gl/blFhwi3+7Qxf3Vqq3D364Kf59WN227aUHFUdc=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MediaInjection.js</key>
@@ -1798,11 +1798,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JAPMT6FcpgUduRn9XqV2r12RSIk=
+			+Z4PDaFys/4rjKas8qtOTC+2zcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			dH1vlRDKhTCrpC/Ll4sUOmcY1azQz/hoCHBaSdy0N0g=
+			Y6g2d1s7h8zT24hy6Ka6zu8nNByTMnwkV2KWMWkP0P0=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/WKInjection.js</key>
@@ -2777,11 +2777,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NgUVB9cYl1VQpePlN/jsBF3T9sE=
+			LGk9ZaVZc9a0fUg21fNYvR0pogw=
 			</data>
 			<key>hash2</key>
 			<data>
-			R3AzX2JMxBFTE5hRKT8S1MMMzZtrxw+IQQzfZYL4CgY=
+			3Qgu/pXYKlSQtNJJwW1WBwKfos/iWHAjV42BqT3fB7E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/mapio_ios.h</key>
@@ -2799,22 +2799,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xo3FaEDHbMHW6X7J8B794YK0STc=
+			tL1XH+pJ+fD/6ZFunlksj4uJigo=
 			</data>
 			<key>hash2</key>
 			<data>
-			5rT4hKNm22+qNzKxRB8xHpGWuOYsCek/SG2vksB3ahM=
+			OYOc7Z7IO2pxc3sH8kgnLYrjFWgSUhhFQL6pLjlIS/E=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cbky8Hz+BiVLoYvdvOjx5KKDSS0=
+			+OmPhO4Uuqq6c2x/UkUCDVBDV8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			7gz4H0flivaiqnPhCFdL9nBaQ5hzd3eHHJCb3FvUVvM=
+			cj19eTOG3kaytJl0oOff1+Q8IuY2o8+M6xk4VuvGufg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MediaInjection.js</key>
@@ -2843,11 +2843,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JAPMT6FcpgUduRn9XqV2r12RSIk=
+			+Z4PDaFys/4rjKas8qtOTC+2zcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			dH1vlRDKhTCrpC/Ll4sUOmcY1azQz/hoCHBaSdy0N0g=
+			Y6g2d1s7h8zT24hy6Ka6zu8nNByTMnwkV2KWMWkP0P0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/WKInjection.js</key>
@@ -2865,11 +2865,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gqccRNbYtZBF+6cZBqAvqtwF2wg=
+			3ZV7TxYzx2F9Str4XTv9nWvJFr0=
 			</data>
 			<key>hash2</key>
 			<data>
-			LBJ5OZeTcLmWAHUM3caI6pxOrh8bR1BsKtYcGOg/q8w=
+			hLDvIgDac44x9qFLVXd1+FZSR+nN4UJ0jOkuBRBOLFI=
 			</data>
 		</dict>
 	</dict>

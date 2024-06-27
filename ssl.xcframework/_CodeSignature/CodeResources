@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/ssl.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		JAPMT6FcpgUduRn9XqV2r12RSIk=
+		+Z4PDaFys/4rjKas8qtOTC+2zcg=
 		</data>
 		<key>ios-arm64/ssl.framework/ssl</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		JAPMT6FcpgUduRn9XqV2r12RSIk=
+		+Z4PDaFys/4rjKas8qtOTC+2zcg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/ssl</key>
 		<data>
@@ -46,11 +46,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JAPMT6FcpgUduRn9XqV2r12RSIk=
+			+Z4PDaFys/4rjKas8qtOTC+2zcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			dH1vlRDKhTCrpC/Ll4sUOmcY1azQz/hoCHBaSdy0N0g=
+			Y6g2d1s7h8zT24hy6Ka6zu8nNByTMnwkV2KWMWkP0P0=
 			</data>
 		</dict>
 		<key>ios-arm64/ssl.framework/ssl</key>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JAPMT6FcpgUduRn9XqV2r12RSIk=
+			+Z4PDaFys/4rjKas8qtOTC+2zcg=
 			</data>
 			<key>hash2</key>
 			<data>
-			dH1vlRDKhTCrpC/Ll4sUOmcY1azQz/hoCHBaSdy0N0g=
+			Y6g2d1s7h8zT24hy6Ka6zu8nNByTMnwkV2KWMWkP0P0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/ssl</key>

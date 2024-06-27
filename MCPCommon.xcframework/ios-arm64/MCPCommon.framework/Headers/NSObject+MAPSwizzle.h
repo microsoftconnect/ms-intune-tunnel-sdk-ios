@@ -52,12 +52,6 @@ withMethod:@selector(newMethod) error:&err]) {         \
     NSLog(@"%@", err); return NO; \
 }
 
-#define SWIZZLE_INIT_STRING(method, newMethod, err)                         \
-if ( NO ==[[self class] jr_swizzleMethod:NSSelectorFromString(method)      \
-withMethod:NSSelectorFromString(newMethod) error:&err]) {         \
-    NSLog(@"%@", err); return NO; \
-}
-
 #define ASSERTING_METHOD_CHECK(theClass, orMethod, altMethod, origImp, altImp, fatMsg)                         \
 ASSERTING_METHOD_CHECK_WITH_SELECTOR(theClass, @selector(orMethod), @selector(altMethod), origImp, altImp, fatMsg);
 
