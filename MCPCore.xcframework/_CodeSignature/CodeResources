@@ -362,11 +362,11 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Info.plist</key>
 		<data>
-		BUyrH50OlNpgBb3WSrRTLEocYCo=
+		FwCwSwG+xttY9rRaLWG9TB45zgM=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<data>
-		oQ3Z95EL9K1eHBZTH4SogtTtH20=
+		CQ3i60f1IXbW8Whx4X+tlxUrQxk=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MediaInjection.js</key>
 		<data>
@@ -742,11 +742,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<data>
-		tL1XH+pJ+fD/6ZFunlksj4uJigo=
+		aFZsZGtcLrjT96XPP8qZXdWHXug=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<data>
-		+OmPhO4Uuqq6c2x/UkUCDVBDV8s=
+		1HNp7PAzq6udFsJlkSHVWlz3E5Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MediaInjection.js</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		3ZV7TxYzx2F9Str4XTv9nWvJFr0=
+		prwpx3W7Ay7XY6si7Twcjroa/mo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1754,22 +1754,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BUyrH50OlNpgBb3WSrRTLEocYCo=
+			FwCwSwG+xttY9rRaLWG9TB45zgM=
 			</data>
 			<key>hash2</key>
 			<data>
-			FCCCLdWaE7HWP8U5PbSf3Q+oCk4YB6/i+bma5EwQDFQ=
+			h6+fDhejyM9os+ZblBczzyEHmY25e9zTqQXTTX23Eqc=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oQ3Z95EL9K1eHBZTH4SogtTtH20=
+			CQ3i60f1IXbW8Whx4X+tlxUrQxk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4d6gl/blFhwi3+7Qxf3Vqq3D364Kf59WN227aUHFUdc=
+			VjQFct998Lo8s8V4a9MTOz2JOmDMSqReyMwfcnE3Q8o=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MediaInjection.js</key>
@@ -2799,22 +2799,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tL1XH+pJ+fD/6ZFunlksj4uJigo=
+			aFZsZGtcLrjT96XPP8qZXdWHXug=
 			</data>
 			<key>hash2</key>
 			<data>
-			OYOc7Z7IO2pxc3sH8kgnLYrjFWgSUhhFQL6pLjlIS/E=
+			7M4Dgqn8nOXzD3Q6Gch0VATCMX7or/1O8vkCZqJt658=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+OmPhO4Uuqq6c2x/UkUCDVBDV8s=
+			1HNp7PAzq6udFsJlkSHVWlz3E5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			cj19eTOG3kaytJl0oOff1+Q8IuY2o8+M6xk4VuvGufg=
+			JMtgUAf61dDIQtgvpRM9WLIlk7EDc1x6SlsVvw0rzbA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MediaInjection.js</key>
@@ -2865,11 +2865,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3ZV7TxYzx2F9Str4XTv9nWvJFr0=
+			prwpx3W7Ay7XY6si7Twcjroa/mo=
 			</data>
 			<key>hash2</key>
 			<data>
-			hLDvIgDac44x9qFLVXd1+FZSR+nN4UJ0jOkuBRBOLFI=
+			scnxNsV3GhhvpkqidNuE1lWJP3SXPrQ3L8pkA6uqtO4=
 			</data>
 		</dict>
 	</dict>
