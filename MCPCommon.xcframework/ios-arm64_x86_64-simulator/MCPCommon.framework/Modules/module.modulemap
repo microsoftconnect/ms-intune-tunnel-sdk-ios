@@ -1,6 +1,0 @@
-framework module MCPCommon {
-  umbrella header "MCPCommon.h"
-
-  export *
-  module * { export * }
-}

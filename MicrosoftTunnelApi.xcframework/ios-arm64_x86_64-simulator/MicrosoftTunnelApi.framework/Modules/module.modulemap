@@ -1,6 +1,0 @@
-framework module MicrosoftTunnelApi {
-  umbrella header "MicrosoftTunnelApi.h"
-
-  export *
-  module * { export * }
-}

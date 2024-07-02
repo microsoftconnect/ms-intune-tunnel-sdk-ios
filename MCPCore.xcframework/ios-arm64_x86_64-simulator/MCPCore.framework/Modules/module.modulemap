@@ -1,6 +1,0 @@
-framework module MCPCore {
-  umbrella header "MCPCore.h"
-
-  export *
-  module * { export * }
-}
