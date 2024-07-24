@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/ECS.h</key>
+		<data>
+		auy2/nzOQYSNZcvk3dzJvf2+m+w=
+		</data>
 		<key>Headers/IMCPPluginLoaderService.h</key>
 		<data>
 		2E75QLhSI843dtx0PkYpk05OBhc=
@@ -50,7 +54,7 @@
 		</data>
 		<key>Headers/Relinker.h</key>
 		<data>
-		JA0i/XlE5m7XXFx8M6y46axVQSg=
+		M+GcVbhjS7Gygpc8+nGpCVa33cg=
 		</data>
 		<key>Headers/SwizzleInfo.h</key>
 		<data>
@@ -74,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		j61y0eI6i7g3Q6rGVt9qFY3nJJs=
+		lWsqYDHZuhmQ12lu/1mv52opEyU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,6 +87,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/ECS.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2G1HTfv2Pxzp3MtmR1nh47YyqRipKPlCdtgJxEQbhLk=
+			</data>
+		</dict>
 		<key>Headers/IMCPPluginLoaderService.h</key>
 		<dict>
 			<key>hash2</key>
@@ -164,7 +175,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ZbenJFX0rf3uJvxGMg5mz+VIH9xZ4AyB/1MNO3kUSU=
+			NJ0d+Se7tiMuJq989h8AWuHO9DzanR1W2Fhe5QKyOnY=
 			</data>
 		</dict>
 		<key>Headers/SwizzleInfo.h</key>

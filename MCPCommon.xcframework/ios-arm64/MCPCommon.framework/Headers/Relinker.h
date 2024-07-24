@@ -205,11 +205,8 @@ class Relinker
     static std::string getStringFromErrorCode(unsigned int errorCode);
 
     static MBSTATUS setErrorListener(RelinkerErrorListener* cb);
-
-#if defined(__APPLE__)
     virtual void* getCodeSignature(const std::string &libraryName) = 0;
     virtual void* getEmbeddedEntitlements(const std::string &libraryName, uint32_t &size) = 0;
-#endif
 
     // Send error condition to listener and obtain flag whether the error should be ignored (result = true)
     static bool foundErrorCondition(unsigned int errorCode, const std::string& explanation);
@@ -397,9 +394,7 @@ MBSTATUS RELINKER_AddExclusiveRelink(BaseRelinkTrigger *trigger, RelinkMap &reli
 MBSTATUS RELINKER_AddSupplementalRelink(BaseRelinkTrigger *trigger, RelinkMap &relinkEntries);
 MBSTATUS RELINKER_PerformForcedRelink(const std::string &imageName, RelinkMap &relinkEntries, BaseRelinkTrigger::PartialRelinkType partialType);
 MBSTATUS RELINKER_PerformForcedRelinkForAll(RelinkMap &relinkEntries, BaseRelinkTrigger::PartialRelinkType partialType);
-#if defined(__APPLE__)
 void *RELINKER_GetEmbeddedEntitlements(const char *libraryName, uint32_t &size);
-#endif
 /* Assign Relinker function pointers to passed in struct. */
 MBSTATUS RELINKER_setCallbacks(RELINKER_FUNCTION_CALLBACKS *pCallbacks);
 #endif
@@ -427,9 +422,7 @@ MBSTATUS RELINKER_CheckAddressInLibrary(const char *libraryName, void *addr);
 MBSTATUS RELINKER_CheckAddressInOpaqueLibraryInfo(void *opaqueLibInfo, void *addr);
 void *RELINKER_GetOpaqueLibraryInfo(const char *libraryName);
 bool RELINKER_CheckSymbolExists(const char *libraryName, const char *symbolName);
-#if defined(__APPLE__)
 void *RELINKER_GetCodeSignature(const char *libraryName);
-#endif
 
 #pragma GCC visibility pop
 
