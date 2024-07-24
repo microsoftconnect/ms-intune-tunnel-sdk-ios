@@ -44,10 +44,7 @@
 #include "IMCPInterception.h"
 #endif
 
-#if defined(__APPLE__)
 typedef off_t off64_t;
-#endif
-
 
 #pragma GCC visibility push(default)
 

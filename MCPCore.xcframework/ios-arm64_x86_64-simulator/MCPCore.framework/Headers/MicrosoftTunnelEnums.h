@@ -108,6 +108,15 @@ static const char *kLoggingClassSocket = "Socket";
 static const char *kLoggingClassHttp = "HTTP";
 static const char *kLoggingClassIntune = "Intune";
 static const char *kLoggingClassMicrosoftTunnel = "MicrosoftTunnel";
+static const char *kLoggingClassFoundation = "Foundation";
+static const char *kLoggingClassKeystore = "Keystore";
+static const char *kLoggingClassInjectable = "Injectable";
+static const char *kLoggingClassFileIO = "FileIO";
+static const char *kLoggingClassCrypto = "Crypto";
+static const char *kLoggingClassDAR = "DAR";
+static const char *kLoggingClassASAPPlugins = "ASAPPlugins";
+static const char *kLoggingClassSQLCipher = "SQLCipher";
+static const char *kLoggingClassMisc = "Misc";
 
 // Interception Log Config Values
 static const char *kLoggingSeverityDebug = "debug";
