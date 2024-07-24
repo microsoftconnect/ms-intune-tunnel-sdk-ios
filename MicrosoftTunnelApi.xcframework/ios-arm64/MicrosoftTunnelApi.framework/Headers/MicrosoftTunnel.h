@@ -128,7 +128,7 @@ __attribute__ ((visibility ("default")))
 @interface MicrosoftTunnel : NSObject
 
 @property(class, nonatomic, readonly, strong) MicrosoftTunnel* _Nonnull sharedInstance;
-@property(nonatomic, assign)id<MicrosoftTunnelDelegate> _Nonnull delegate;
+@property(nonatomic, assign)id<MicrosoftTunnelDelegate> _Nullable delegate;
 @property(nonatomic, assign)id<MicrosoftTunnelLogDelegate> _Nullable logDelegate;
 
 /**
@@ -156,7 +156,7 @@ __attribute__ ((visibility ("default")))
  * @param configDictionary Configuration items used to determine what is to be logged, intercepted, and values for Tunnel connection to be established
  * @return An API error {@link MicrosoftTunnelError}
  */
-- (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nonnull id<MicrosoftTunnelDelegate>)delegate config:(nonnull NSDictionary <NSString *, NSString*>*)config;
+- (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nullable id<MicrosoftTunnelDelegate>)delegate config:(nullable NSDictionary <NSString *, NSString*>*)config;
 
 /**
  * Initializes Microsoft Tunnel API infrastructure.
@@ -166,7 +166,7 @@ __attribute__ ((visibility ("default")))
  * @param configDictionary Configuration items used to determine what is to be logged, intercepted, and values for Tunnel connection to be established
  * @return The initialized instance, or nil on an error
  */
-- (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nonnull id<MicrosoftTunnelDelegate>)delegate logDelegate:(nonnull id<MicrosoftTunnelLogDelegate>)logDelegate config:(nonnull NSDictionary <NSString *, NSString*>*)config;
+- (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nullable id<MicrosoftTunnelDelegate>)delegate logDelegate:(nullable id<MicrosoftTunnelLogDelegate>)logDelegate config:(nullable NSDictionary <NSString *, NSString*>*)config;
 
 /**
  * Set configuration values. See {@link MicrosoftTunnelEnums.h} for configuration keys and values.
@@ -239,7 +239,7 @@ __attribute__ ((visibility ("default")))
  * Launches enrollment for MAM enrollment with a callback for acquiring a token
  * If the callback returns a value of false, then the token acquisition will fall back to the default acquisition
  */
-- (BOOL)launchEnrollment:(BOOL (^ __nonnull)(void (^ __nonnull)(NSString* accessToken)))tokenCallback;
+- (BOOL)launchEnrollment:(BOOL (^ __nullable)(void (^ __nonnull)(NSString* _Nullable accessToken)))tokenCallback;
 
 /**
  * Launches enrollment for MAM enrollment

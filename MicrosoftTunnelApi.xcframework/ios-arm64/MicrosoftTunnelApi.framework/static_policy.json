@@ -1,6 +1,6 @@
 {
   "id": "7ae20eb3-4227-4d61-a2b2-08ceca5c8f55",
-  "desc": "Simple testing profile",
+  "desc": "Default Configuration",
   "microsoftPolicy": {
       "enabled": true
   },
@@ -12,11 +12,11 @@
     "logClasses": [
       {
         "name": "client",
-        "severity": "debug"
+        "severity": "warn"
       },
       {
         "name": "connect",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "dsf",
@@ -28,43 +28,43 @@
       },
       {
         "name": "vnet",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "packet",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "socket",
-        "severity": "debug"
+        "severity": "warn"
       },
       {
         "name": "vsIp",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "vsTcp",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "vsUdp",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "vsInternal",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "vsSocket",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "vsDriver",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "driver",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "name": "policy",
@@ -72,34 +72,34 @@
       },
       {
         "name": "default",
-        "severity": "info"
+        "severity": "warn"
       }
     ],
     "externalLogClasses": [
       {
         "index": 0,
         "name": "inj",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 1,
         "name": "keystore",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 2,
         "name": "foundation",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 3,
         "name": "fileio",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 4,
         "name": "crypto",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 5,
@@ -109,7 +109,7 @@
       {
         "index": 6,
         "name": "http",
-        "severity": "info"
+        "severity": "warn"
       },
       {
         "index": 7,
@@ -124,12 +124,7 @@
       {
         "_index": 9,
         "name": "intune",
-        "severity": "info"
-      },
-      {
-        "_index": 10,
-        "name": "ping",
-        "severity": "crit"
+        "severity": "warn"
       }
     ]
   }
