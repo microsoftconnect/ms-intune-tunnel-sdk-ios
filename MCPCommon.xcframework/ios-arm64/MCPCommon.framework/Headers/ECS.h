@@ -19,6 +19,4 @@ __attribute__ ((visibility ("default")))
 
 -(void)fetchIfNeeded;
 
--(void)setUPN:(NSString *)upn;
-
 @end
