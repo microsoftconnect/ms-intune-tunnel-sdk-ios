@@ -7,6 +7,10 @@
 
 /* jshint esversion: 6 */
 /* jslint bitwise: true */
+function mstobject() {  // eslint-disable-line no-unused-vars
+    return window.mstobject;
+}
+
 // Use an anonymous function that we call in-line as a namespace for injection
 (function () {
     window.mstobject.injected = false;
