@@ -15,4 +15,4 @@ See the [Microsoft Tunnel for MAM iOS SDK Developer Guide](https://aka.ms/tunnel
 Supported versions:
 | Intune SDK Version  | MSAL SDK Version  | Supported iOS Versions  | Supported Xcode Version | Support Scope |
 | ----------------------- | ----------------------- | ---------------------------- | -----------------------------  | ----------------- |                         
-| 17.1.0+                     | 1.2.3+              | 15.0+                               | 14+                                       | Main release branch - supports all feature work and bug fixes |
+| 20.0+                     | 1.2.3+              | 16.0+                               | 14+                                       | Main release branch - supports all feature work and bug fixes |
