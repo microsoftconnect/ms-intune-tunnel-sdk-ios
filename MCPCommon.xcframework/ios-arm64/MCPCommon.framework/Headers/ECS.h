@@ -16,6 +16,7 @@ __attribute__ ((visibility ("default")))
 -(BOOL)urlSchemeHandlerEnabled;
 -(BOOL)mamServiceUrlBypassEnabled;
 -(BOOL)loginServiceUrlBypassEnabled;
+-(BOOL)reloadRedirectsEnabled;
 
 -(void)fetchIfNeeded;
 
