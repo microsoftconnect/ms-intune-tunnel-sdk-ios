@@ -17,6 +17,9 @@ __attribute__ ((visibility ("default")))
 -(BOOL)mamServiceUrlBypassEnabled;
 -(BOOL)loginServiceUrlBypassEnabled;
 -(BOOL)reloadRedirectsEnabled;
+-(BOOL)webSocketsEnabled;
+
+-(NSString*)webViewJSON;
 
 -(void)fetchIfNeeded;
 

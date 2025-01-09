@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/Info.plist</key>
 		<data>
-		HYWTQAxqtdyBUq/X5kJFWF/nY2U=
+		NA6HZYxQMFdlA1ep38JZ6Pi0fQI=
 		</data>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/LICENSE.json</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/MicrosoftTunnelApi</key>
 		<data>
-		2VOSQDI1/AOZg6gX4+yNrBZqa/E=
+		OZbLmOOK0LXDP1xFfvuQ3SelBxc=
 		</data>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/Modules/module.modulemap</key>
 		<data>
-		IiGzVHW4Qty9oacqYqvSKNWHTVw=
+		lg4hYZLTgHAZnnwVFjK7MMwqdxg=
 		</data>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/Info.plist</key>
 		<data>
-		xBzOBLLjmhItm0+KZ0beHokM+SU=
+		aGSqZQxNssAhbP84+7cQZlnQyaQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/LICENSE.json</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/MicrosoftTunnelApi</key>
 		<data>
-		V/dg50GTrz5dXvOlMtQwx77EOMs=
+		mTvy3AJxexAC9lBlk6UvXB42ho8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/Modules/module.modulemap</key>
 		<data>
-		IiGzVHW4Qty9oacqYqvSKNWHTVw=
+		lg4hYZLTgHAZnnwVFjK7MMwqdxg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/_CodeSignature/CodeResources</key>
 		<data>
-		1cmLmUZ3qGhexlxkQNY5u9O5SSw=
+		o6oVH1Bg9UxpDwonEB/GJ+S7y7I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/certificate_policy.json</key>
 		<data>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HYWTQAxqtdyBUq/X5kJFWF/nY2U=
+			NA6HZYxQMFdlA1ep38JZ6Pi0fQI=
 			</data>
 			<key>hash2</key>
 			<data>
-			sWraTkC60u6vwi+NT76HuOtqNekdr+3Rl+g4Sy+S4z4=
+			e8P1oqOpbLelXSe/dJjL7LHyEAFNMzaWLhd3wk3z/Ug=
 			</data>
 		</dict>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/LICENSE.json</key>
@@ -150,22 +150,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2VOSQDI1/AOZg6gX4+yNrBZqa/E=
+			OZbLmOOK0LXDP1xFfvuQ3SelBxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			43TIcbmlPYp9VTEfHfnDEVchwUy7cn6myVkG7E8LmwE=
+			zwggnHrbpR9Edv/niqhSeCtwDgzvlR1SKCMPhpHkC/0=
 			</data>
 		</dict>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IiGzVHW4Qty9oacqYqvSKNWHTVw=
+			lg4hYZLTgHAZnnwVFjK7MMwqdxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BiLM1aa35AJsL46YFl0W8VNUWN163P6tjNRHQQrv5l0=
+			feE0V/204wjB5hLNpu6TVly6cE1Ycthw11AcUb74L1Y=
 			</data>
 		</dict>
 		<key>ios-arm64/MicrosoftTunnelApi.framework/PrivacyInfo.xcprivacy</key>
@@ -238,11 +238,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xBzOBLLjmhItm0+KZ0beHokM+SU=
+			aGSqZQxNssAhbP84+7cQZlnQyaQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			i82Zqv89v0cbC3dTq8bj9kU93APxyqHS5KIcTb8c7c4=
+			cQcu9HFNNNdncnAdoGOI5ekidLsFnAnjZlRrP8JMulQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/LICENSE.json</key>
@@ -260,22 +260,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V/dg50GTrz5dXvOlMtQwx77EOMs=
+			mTvy3AJxexAC9lBlk6UvXB42ho8=
 			</data>
 			<key>hash2</key>
 			<data>
-			E/cryJKlqSJSCvatduX2y4zM/pZpnfq0yh1hUmxZ1eg=
+			7dHTZ5yM3ipLrxSU3e+nq7P8ncEc04XuucgWHn19Ffg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IiGzVHW4Qty9oacqYqvSKNWHTVw=
+			lg4hYZLTgHAZnnwVFjK7MMwqdxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			BiLM1aa35AJsL46YFl0W8VNUWN163P6tjNRHQQrv5l0=
+			feE0V/204wjB5hLNpu6TVly6cE1Ycthw11AcUb74L1Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/PrivacyInfo.xcprivacy</key>
@@ -293,11 +293,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1cmLmUZ3qGhexlxkQNY5u9O5SSw=
+			o6oVH1Bg9UxpDwonEB/GJ+S7y7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			/bXOO2D4ChcceOQoGq+zH85iNY3DNt/H+guxRMk/NjE=
+			YEdeVJjuB69YejOacjZYnlVrb3d3zVNYmDSWpN7+an0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicrosoftTunnelApi.framework/certificate_policy.json</key>
