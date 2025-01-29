@@ -362,11 +362,11 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Info.plist</key>
 		<data>
-		JM/T99/1L2oo4e7EYLX9KW7x+pk=
+		FE1PJyu+ilYNiAZ/dl/7g0Yg3Ug=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<data>
-		iCbLQJP4NKi9Fdw4adAFpN7vZUE=
+		Gl1BIZ1/2KtnyczPT7ctQaQSTac=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -742,11 +742,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<data>
-		0neZuYjESpJTpWuyo3S+LUPyiqQ=
+		QnFuLGbVdNzxW6jMuFld5vbUOYE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<data>
-		qk/xYUmuWmQSIOvpOdhE483uAMw=
+		tRcKaNkW/qI9R0OVW/TD4QuVFg0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		tcTJcZeTnnMtkqly9YnOZWOWgug=
+		vMeVaUyyPaAlAYUpXsN4K3Tc5ck=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1754,22 +1754,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JM/T99/1L2oo4e7EYLX9KW7x+pk=
+			FE1PJyu+ilYNiAZ/dl/7g0Yg3Ug=
 			</data>
 			<key>hash2</key>
 			<data>
-			DVuz09T0pezlDdbJe+uy1zUEd6JrrOd/RfihPfv124Y=
+			MjYIL2btCsZZpZCvm4Gn0aN0zbK00SBvoG/kr4h8QnE=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iCbLQJP4NKi9Fdw4adAFpN7vZUE=
+			Gl1BIZ1/2KtnyczPT7ctQaQSTac=
 			</data>
 			<key>hash2</key>
 			<data>
-			lqUljdG0QFRZ9ketyC5/35NhuiAEOxxwoH81290ncfw=
+			hu5sR+YBLjjxojNejyO4goBrv+hkRcNE0LzE17CW+Vg=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
@@ -2799,22 +2799,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0neZuYjESpJTpWuyo3S+LUPyiqQ=
+			QnFuLGbVdNzxW6jMuFld5vbUOYE=
 			</data>
 			<key>hash2</key>
 			<data>
-			qkseaTKYJ/vNUEzaEkJOo6L9pv6VpeKzERxgww3TqX8=
+			yYsAwDdOQxNpR5llVgjTeh2/u+63YYfmFoeip+4F/rs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qk/xYUmuWmQSIOvpOdhE483uAMw=
+			tRcKaNkW/qI9R0OVW/TD4QuVFg0=
 			</data>
 			<key>hash2</key>
 			<data>
-			HUOa8+Qx0fOw7WwO8MiaZch5mu+TU0j7G5apwqGaIRw=
+			o2wzmAOMapXFMvoK0GhWlsj3ACz5Z3vbyvXlOcSZT0o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
@@ -2865,11 +2865,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tcTJcZeTnnMtkqly9YnOZWOWgug=
+			vMeVaUyyPaAlAYUpXsN4K3Tc5ck=
 			</data>
 			<key>hash2</key>
 			<data>
-			xdV75k4ScM/R/bGfFHYs18GAFF2q63OLFxJaY1EyxSU=
+			K+0Vil4x6fnbTQgM7TxATIC5wXJXwGviO9eW84MZnZM=
 			</data>
 		</dict>
 	</dict>
