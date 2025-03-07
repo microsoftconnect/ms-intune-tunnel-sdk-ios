@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/ssl.framework/Info.plist</key>
 		<data>
-		4sjlD9arS2OGoQhZp2SvhYcc8BU=
+		hGORdthAG+Stcc6lT/Mj1u7Oqps=
 		</data>
 		<key>ios-arm64/ssl.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>ios-arm64/ssl.framework/ssl</key>
 		<data>
-		k3kkZd/RceyjB5/FVYKjNH1xmNc=
+		MF3wSkh4nIsOtbaGKbY6pkikEpY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/Info.plist</key>
 		<data>
-		4sjlD9arS2OGoQhZp2SvhYcc8BU=
+		hGORdthAG+Stcc6lT/Mj1u7Oqps=
 		</data>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/ssl</key>
 		<data>
-		p8+vFCGd9uTD59gnjQduepgUuzs=
+		vLp3ZwimhN6My0X/5fxIxvAvxhU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -35,11 +35,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4sjlD9arS2OGoQhZp2SvhYcc8BU=
+			hGORdthAG+Stcc6lT/Mj1u7Oqps=
 			</data>
 			<key>hash2</key>
 			<data>
-			+G7tX7wedLT7lpFJOJ4AhbltRRgjnwRFbaQvobMuFqg=
+			nZd8yD9KfF944D+GxqcgR7eWR6Pk6zNP9y7ixMa1jXM=
 			</data>
 		</dict>
 		<key>ios-arm64/ssl.framework/PrivacyInfo.xcprivacy</key>
@@ -57,22 +57,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k3kkZd/RceyjB5/FVYKjNH1xmNc=
+			MF3wSkh4nIsOtbaGKbY6pkikEpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			G+txG36s5khcN1M2Ct5J76EbluHOCfly7Cm9Dw7qh4M=
+			m7vUrWf3IRHZG+SLb2VSsfZgWs9PkvF3Bky3RiZrdlU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4sjlD9arS2OGoQhZp2SvhYcc8BU=
+			hGORdthAG+Stcc6lT/Mj1u7Oqps=
 			</data>
 			<key>hash2</key>
 			<data>
-			+G7tX7wedLT7lpFJOJ4AhbltRRgjnwRFbaQvobMuFqg=
+			nZd8yD9KfF944D+GxqcgR7eWR6Pk6zNP9y7ixMa1jXM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/ssl.framework/PrivacyInfo.xcprivacy</key>
@@ -90,11 +90,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p8+vFCGd9uTD59gnjQduepgUuzs=
+			vLp3ZwimhN6My0X/5fxIxvAvxhU=
 			</data>
 			<key>hash2</key>
 			<data>
-			+2fJq3SAHcSSFkhrIkteXjv0TZYVX16FKyYFaMs/SL8=
+			FpKxGMziCw802YQ6HiKMy+xiRLkSvcgPklFllWPiaYc=
 			</data>
 		</dict>
 	</dict>

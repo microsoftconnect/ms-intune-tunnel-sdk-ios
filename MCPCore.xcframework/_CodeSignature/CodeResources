@@ -214,7 +214,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/MicrosoftTunnelEnums.h</key>
 		<data>
-		UmX6UeSnV250VUDBcwZ5jLXxQqY=
+		rdGs1lI1gl7E0iw/HlSNT9xpwRg=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
 		<data>
@@ -362,11 +362,11 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Info.plist</key>
 		<data>
-		FE1PJyu+ilYNiAZ/dl/7g0Yg3Ug=
+		gsOIQCDj6QRLvFl68h1FoNWu3eQ=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<data>
-		Gl1BIZ1/2KtnyczPT7ctQaQSTac=
+		4nGjJNlR9QZNj4rtd0G3KvhAMSs=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -594,7 +594,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MicrosoftTunnelEnums.h</key>
 		<data>
-		UmX6UeSnV250VUDBcwZ5jLXxQqY=
+		rdGs1lI1gl7E0iw/HlSNT9xpwRg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
 		<data>
@@ -742,11 +742,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<data>
-		QnFuLGbVdNzxW6jMuFld5vbUOYE=
+		8XAfe0dY3zcI2GyfAqvO/S0ujUw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<data>
-		tRcKaNkW/qI9R0OVW/TD4QuVFg0=
+		OMoqK7GE8ui5hkH+g6VWvNS83jo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		vMeVaUyyPaAlAYUpXsN4K3Tc5ck=
+		bBQIYPohCIV9SHAQzzMFbfDIwZQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1347,11 +1347,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UmX6UeSnV250VUDBcwZ5jLXxQqY=
+			rdGs1lI1gl7E0iw/HlSNT9xpwRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9g0kODYK+kxEyXsT1rG0Ew5h+aUWmeqP3eK1+XeMaHg=
+			G5AGJLwKUUFgMiglHgXwTzB/Z6Bpmhzz6+BUQuwYF9w=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
@@ -1754,22 +1754,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FE1PJyu+ilYNiAZ/dl/7g0Yg3Ug=
+			gsOIQCDj6QRLvFl68h1FoNWu3eQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			MjYIL2btCsZZpZCvm4Gn0aN0zbK00SBvoG/kr4h8QnE=
+			0GqsroBOk/gHOYbR1ZsTQWGryyVFl5d54AeqMpJbbHc=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gl1BIZ1/2KtnyczPT7ctQaQSTac=
+			4nGjJNlR9QZNj4rtd0G3KvhAMSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			hu5sR+YBLjjxojNejyO4goBrv+hkRcNE0LzE17CW+Vg=
+			boZhOpTPH+4IrgI3WSioyLE90ASk1hCzZnrf9JYIxGo=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
@@ -2392,11 +2392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UmX6UeSnV250VUDBcwZ5jLXxQqY=
+			rdGs1lI1gl7E0iw/HlSNT9xpwRg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9g0kODYK+kxEyXsT1rG0Ew5h+aUWmeqP3eK1+XeMaHg=
+			G5AGJLwKUUFgMiglHgXwTzB/Z6Bpmhzz6+BUQuwYF9w=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
@@ -2799,22 +2799,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QnFuLGbVdNzxW6jMuFld5vbUOYE=
+			8XAfe0dY3zcI2GyfAqvO/S0ujUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			yYsAwDdOQxNpR5llVgjTeh2/u+63YYfmFoeip+4F/rs=
+			nnVLVlI7KBil2Wqmz72Yo7/UNklvSw1Z+XQ11w/zzHs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tRcKaNkW/qI9R0OVW/TD4QuVFg0=
+			OMoqK7GE8ui5hkH+g6VWvNS83jo=
 			</data>
 			<key>hash2</key>
 			<data>
-			o2wzmAOMapXFMvoK0GhWlsj3ACz5Z3vbyvXlOcSZT0o=
+			mXZPO7xMs6rWNi8GLHUXUEx+kAw3Yg1Oarbpmbedz/c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
@@ -2865,11 +2865,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vMeVaUyyPaAlAYUpXsN4K3Tc5ck=
+			bBQIYPohCIV9SHAQzzMFbfDIwZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			K+0Vil4x6fnbTQgM7TxATIC5wXJXwGviO9eW84MZnZM=
+			G4qC6nbfKFnFZNzYzPzR3v/V5X7vtO9Wtka8SazC0Xg=
 			</data>
 		</dict>
 	</dict>

@@ -6,7 +6,11 @@
 	<dict>
 		<key>Headers/MicrosoftTunnel.h</key>
 		<data>
-		IpiLfsbtJnlsqaYp6B686i2H+DY=
+		t5QDuU+8guOS8HXwcAMMY433vqA=
+		</data>
+		<key>Headers/MicrosoftTunnelApi-Swift.h</key>
+		<data>
+		o9Yzpggi7m26xhOQFp9I47mB7/o=
 		</data>
 		<key>Headers/MicrosoftTunnelApi.h</key>
 		<data>
@@ -14,19 +18,59 @@
 		</data>
 		<key>Headers/MicrosoftTunnelEnums.h</key>
 		<data>
-		UmX6UeSnV250VUDBcwZ5jLXxQqY=
+		rdGs1lI1gl7E0iw/HlSNT9xpwRg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KOPHQUz0WleYFeKtUXugiWBZOgk=
+		l8mZTNIOdCN3d5lzDIqr4CwF3MQ=
 		</data>
 		<key>LICENSE.json</key>
 		<data>
 		lpzsaqqWD0CWUb0aAmr+MHkpNlw=
 		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		fA76QbAzhl0fhczZZRyhOEYhw+k=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		mYRKzwWilmuVBFiwK0WHbvvmncU=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		n4KrvHKLPNMT8kcN7D9VfOWVdpo=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		mYRKzwWilmuVBFiwK0WHbvvmncU=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		ApdjVHI5pA/pR1SuLuHaKllAj94=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		fA76QbAzhl0fhczZZRyhOEYhw+k=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		WYSaVOnPWnQgIWN64wJyVIJKujs=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		UDYVLdwJeutl69wBu0rvvuTgAe4=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<data>
+		WYSaVOnPWnQgIWN64wJyVIJKujs=
+		</data>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		FNce5agQdU1ArLnYdeMUWazVeXw=
+		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		lg4hYZLTgHAZnnwVFjK7MMwqdxg=
+		v6Z4fOUkPRioj7yqrlD8suB3aLE=
 		</data>
 		<key>certificate_policy.json</key>
 		<data>
@@ -43,7 +87,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LWA6LgSo2g5se0TC0ojjZF4yGXs4PaXS2cH0C7Cjadc=
+			YOwbUB3tT3KuIbs+URvmirFJHRTNFNUQFRRU4XTVkfY=
+			</data>
+		</dict>
+		<key>Headers/MicrosoftTunnelApi-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KZaiMdXsozfEEjLa+2ZnUXivLCTX4M+3KN1inhqXQHw=
 			</data>
 		</dict>
 		<key>Headers/MicrosoftTunnelApi.h</key>
@@ -57,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9g0kODYK+kxEyXsT1rG0Ew5h+aUWmeqP3eK1+XeMaHg=
+			G5AGJLwKUUFgMiglHgXwTzB/Z6Bpmhzz6+BUQuwYF9w=
 			</data>
 		</dict>
 		<key>LICENSE.json</key>
@@ -67,11 +118,81 @@
 			62vGbxbqtEFJX76gE7o2WwM7oPtmPAtD2BtnQv1yOo0=
 			</data>
 		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			U5g6Tgj5UrGmDN8ljJJTXOMZDhAuviBp38Ud1+Fqz4A=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E54Q62khawEd0iqBVSwF1MIEr80MHCBtVjdHFp6FXdA=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NOH9I82jg1gXyxb9222OkQc3wt1sr98oalGEp3n0NbQ=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E54Q62khawEd0iqBVSwF1MIEr80MHCBtVjdHFp6FXdA=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OHb8DaKml1EgChwueXbjYvMvM7sHITY9osUYtdsb+KU=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			U5g6Tgj5UrGmDN8ljJJTXOMZDhAuviBp38Ud1+Fqz4A=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fhtEGRoPf0K7G5Tns8NdcCuxbWZUdQBnbk7FagD1iHc=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0uLElZeFytneeYNiRCUq/tsTGf9XE0ldxHhpAv2hl/c=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fhtEGRoPf0K7G5Tns8NdcCuxbWZUdQBnbk7FagD1iHc=
+			</data>
+		</dict>
+		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/rNJhzwjQqhWu2Dc1u5dFjPxyM2dkWW+IEV5TS/Zgns=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			feE0V/204wjB5hLNpu6TVly6cE1Ycthw11AcUb74L1Y=
+			kAKDL0XyMgmXBQAVsTJaePGL+7iSUqFQmYvY9AHQur8=
 			</data>
 		</dict>
 		<key>certificate_policy.json</key>

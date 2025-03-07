@@ -117,6 +117,7 @@ static const char *kLoggingClassDAR = "DAR";
 static const char *kLoggingClassASAPPlugins = "ASAPPlugins";
 static const char *kLoggingClassSQLCipher = "SQLCipher";
 static const char *kLoggingClassMisc = "Misc";
+static const char *kLoggingClassClient = "Client";
 
 // Interception Log Config Values
 static const char *kLoggingSeverityDebug = "debug";

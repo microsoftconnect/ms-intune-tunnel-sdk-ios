@@ -43,6 +43,8 @@ __attribute__ ((visibility ("default")))
  */
 @protocol MicrosoftTunnelDelegate <NSObject>
 
+@optional
+
 /**
  * Callback indicating the various events in a single method.
  */
@@ -82,8 +84,6 @@ __attribute__ ((visibility ("default")))
  */
 - (void)onError:(MicrosoftTunnelError)error;
 
-
-@optional
 /**
  * Callback indicating an oauth token is needed.
  */
@@ -252,6 +252,11 @@ __attribute__ ((visibility ("default")))
  * Proxy handling of MSAL response to push to MSAL library
  */
 - (BOOL)handleMSALResponse:(nonnull NSURL *)response sourceApplication:(nullable NSString *)sourceApplication;
+
+/**
+ * Show the diagnostic console
+ */
+- (void)showDiagnosticConsole;
 
 @end
 #pragma GCC visibility pop
