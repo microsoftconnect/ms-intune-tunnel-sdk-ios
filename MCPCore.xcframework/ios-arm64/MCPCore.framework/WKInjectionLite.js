@@ -35,8 +35,9 @@ function mstobject() {  // eslint-disable-line no-unused-vars
     
     class MstLogger {
         __logLevel = mstobject().httpLogLevel;
-        constructor(tag) {
+        constructor(tag, context) {
             this.__tag = tag;
+            this.__context = context || "";
         }
         logDebug(message) {
             if (this.__logLevel > 0) { return; }
@@ -57,12 +58,52 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             if (this.__logLevel > 3) { return; }
             this.__log(console.error, "ERROR", message);
         }
-        
+
+        logDebugData(action, data) {
+            if (typeof (data) === "string") {
+                this.logDebug(action + ` string, length = ` + data.length);
+            }
+            else if (typeof (data) === "object") {
+                if (data instanceof Blob) {
+                    data.arrayBuffer().then((buffer)=>{
+                        this.logDebug(action + ` Blob, length = ` + buffer.byteLength);
+                    });
+                }
+                else if (data instanceof DataView) {
+                    var bytes = new Uint8Array(data.buffer);
+                    this.logDebug(action + ` DataView, length = ` + bytes.byteLength);
+                }
+                else if (data instanceof Int8Array ||
+                            data instanceof Uint8Array ||
+                            data instanceof Uint8ClampedArray ||
+                            data instanceof Int16Array ||
+                            data instanceof Uint16Array ||
+                            data instanceof Int32Array ||
+                            data instanceof Uint32Array ||
+                            data instanceof Float32Array ||
+                            data instanceof Float64Array ||
+                            data instanceof BigInt64Array ||
+                            data instanceof BigUint64Array) {
+
+                        var bytes = new Uint8Array(data.buffer);
+                        this.logDebug(action + ` TypedArray, length = ` + bytes.byteLength);
+                }
+                else if (data instanceof ArrayBuffer) {
+                    this.logDebug(action + ` ArrayBuffer, length = ` + data.byteLength);
+                }
+                else {
+                    this.logError(action + ` unsupported type`);
+                }
+            }
+        }
+
         __log(logFunc, level, message) {
-            logFunc(`[${new Date().toISOString()}][MicrosoftTunnel][${this.__tag}][${level}] ${message}`);
+            logFunc(`[${new Date().toISOString()}][MicrosoftTunnel][${this.__tag}][${level}][${this.__context}] ${message}`);
         }
     };
-    
+
+    mstobject().logger = new MstLogger("WebSocket"); // logger used by evaluated js scripts
+
     if (mstobject().ecs.webSocketsEnabled) {
         mstobject().websockets = {};
         class MstWebSocket extends EventTarget {
@@ -73,9 +114,10 @@ function mstobject() {  // eslint-disable-line no-unused-vars
                 this.CLOSING = MstWebSocket.CLOSING;
                 this.CLOSED = MstWebSocket.CLOSED;
                 this.__tag = this.__createTag();
+                this.__bufferedAmount = 0;
                 this.binaryType = "blob";
                 this.url = url;
-                this.__logger = new MstLogger("WebSocket");
+                this.__logger = new MstLogger("WebSocket", this.__tag);
                 this.__logger.logInfo(`constructor '${url}' - '${protocols}' - '${window.location.origin}' - '${navigator.userAgent}'`);
                 this.__post({'method': 'constructor', 'url': url, 'protocols': protocols, 'origin': window.location.origin, 'userAgent': navigator.userAgent});
                 mstobject().websockets[this.__tag] = this;
@@ -87,20 +129,30 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             static get CLOSED() { return 3; }
             
             send(data) {
+                this.__logger.logDebugData('Send', data);
+
                 if (typeof (data) === "string") {
-                    this.__logger.logDebug(`send string`);
+                    this.__bufferedAmount += data.length;
                     this.__post({'method': 'send', 'isBinary': false, 'data': data});
                 }
                 else if (typeof (data) === "object") {
                     if (data instanceof Blob) {
-                        this.__logger.logDebug(`send Blob`);
-                        data.arrayBuffer().then((buffer)=>{
-                            this.__post({'method': 'send', 'isBinary': true, 'data': this.__arrayBufferToBase64(buffer)});
+                        data.arrayBuffer().then((buffer) => {
+                            this.__bufferedAmount += buffer.byteLength;
+                            var encodedData = this.__arrayBufferToBase64(buffer);
+                            this.__post({'method': 'send', 'isBinary': true, 'data': encodedData});
+                        }).catch((error) => {
+                            this.__logger.logError(`Failed to convert Blob to ArrayBuffer: ${error}`);
+                            this.dispatchEvent(new ErrorEvent('error', { 'message': 'Failed to convert Blob to ArrayBuffer' }));
                         });
                     }
                     else if (data instanceof DataView) {
-                        this.__logger.logDebug(`send DataView`);
-                        this.__post({'method': 'send', 'isBinary': true, 'data': this.__arrayBufferToBase64(data.buffer)});
+
+                        var bytes = new Uint8Array(data.buffer);
+                        this.__bufferedAmount += bytes.byteLength;
+
+                        var encodedData = this.__uintArrayToBase64(bytes)
+                        this.__post({'method': 'send', 'isBinary': true, 'data': encodedData});
                     }
                     else if (data instanceof Int8Array ||
                              data instanceof Uint8Array ||
@@ -113,12 +165,17 @@ function mstobject() {  // eslint-disable-line no-unused-vars
                              data instanceof Float64Array ||
                              data instanceof BigInt64Array ||
                              data instanceof BigUint64Array) {
-                        this.__logger.logDebug(`send TypedArray`);
-                        this.__post({'method': 'send', 'isBinary': true, 'data': this.__arrayBufferToBase64(data.buffer)});
+
+                        var bytes = new Uint8Array(data.buffer);
+                        this.__bufferedAmount += bytes.byteLength;
+
+                        var encodedData = this.__uintArrayToBase64(bytes)
+                        this.__post({'method': 'send', 'isBinary': true, 'data': encodedData});
                     }
                     else if (data instanceof ArrayBuffer) {
-                        this.__logger.logDebug(`send ArrayBuffer`);
-                        this.__post({'method': 'send', 'isBinary': true, 'data': this.__arrayBufferToBase64(data)});
+                        this.__bufferedAmount += data.byteLength;
+                        var encodedData = this.__arrayBufferToBase64(data)
+                        this.__post({'method': 'send', 'isBinary': true, 'data': encodedData});
                     }
                     else {
                         this.__logger.logError(`send unsupported type`);
@@ -149,7 +206,7 @@ function mstobject() {  // eslint-disable-line no-unused-vars
                 this.__logger.logInfo(`Client onerror set`);
                 this.addEventListener.apply(this, ['error', handler, false]);
             }
-            
+
             __close(options) {
                 options = options || {};
                 options.wasClean = (options.code === 1000 || options.code === 1005);
@@ -160,8 +217,9 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             }
             
             __binaryMessage(message){
-                this.__logger.logDebug(`Server binary message received. binaryType = '${this.binaryType}'.`);
                 var buffer = this.__base64ToArrayBuffer(message);
+                this.__logger.logDebugData('Receive', buffer);
+
                 var options = { 'origin': this.url };
                 if (this.binaryType === "arraybuffer") {
                     options.data = buffer;
@@ -176,7 +234,16 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             __post(message){
                 webkit.messageHandlers.mstCallbackHandler.postMessage({ 'action': 'webSocket', 'tag': this.__tag, ...message });
             }
-            
+
+            __uintArrayToBase64(bytes) {
+                var binary = '';
+                var len = bytes.byteLength;
+                for (var i = 0; i < len; i++) {
+                    binary += String.fromCharCode(bytes[i]);
+                }
+                return window.btoa(binary);
+            }
+
             __arrayBufferToBase64(buffer) {
                 var binary = '';
                 var bytes = new Uint8Array(buffer);

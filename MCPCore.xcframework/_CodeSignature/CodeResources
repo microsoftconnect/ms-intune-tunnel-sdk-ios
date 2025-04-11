@@ -362,11 +362,11 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Info.plist</key>
 		<data>
-		gsOIQCDj6QRLvFl68h1FoNWu3eQ=
+		cGjFR7se4zIzp4pLIBXsPgQvuaE=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<data>
-		4nGjJNlR9QZNj4rtd0G3KvhAMSs=
+		QpZS5l10oSryXroM+qg2lvQBZww=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -382,7 +382,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/WKInjectionLite.js</key>
 		<data>
-		eHCFoDjvgpbieFeMaCMPKDC/WS4=
+		vw74lvtO91dNtAM8Id0VbWM82Y8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/BGTaskScheduler+MCP_BGTaskScheduler.h</key>
 		<data>
@@ -742,11 +742,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<data>
-		8XAfe0dY3zcI2GyfAqvO/S0ujUw=
+		9zBIS4HW4kRD7vi2xTQ91wUcEZY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<data>
-		OMoqK7GE8ui5hkH+g6VWvNS83jo=
+		iIOtBGBpYIk4mHE857ib25cbRus=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -762,11 +762,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/WKInjectionLite.js</key>
 		<data>
-		eHCFoDjvgpbieFeMaCMPKDC/WS4=
+		vw74lvtO91dNtAM8Id0VbWM82Y8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		bBQIYPohCIV9SHAQzzMFbfDIwZQ=
+		jk+PvbeF0oMPOGzp69WAp1il5NI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1754,22 +1754,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gsOIQCDj6QRLvFl68h1FoNWu3eQ=
+			cGjFR7se4zIzp4pLIBXsPgQvuaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			0GqsroBOk/gHOYbR1ZsTQWGryyVFl5d54AeqMpJbbHc=
+			31sZig7f6gYUecx26wek4qlj2gefoOr5h2yFbkCSUVQ=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4nGjJNlR9QZNj4rtd0G3KvhAMSs=
+			QpZS5l10oSryXroM+qg2lvQBZww=
 			</data>
 			<key>hash2</key>
 			<data>
-			boZhOpTPH+4IrgI3WSioyLE90ASk1hCzZnrf9JYIxGo=
+			TUvlcw5JuhwJeIPVCyu19PDW9A/QBFndursyHKaREYI=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
@@ -1809,11 +1809,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eHCFoDjvgpbieFeMaCMPKDC/WS4=
+			vw74lvtO91dNtAM8Id0VbWM82Y8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wy5mk0wAGVI6aF0Pls+M51fFmv+ZmuTYY1S3ba2CQSU=
+			gFmCxoclY9T2Qf5DVNnmc7NlNBjeCgnkCjal4IsFGBQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/BGTaskScheduler+MCP_BGTaskScheduler.h</key>
@@ -2799,22 +2799,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8XAfe0dY3zcI2GyfAqvO/S0ujUw=
+			9zBIS4HW4kRD7vi2xTQ91wUcEZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			nnVLVlI7KBil2Wqmz72Yo7/UNklvSw1Z+XQ11w/zzHs=
+			nDXcQY1MGdErfGOCvPQOSTynu51L7ZtZ50yJ2zEEaM8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OMoqK7GE8ui5hkH+g6VWvNS83jo=
+			iIOtBGBpYIk4mHE857ib25cbRus=
 			</data>
 			<key>hash2</key>
 			<data>
-			mXZPO7xMs6rWNi8GLHUXUEx+kAw3Yg1Oarbpmbedz/c=
+			hcXdUtfjxYUAb7FlOHKGzi5r3KcDCBvCHZIPUUd370A=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
@@ -2854,22 +2854,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eHCFoDjvgpbieFeMaCMPKDC/WS4=
+			vw74lvtO91dNtAM8Id0VbWM82Y8=
 			</data>
 			<key>hash2</key>
 			<data>
-			wy5mk0wAGVI6aF0Pls+M51fFmv+ZmuTYY1S3ba2CQSU=
+			gFmCxoclY9T2Qf5DVNnmc7NlNBjeCgnkCjal4IsFGBQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bBQIYPohCIV9SHAQzzMFbfDIwZQ=
+			jk+PvbeF0oMPOGzp69WAp1il5NI=
 			</data>
 			<key>hash2</key>
 			<data>
-			G4qC6nbfKFnFZNzYzPzR3v/V5X7vtO9Wtka8SazC0Xg=
+			woo612rZunuuQ9Evx7lIGDQiErKCioaU+8tDpiTUPEM=
 			</data>
 		</dict>
 	</dict>

@@ -19,6 +19,7 @@ __attribute__ ((visibility ("default")))
 -(BOOL)reloadRedirectsEnabled;
 -(BOOL)webSocketsEnabled;
 -(BOOL)urlCacheEnabled;
+-(BOOL)useDataTaskDelegate;
 
 -(NSString*)webViewJSON;
 
