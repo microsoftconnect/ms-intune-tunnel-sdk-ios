@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		l8mZTNIOdCN3d5lzDIqr4CwF3MQ=
+		MTzKBRGULgmFn9Pr5jmlu9qjTyk=
 		</data>
 		<key>LICENSE.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/MicrosoftTunnelApi.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ApdjVHI5pA/pR1SuLuHaKllAj94=
+		Jn4MTGYFB2BDlm7ClEieTodcoJU=
 		</data>
 		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FNce5agQdU1ArLnYdeMUWazVeXw=
+		xXhQpQr3o7YsNv5ToSHf9wU2IB8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OHb8DaKml1EgChwueXbjYvMvM7sHITY9osUYtdsb+KU=
+			GkP+oyLSdpQo6+g12hpaimrzmqtCB7JVKuYVxpToedI=
 			</data>
 		</dict>
 		<key>Modules/MicrosoftTunnelApi.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -185,7 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/rNJhzwjQqhWu2Dc1u5dFjPxyM2dkWW+IEV5TS/Zgns=
+			MBJMYWQSJ32pFmc1m+rebsbDF0SGs4M/rAlylRf0qO4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
