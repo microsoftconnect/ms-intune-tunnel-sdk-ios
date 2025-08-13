@@ -78,7 +78,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/IosSecureWebStackManager.h</key>
 		<data>
-		0Xf576xA82IIdrL+2SF+b/NzcZ0=
+		79u0PtlwWymXaA08yQs32k2uvXo=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/IosStorageLocationProvider.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/MAP_HTTPCacheFixup.h</key>
 		<data>
-		96NKxBuucXVxNGnWXOU6ZENLGUA=
+		3B8YQWtcCMRJLviE/y5IpCNsbJQ=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/MAP_NSBundle.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/MicrosoftTunnelEnums.h</key>
 		<data>
-		rdGs1lI1gl7E0iw/HlSNT9xpwRg=
+		UmX6UeSnV250VUDBcwZ5jLXxQqY=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/ProxmetheusWKWebViewInterceptor.h</key>
 		<data>
-		eFRh4A4zwtyw2G6Siz60jqEfVkI=
+		ZdRX8PSTqWBlK+ygXEKn2/wfpbU=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
 		<data>
@@ -362,11 +362,11 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/Info.plist</key>
 		<data>
-		cGjFR7se4zIzp4pLIBXsPgQvuaE=
+		GCCU1JXYAO5XCcYOMeFDkGYoBHw=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<data>
-		QpZS5l10oSryXroM+qg2lvQBZww=
+		9MDCl7DcmRwzkTPlvdRHQliJhn4=
 		</data>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -382,7 +382,7 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/WKInjectionLite.js</key>
 		<data>
-		vw74lvtO91dNtAM8Id0VbWM82Y8=
+		GOnla94M0UosAjjr+STEUWre3N0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/BGTaskScheduler+MCP_BGTaskScheduler.h</key>
 		<data>
@@ -458,7 +458,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/IosSecureWebStackManager.h</key>
 		<data>
-		0Xf576xA82IIdrL+2SF+b/NzcZ0=
+		79u0PtlwWymXaA08yQs32k2uvXo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/IosStorageLocationProvider.h</key>
 		<data>
@@ -514,7 +514,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MAP_HTTPCacheFixup.h</key>
 		<data>
-		96NKxBuucXVxNGnWXOU6ZENLGUA=
+		3B8YQWtcCMRJLviE/y5IpCNsbJQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MAP_NSBundle.h</key>
 		<data>
@@ -594,7 +594,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MicrosoftTunnelEnums.h</key>
 		<data>
-		rdGs1lI1gl7E0iw/HlSNT9xpwRg=
+		UmX6UeSnV250VUDBcwZ5jLXxQqY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
 		<data>
@@ -626,7 +626,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/ProxmetheusWKWebViewInterceptor.h</key>
 		<data>
-		eFRh4A4zwtyw2G6Siz60jqEfVkI=
+		ZdRX8PSTqWBlK+ygXEKn2/wfpbU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
 		<data>
@@ -742,11 +742,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<data>
-		9zBIS4HW4kRD7vi2xTQ91wUcEZY=
+		olh+AKhsNUG+0wRokRkExW2i4vM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<data>
-		iIOtBGBpYIk4mHE857ib25cbRus=
+		qltHiM7l/zMi9HGnJ4hqpwdASMM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -762,11 +762,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/WKInjectionLite.js</key>
 		<data>
-		vw74lvtO91dNtAM8Id0VbWM82Y8=
+		GOnla94M0UosAjjr+STEUWre3N0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		jk+PvbeF0oMPOGzp69WAp1il5NI=
+		Z7zkCoqSwZ+zPXVtJemx/+dWO7Y=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -973,11 +973,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Xf576xA82IIdrL+2SF+b/NzcZ0=
+			79u0PtlwWymXaA08yQs32k2uvXo=
 			</data>
 			<key>hash2</key>
 			<data>
-			tnmoBQVPvV+Y3Q7rzZGsG21yTCgiRIVDmjhpsrFFgwk=
+			DEZQ78282rwVGr1cDAAWvjNItmWShUtQExJN72uiDZc=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Headers/IosStorageLocationProvider.h</key>
@@ -1127,11 +1127,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			96NKxBuucXVxNGnWXOU6ZENLGUA=
+			3B8YQWtcCMRJLviE/y5IpCNsbJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jBzgFVKWJo/urRXrYMqttFfXup3oQhWiPY7XxwqRbTc=
+			24l62zOlGeRJV1+7r/8Z5kNkaKho0t3jWRUjL5LFtQE=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Headers/MAP_NSBundle.h</key>
@@ -1347,11 +1347,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rdGs1lI1gl7E0iw/HlSNT9xpwRg=
+			UmX6UeSnV250VUDBcwZ5jLXxQqY=
 			</data>
 			<key>hash2</key>
 			<data>
-			G5AGJLwKUUFgMiglHgXwTzB/Z6Bpmhzz6+BUQuwYF9w=
+			9g0kODYK+kxEyXsT1rG0Ew5h+aUWmeqP3eK1+XeMaHg=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
@@ -1435,11 +1435,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eFRh4A4zwtyw2G6Siz60jqEfVkI=
+			ZdRX8PSTqWBlK+ygXEKn2/wfpbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			2MQoD+eUatiVdUuJLu0Yl0yijliMZJRy0iEHHpp0ffQ=
+			rmisS71osPUrFr/oHy/JLzFHYUfjToeUwcjj64Rp7wM=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
@@ -1754,22 +1754,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cGjFR7se4zIzp4pLIBXsPgQvuaE=
+			GCCU1JXYAO5XCcYOMeFDkGYoBHw=
 			</data>
 			<key>hash2</key>
 			<data>
-			31sZig7f6gYUecx26wek4qlj2gefoOr5h2yFbkCSUVQ=
+			sm063AqZt1D8OnI9ROwbHm5Lw+janZ44UWpTISTOdH8=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QpZS5l10oSryXroM+qg2lvQBZww=
+			9MDCl7DcmRwzkTPlvdRHQliJhn4=
 			</data>
 			<key>hash2</key>
 			<data>
-			TUvlcw5JuhwJeIPVCyu19PDW9A/QBFndursyHKaREYI=
+			5nhW0WNBuu7YoT0h3NTQuNRCMUEBPlNQMefP9lrFB+c=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/Modules/module.modulemap</key>
@@ -1809,11 +1809,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vw74lvtO91dNtAM8Id0VbWM82Y8=
+			GOnla94M0UosAjjr+STEUWre3N0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gFmCxoclY9T2Qf5DVNnmc7NlNBjeCgnkCjal4IsFGBQ=
+			3kKy4XjHU94LFnYCJ2Badu+jF7AgxrEArOiYJwMtjFU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/BGTaskScheduler+MCP_BGTaskScheduler.h</key>
@@ -2018,11 +2018,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0Xf576xA82IIdrL+2SF+b/NzcZ0=
+			79u0PtlwWymXaA08yQs32k2uvXo=
 			</data>
 			<key>hash2</key>
 			<data>
-			tnmoBQVPvV+Y3Q7rzZGsG21yTCgiRIVDmjhpsrFFgwk=
+			DEZQ78282rwVGr1cDAAWvjNItmWShUtQExJN72uiDZc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/IosStorageLocationProvider.h</key>
@@ -2172,11 +2172,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			96NKxBuucXVxNGnWXOU6ZENLGUA=
+			3B8YQWtcCMRJLviE/y5IpCNsbJQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jBzgFVKWJo/urRXrYMqttFfXup3oQhWiPY7XxwqRbTc=
+			24l62zOlGeRJV1+7r/8Z5kNkaKho0t3jWRUjL5LFtQE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MAP_NSBundle.h</key>
@@ -2392,11 +2392,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rdGs1lI1gl7E0iw/HlSNT9xpwRg=
+			UmX6UeSnV250VUDBcwZ5jLXxQqY=
 			</data>
 			<key>hash2</key>
 			<data>
-			G5AGJLwKUUFgMiglHgXwTzB/Z6Bpmhzz6+BUQuwYF9w=
+			9g0kODYK+kxEyXsT1rG0Ew5h+aUWmeqP3eK1+XeMaHg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/MstapNextServerCertProvider.h</key>
@@ -2480,11 +2480,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eFRh4A4zwtyw2G6Siz60jqEfVkI=
+			ZdRX8PSTqWBlK+ygXEKn2/wfpbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			2MQoD+eUatiVdUuJLu0Yl0yijliMZJRy0iEHHpp0ffQ=
+			rmisS71osPUrFr/oHy/JLzFHYUfjToeUwcjj64Rp7wM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Headers/SFSafariViewController+MAP_SFSafariViewController.h</key>
@@ -2799,22 +2799,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9zBIS4HW4kRD7vi2xTQ91wUcEZY=
+			olh+AKhsNUG+0wRokRkExW2i4vM=
 			</data>
 			<key>hash2</key>
 			<data>
-			nDXcQY1MGdErfGOCvPQOSTynu51L7ZtZ50yJ2zEEaM8=
+			xsySlDAGBDuUTFhhGlbaz/sGz1roSHmBTaAwaFeNI3Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iIOtBGBpYIk4mHE857ib25cbRus=
+			qltHiM7l/zMi9HGnJ4hqpwdASMM=
 			</data>
 			<key>hash2</key>
 			<data>
-			hcXdUtfjxYUAb7FlOHKGzi5r3KcDCBvCHZIPUUd370A=
+			pW6iJS4Fz79tYfBEXbz0KaXlMgKZFkKrrJ9U2EehRRs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Modules/module.modulemap</key>
@@ -2854,22 +2854,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vw74lvtO91dNtAM8Id0VbWM82Y8=
+			GOnla94M0UosAjjr+STEUWre3N0=
 			</data>
 			<key>hash2</key>
 			<data>
-			gFmCxoclY9T2Qf5DVNnmc7NlNBjeCgnkCjal4IsFGBQ=
+			3kKy4XjHU94LFnYCJ2Badu+jF7AgxrEArOiYJwMtjFU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jk+PvbeF0oMPOGzp69WAp1il5NI=
+			Z7zkCoqSwZ+zPXVtJemx/+dWO7Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			woo612rZunuuQ9Evx7lIGDQiErKCioaU+8tDpiTUPEM=
+			K+y3Y68OwdDh8r0w2bZcouUQj7X76bcBR2WkBJoAMh8=
 			</data>
 		</dict>
 	</dict>

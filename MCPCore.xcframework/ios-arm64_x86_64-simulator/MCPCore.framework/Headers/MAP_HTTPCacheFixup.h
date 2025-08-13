@@ -11,5 +11,6 @@
 @interface MAP_HTTPCacheFixup : NSURLProtocol
 
 + (void) registerProtocol;
+@property (class) BOOL enabled;
 
 @end

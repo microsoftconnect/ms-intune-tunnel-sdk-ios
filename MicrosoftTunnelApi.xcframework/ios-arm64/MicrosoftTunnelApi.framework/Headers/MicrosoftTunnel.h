@@ -253,10 +253,5 @@ __attribute__ ((visibility ("default")))
  */
 - (BOOL)handleMSALResponse:(nonnull NSURL *)response sourceApplication:(nullable NSString *)sourceApplication;
 
-/**
- * Show the diagnostic console
- */
-- (void)showDiagnosticConsole;
-
 @end
 #pragma GCC visibility pop

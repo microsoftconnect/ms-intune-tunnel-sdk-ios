@@ -13,6 +13,8 @@
 #include "IPlatformSecureWebStackManager.h"
 #include "WKWebViewBridge.h"
 
+extern NSString* const kWebInterceptionStateChangedNotification;
+
 // This needs to be an NSObject today because we signal it with NSNotifications,
 // but it's not entirely clear 1) why we need to do that, 2) what this is doing
 // in the first place, or 3) why we need it, so leave it as-is for now.
@@ -42,13 +44,13 @@ public:
 
     virtual void SetSecureWebStackService(ISecureWebStackServiceBase *pSWSService) override;
     
-    virtual void DisableInterception() override;
+    virtual void DisableInterception(bool forAuth) override;
     
     virtual void EnableInterception() override;
     
     virtual void ClearConnectionCache() override;
     
-    virtual ACSTATUS ShouldInterceptWebView() override;
+    virtual ACSTATUS ShouldInterceptWebViewStatus() override;
 
     virtual void OnSecureWebStackPolicyChanged() override;
     
@@ -56,7 +58,7 @@ private:
     SWSAuthChallengeHandler *m_pAuthChallengeHandler;
     WKWebViewBridge *m_pBridge;
     ISecureWebStackServiceBase *m_pSWSService;
-    bool m_shouldInterceptWebview;
+    ACSTATUS m_shouldInterceptWebviewStatus;
 };
 #pragma GCC visibility pop
 

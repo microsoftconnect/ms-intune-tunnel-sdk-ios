@@ -12,6 +12,7 @@
 
 @interface ProxmetheusWKWebViewInterceptor : WKWebViewConfiguration <WKScriptMessageHandler>
 
+-(instancetype) initWithWebView:(WKWebView* )webView;
 -(WKWebViewConfiguration *)getConfiguration:(WKWebViewConfiguration *)existingConfig;
 
 @end

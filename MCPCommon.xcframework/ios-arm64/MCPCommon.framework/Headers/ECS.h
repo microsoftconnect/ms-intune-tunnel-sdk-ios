@@ -18,8 +18,14 @@ __attribute__ ((visibility ("default")))
 -(BOOL)loginServiceUrlBypassEnabled;
 -(BOOL)reloadRedirectsEnabled;
 -(BOOL)webSocketsEnabled;
--(BOOL)urlCacheEnabled;
 -(BOOL)useDataTaskDelegate;
+-(BOOL)configureWebInterceptionDuringAuth;
+-(BOOL)reloadWebViewAfterInjection;
+-(BOOL)urlCacheEnabled;
+-(BOOL)urlCacheStorageAllowedInMemoryOnly;
+-(BOOL)useInternalWebRedirect;
+-(BOOL)useClientWebRedirect;
+-(BOOL)interceptJSFormData;
 
 -(NSString*)webViewJSON;
 

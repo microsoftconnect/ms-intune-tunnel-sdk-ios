@@ -4,8 +4,3 @@ framework module MicrosoftTunnelApi {
 
   module * { export * }
 }
-
-module MicrosoftTunnelApi.Swift {
-  header "MicrosoftTunnelApi-Swift.h"
-  requires objc
-}
