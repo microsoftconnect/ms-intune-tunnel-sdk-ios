@@ -99,6 +99,7 @@ function mstobject() {  // eslint-disable-line no-unused-vars
 
         __log(logFunc, level, message) {
             logFunc(`[${new Date().toISOString()}][MicrosoftTunnel][${this.__tag}][${level}][${this.__context}] ${message}`);
+            webkit.messageHandlers.mstCallbackHandler.postMessage({ 'action': 'webSocket', 'method': 'log', 'level': level, 'message': message });
         }
     };
 
@@ -271,8 +272,128 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             }
         }
         
-        var OriginalWebSocket = WebSocket;
         WebSocket = MstWebSocket;
         webkit.messageHandlers.mstCallbackHandler.postMessage({ 'action': 'webSocket', 'method': "clearSockets" });
+
+        mstobject().logger.logInfo('Intercepting web sockets');
     }
+    
+    // Intercept XMLHttpRequest POST requests with FormData bodies for multipart/form-data reconstruction
+    (function() {
+        function __mstLog(content) {
+            var log = content;
+            webkit.messageHandlers.mstCallbackHandler.postMessage({ 'action': 'logValue', 'content': log });
+        }
+
+        // Global guard to prevent double-injection
+        if (window.__mstXHRInjected) {
+            __mstLog("[WKInjection][XHR] Script already injected, skipping.");
+            return;
+        }
+        window.__mstXHRInjected = true;
+
+        var nativeSend = XMLHttpRequest.prototype.send;
+        var origOpen = XMLHttpRequest.prototype.open;
+
+        XMLHttpRequest.prototype.open = function(method, url) {
+            this._mstMethod = method;
+            this._mstUrl = url;
+            this._mstTag = crypto.randomUUID();
+            return origOpen.apply(this, arguments);
+        };
+
+        XMLHttpRequest.prototype.send = function(body) {
+            var xhr = this;
+            var method = this._mstMethod || "GET";
+            var url = this._mstUrl || "";
+            var tag = this._mstTag || crypto.randomUUID();
+            
+            // Double check that we have a valid tag
+            if (!tag) {
+                tag = Math.random().toString(36).slice(2, 11);
+            }
+
+            // We only want to handle data from POST requests with FormData
+            if (!method || method.toUpperCase() !== "POST" || !(body instanceof FormData)) {
+                return nativeSend.call(xhr, body);
+            }
+
+            var MST_TUNNEL_ID_HEADER = 'X-Msft-Tunnel-Id';
+            
+            // Inject custom header with UUID for lookup later
+            xhr.setRequestHeader(MST_TUNNEL_ID_HEADER, tag);
+            __mstLog('[WKInjection][XHR] Injected ' + MST_TUNNEL_ID_HEADER + ' header with tag: ' + tag);
+            
+            // Handle POST requests with FormData bodies
+            var formArr = [];
+            var pending = 0;
+            var done = false;
+            
+            // Serialize the FormData
+            for (var pair of body.entries()) {
+                if (!(pair[1] instanceof Blob)) {
+                    formArr.push({ key: pair[0], value: pair[1] });
+                    continue;
+                }
+                
+                // Handle Blob/File fields with async processing
+                pending++;
+                (function(key, blob) {
+                    var reader = new FileReader();
+                    reader.onload = function() {
+                        __mstLog('[WKInjection][XHR] Processing file');
+                        var uint8Array = new Uint8Array(reader.result);
+                        
+                        // Convert to base64 in chunks to avoid stack overflow on large files
+                        var binaryString = '';
+                        var chunkSize = 8192; // Process 8KB chunks
+                        for (var i = 0; i < uint8Array.length; i += chunkSize) {
+                            var chunk = uint8Array.subarray(i, i + chunkSize);
+                            binaryString += String.fromCharCode.apply(null, chunk);
+                        }
+                        
+                        var base64Data = btoa(binaryString);
+                        formArr.push({
+                            key: key,
+                            filename: blob.name || 'unknown', // Preserve original filename
+                            type: blob.type || 'application/octet-stream',
+                            data: base64Data
+                        });
+                        
+                        pending--;
+                        if (pending === 0 && done) sendFormData();
+                    };
+                    reader.onerror = function(e) {
+                        __mstLog('[WKInjection][XHR] FileReader error: ' + (e.target && e.target.error && e.target.error.message ? e.target.error.message : 'Unknown error'));
+                        pending--;
+                        if (pending === 0 && done) sendFormData();
+                    };
+                    reader.readAsArrayBuffer(blob);
+                })(pair[0], pair[1]);
+            }
+            
+            done = true;
+            // If no async operations are pending, send immediately
+            if (pending === 0) sendFormData();
+            
+            // Function to send the serialized FormData to the native bridge
+            function sendFormData() {
+                __mstLog('[WKInjection][XHR] Sending FormData to native bridge - entries: ' + formArr.length);
+                try {
+                    webkit.messageHandlers.mstCallbackHandler.postMessage({
+                        action: "formDataSend",
+                        url: url,
+                        content: JSON.stringify(formArr),
+                        encoding: "formdata-serialized",
+                        tag: tag
+                    });
+                    return nativeSend.call(xhr, null);
+                } catch (e) {
+                    __mstLog("[WKInjection][XHR] Bridge communication failed: " + (e.message ? e.message : e.toString()));
+                    // Fallback: send original request if bridge fails
+                    return nativeSend.call(xhr, body);
+                }
+            }
+        };
+    })();
 }());
