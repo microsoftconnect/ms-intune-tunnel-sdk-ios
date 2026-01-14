@@ -168,6 +168,20 @@ __attribute__ ((visibility ("default")))
  */
 - (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nullable id<MicrosoftTunnelDelegate>)delegate logDelegate:(nullable id<MicrosoftTunnelLogDelegate>)logDelegate config:(nullable NSDictionary <NSString *, NSString*>*)config;
 
+
+/**
+ * Initializes Microsoft Tunnel API infrastructure with a specific account ID.
+ * This API should be used by apps that enable Multi-Account Management (MMA).
+ * This method binds the Tunnel connection to a specific enrolled account.
+ *
+ * @param delegate Delegate for events {@link MicrosoftTunnelDelegate}
+ * @param logDelegate Delegate for logs {@link MicrosoftTunnelLogDelegate}
+ * @param configDictionary Configuration items used to determine what is to be logged, intercepted, and values for Tunnel connection to be established
+ * @param activeAccountId The account ID to be considered the active Tunnel account. Must be one of the MAM enrolled account IDs.
+ * @return An API error {@link MicrosoftTunnelError}
+ */
+- (MicrosoftTunnelError)microsoftTunnelInitializeWithDelegate:(nullable id<MicrosoftTunnelDelegate>)delegate logDelegate:(nullable id<MicrosoftTunnelLogDelegate>)logDelegate config:(nullable NSDictionary <NSString *, NSString*>*)config activeAccountId:(nullable NSString*)activeAccountId;
+
 /**
  * Set configuration values. See {@link MicrosoftTunnelEnums.h} for configuration keys and values.
  *
@@ -231,6 +245,15 @@ __attribute__ ((visibility ("default")))
 - (NSString * _Nonnull)getVersionString;
 
 /**
+ * Get the currently active enrolled account ID for the current Tunnel instance.
+ * This returns the account ID that was set via microsoftTunnelInitializeWithDelegate:logDelegate:config:activeAccountId:
+ * or nil if no specific account is set or the account is no longer enrolled.
+ * 
+ * @return The active enrolled account ID or nil if none is set
+ */
+- (NSString * _Nullable)getActiveEnrolledAccountIdForTunnel;
+
+/**
  * Launches enrollment for MAM enrollment
  */
 - (BOOL)launchEnrollment;
@@ -238,8 +261,15 @@ __attribute__ ((visibility ("default")))
 /**
  * Launches enrollment for MAM enrollment with a callback for acquiring a token
  * If the callback returns a value of false, then the token acquisition will fall back to the default acquisition
+ * @deprecated Use launchEnrollmentForAccountId: instead for access to both accessToken and accountId
  */
-- (BOOL)launchEnrollment:(BOOL (^ __nullable)(void (^ __nonnull)(NSString* _Nullable accessToken)))tokenCallback;
+- (BOOL)launchEnrollment:(BOOL (^ __nullable)(void (^ __nonnull)(NSString* _Nullable accessToken)))tokenCallback __attribute__((deprecated("Use launchEnrollmentForAccountId: instead")));
+
+/**
+ * Launches enrollment for MAM enrollment with a callback for acquiring a token with account ID
+ * If the callback returns a value of false, then the token acquisition will fall back to the default acquisition
+ */
+- (BOOL)launchEnrollmentForAccountId:(BOOL (^ __nullable)(void (^ __nonnull)(NSString* _Nullable accessToken, NSString* _Nullable accountId)))tokenCallback;
 
 /**
  * Launches enrollment for MAM enrollment

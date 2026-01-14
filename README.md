@@ -1,6 +1,6 @@
 # Microsoft Tunnel for Mobile Application Management iOS SDK 
 
-Version [1.4.1](https://github.com/microsoftconnect/ms-intune-tunnel-sdk-ios/releases/tag/1.4.1)
+Version [1.7.0](https://github.com/microsoftconnect/ms-intune-tunnel-sdk-ios/releases/tag/1.7.0)
 
 See [release notes](https://github.com/microsoftconnect/ms-intune-tunnel-sdk-ios/releases) for more information. GitHub users can recieve email notifications for new releases to this repo by clicking on **Releases only** from the "Watch" drop-down menu in the upper right-hand corner.
 
@@ -15,4 +15,4 @@ See the [Microsoft Tunnel for MAM iOS SDK Developer Guide](https://aka.ms/tunnel
 Supported versions:
 | Intune SDK Version  | MSAL SDK Version  | Supported iOS Versions  | Supported Xcode Version | Support Scope |
 | ----------------------- | ----------------------- | ---------------------------- | -----------------------------  | ----------------- |                         
-| 20.0+                     | 1.2.3+              | 16.0+                               | 16.2+                                       | Main release branch - supports all feature work and bug fixes |
+| 21.2.0+                     | 2.2.0+              | 16.0+                               | 26.0+                                       | Main release branch - supports all feature work and bug fixes |

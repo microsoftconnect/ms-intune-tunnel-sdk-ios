@@ -84,7 +84,11 @@ typedef enum MicrosoftTunnelError {
     /**
      * An unexpected error occurred.
      */
-    UnexpectedError
+    UnexpectedError,
+    /**
+     * The specified account is not enrolled in MAM.
+     */
+    AccountNotEnrolled
 } MicrosoftTunnelError;
 
 /**
