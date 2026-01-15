@@ -6,11 +6,11 @@
 	<dict>
 		<key>ios-arm64/MCPCore.framework/Info.plist</key>
 		<data>
-		jArdHXu24Sv84rnrdBypnx4neg4=
+		JxzyLf6MqHySqLsRPSkBZyZin14=
 		</data>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<data>
-		up+TRWV44eeTaTc3ldusKvSqymg=
+		DLrCFF64VZFs0wBRB/v+pn8srlQ=
 		</data>
 		<key>ios-arm64/MCPCore.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -22,15 +22,15 @@
 		</data>
 		<key>ios-arm64/MCPCore.framework/WKInjectionLite.js</key>
 		<data>
-		GOnla94M0UosAjjr+STEUWre3N0=
+		9MhLRSqZVU5EjgO9AfLBWpgdElI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<data>
-		1/oY1ALoBGyxjCiDK4Pmso68PNw=
+		K5+SrP+ZvGqR15iVhvpIf3cqTDw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<data>
-		wA6hjHMTa2jU7gZnBeaqqYDGSmI=
+		dRy38s3NeTsG8Fm1jVyS/6mTc2E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/WKInjectionLite.js</key>
 		<data>
-		GOnla94M0UosAjjr+STEUWre3N0=
+		9MhLRSqZVU5EjgO9AfLBWpgdElI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		P31k71LtaKtFnXJSVUAtaeeAFI4=
+		AfDdL9WyPlZ9695TRTX4USrnQh4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,22 +55,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jArdHXu24Sv84rnrdBypnx4neg4=
+			JxzyLf6MqHySqLsRPSkBZyZin14=
 			</data>
 			<key>hash2</key>
 			<data>
-			TYGI49hJbdGFm5yoUG/mW1zox0l+m+o8F91EnFH25jk=
+			ALzh/MqGQ90QwoI3wmFyTsSuuPmQP7GK1v9HA1tZAIk=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			up+TRWV44eeTaTc3ldusKvSqymg=
+			DLrCFF64VZFs0wBRB/v+pn8srlQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			QPDz1h+7b6/CQH6jfNlHQsb6sBrL8sUbcT7z9XC8XIM=
+			GrPfZqEXVzJJIrnjwt2lYMzTFCR6sI9ghEBC4FWkIg8=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPCore.framework/PrivacyInfo.xcprivacy</key>
@@ -99,33 +99,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GOnla94M0UosAjjr+STEUWre3N0=
+			9MhLRSqZVU5EjgO9AfLBWpgdElI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3kKy4XjHU94LFnYCJ2Badu+jF7AgxrEArOiYJwMtjFU=
+			QvbC65ZApoyXNSuEpP8QJOCg71yvR5C23L6ZPptKmMo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1/oY1ALoBGyxjCiDK4Pmso68PNw=
+			K5+SrP+ZvGqR15iVhvpIf3cqTDw=
 			</data>
 			<key>hash2</key>
 			<data>
-			SLkF2tnBdFj+eUB0bS+kWn01qNwZ59QCt/7MVK74Fco=
+			8L9sYw/j6hWhqU5iB4Oxl7vuVQrI1vMeWU/jW1Le4WU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/MCPCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wA6hjHMTa2jU7gZnBeaqqYDGSmI=
+			dRy38s3NeTsG8Fm1jVyS/6mTc2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			YaxzT6BFYg9JMTqExozdiiFydUlaUu2+l70PIcTv/Tk=
+			/bn1t2odF5rDXKxAt57utv5yQ49SSYUCFL3h4BOJMcw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/PrivacyInfo.xcprivacy</key>
@@ -154,22 +154,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GOnla94M0UosAjjr+STEUWre3N0=
+			9MhLRSqZVU5EjgO9AfLBWpgdElI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3kKy4XjHU94LFnYCJ2Badu+jF7AgxrEArOiYJwMtjFU=
+			QvbC65ZApoyXNSuEpP8QJOCg71yvR5C23L6ZPptKmMo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			P31k71LtaKtFnXJSVUAtaeeAFI4=
+			AfDdL9WyPlZ9695TRTX4USrnQh4=
 			</data>
 			<key>hash2</key>
 			<data>
-			yOwE3dTrqvkGuZJX3aKTGtkHd/VSuJtwq5YXrmiJ+XM=
+			KPJTyzFrAfAJyKF51gBiPjuNVleTiQcpUbWt4DteOa4=
 			</data>
 		</dict>
 	</dict>
