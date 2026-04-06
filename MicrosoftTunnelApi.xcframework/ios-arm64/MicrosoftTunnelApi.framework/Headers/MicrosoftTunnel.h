@@ -128,8 +128,8 @@ __attribute__ ((visibility ("default")))
 @interface MicrosoftTunnel : NSObject
 
 @property(class, nonatomic, readonly, strong) MicrosoftTunnel* _Nonnull sharedInstance;
-@property(nonatomic, assign)id<MicrosoftTunnelDelegate> _Nullable delegate;
-@property(nonatomic, assign)id<MicrosoftTunnelLogDelegate> _Nullable logDelegate;
+@property(nonatomic, weak)id<MicrosoftTunnelDelegate> _Nullable delegate;
+@property(nonatomic, weak)id<MicrosoftTunnelLogDelegate> _Nullable logDelegate;
 
 /**
  * The Microsoft Tunnel API should not be instantiated directly. Use the {@link sharedInstance} property.

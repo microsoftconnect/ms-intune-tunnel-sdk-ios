@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/MCPPluginUnencryptedFile.framework/Info.plist</key>
 		<data>
-		yiLQhxiZMZSzIeghjYJVvY2TtqY=
+		ZxW81Lm5I8UjtsqHWNoEpteh1VY=
 		</data>
 		<key>ios-arm64/MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPPluginUnencryptedFile.framework/Info.plist</key>
 		<data>
-		jgbROSCoF7JNcU1eZKhxrkhopPI=
+		8PcvqpR8vhD4XuLJsgrmPWwZOt8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile</key>
 		<data>
-		Rrl3nDbAJnmM+6r1Eh/0XA0sbgo=
+		5VtAj9UTMNAlN6EATovjeFCR7/o=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPPluginUnencryptedFile.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MCPPluginUnencryptedFile.framework/_CodeSignature/CodeResources</key>
 		<data>
-		rTnBUBGmWgHzgAgC52D3yOwD8oc=
+		63PSAhlB2gFhyw0nDBM4eqSUgRs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yiLQhxiZMZSzIeghjYJVvY2TtqY=
+			ZxW81Lm5I8UjtsqHWNoEpteh1VY=
 			</data>
 			<key>hash2</key>
 			<data>
-			v4/pFtaNA79IPEe3n6t2OtufY8tUDPHcype7qyHrsIc=
+			7TkRxJtEypzjIOjlRpuQx9ZHiq9/+4mbJ7j3dS8nz2E=
 			</data>
 		</dict>
 		<key>ios-arm64/MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile</key>
@@ -72,22 +72,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jgbROSCoF7JNcU1eZKhxrkhopPI=
+			8PcvqpR8vhD4XuLJsgrmPWwZOt8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q3RGF1Ybpj2VLLofxoHuKjYRFmlUtrwBXQzoVniTuGc=
+			nYsSbebt5cWDySC4IaBAKw2slKJoTyov7UXRdrfbxfI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPPluginUnencryptedFile.framework/MCPPluginUnencryptedFile</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rrl3nDbAJnmM+6r1Eh/0XA0sbgo=
+			5VtAj9UTMNAlN6EATovjeFCR7/o=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q2xWMtFqYj4adJG0CLRlsF8JtC0YYFUGVn2Hl+f/xrg=
+			OXnqOHqHc8WMHKJgezwu3HovcuEfQbUjNsXbkTxu/3g=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MCPPluginUnencryptedFile.framework/PrivacyInfo.xcprivacy</key>
@@ -105,11 +105,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rTnBUBGmWgHzgAgC52D3yOwD8oc=
+			63PSAhlB2gFhyw0nDBM4eqSUgRs=
 			</data>
 			<key>hash2</key>
 			<data>
-			/9zJZVGBuiJoztng4vsMTADuT1tnsKlX48wwbVDX9U8=
+			nOi5jojLiZbZthng68u2HwxskdxUzUlP0CpXgqe7wHg=
 			</data>
 		</dict>
 	</dict>

@@ -8,4 +8,5 @@
 
 #import <MicrosoftTunnelApi/MicrosoftTunnel.h>
 #import <MicrosoftTunnelApi/MicrosoftTunnelEnums.h>
+#import <MicrosoftTunnelApi/MicrosoftTunnelDiagnosticsViewController.h>
 
