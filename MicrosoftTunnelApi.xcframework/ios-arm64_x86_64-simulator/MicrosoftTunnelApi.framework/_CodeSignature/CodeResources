@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/MicrosoftTunnel.h</key>
 		<data>
-		MiTYvq79/ioyyMgGRskrgMuyg+M=
+		g3x/87QexzlXe4P4K8BRaEE72ug=
 		</data>
 		<key>Headers/MicrosoftTunnelApi.h</key>
 		<data>
-		Jzriu6OeruUMj8lKECVNH25xdwY=
+		494Li+3n/91ryRGRXAcJR3n4GOI=
+		</data>
+		<key>Headers/MicrosoftTunnelDiagnosticsViewController.h</key>
+		<data>
+		6Kfps3ydZ9H2u4euDbmErgogIhs=
 		</data>
 		<key>Headers/MicrosoftTunnelEnums.h</key>
 		<data>
@@ -18,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vq4wUUFKBU7kQhBIUNj9egZGsyA=
+		nB0/xPWns1aeX/dfNDAVx85deLU=
 		</data>
 		<key>LICENSE.json</key>
 		<data>
@@ -32,6 +36,19 @@
 		<data>
 		iFawP/VupJccK6ytrtMtgYp6XZk=
 		</data>
+		<key>en.lproj/MicrosoftTunnel.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dwlB8Ym4bKNhz9nRoABGqepyr8w=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>mappingTable.plist</key>
+		<data>
+		zmV6UqBSo6r1NOz798vd5O4zTBA=
+		</data>
 		<key>static_policy.json</key>
 		<data>
 		dEJE3BQrLcnSnRb68Y+WFeJ/esM=
@@ -43,14 +60,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			arLygHGTylPddQI3QiKSwofFhbElA0qgHInh/ERV/zw=
+			fLofhHSsy4y1RKRudkTvz66D/eS6xf0swJ3djHUEg5s=
 			</data>
 		</dict>
 		<key>Headers/MicrosoftTunnelApi.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/aCD7B4XfyB7JbEnIQ3l85Chv5W2RD/2/T7+TFF46G8=
+			FNCoZ0OgikT/erEoPYRLyVCAaFvfBewnCPqy8drGnyw=
+			</data>
+		</dict>
+		<key>Headers/MicrosoftTunnelDiagnosticsViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6ulGiPQGO6mom+S89Y6AKe0nnR05QaK9t690NhTf0K0=
 			</data>
 		</dict>
 		<key>Headers/MicrosoftTunnelEnums.h</key>
@@ -79,6 +103,22 @@
 			<key>hash2</key>
 			<data>
 			EXUykDSZIPCRVGpAzQ3Xtkof0rnknBOm6YnXkMJTdyE=
+			</data>
+		</dict>
+		<key>en.lproj/MicrosoftTunnel.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Yrk+/DGXWg7k2dFctXSeDkQ5e1MQNvqNIsoqiYhZHKs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>mappingTable.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kmHsztpgjvF0JW5f3HdMHm49z1M0CcG8OT1JDQHHE/E=
 			</data>
 		</dict>
 		<key>static_policy.json</key>

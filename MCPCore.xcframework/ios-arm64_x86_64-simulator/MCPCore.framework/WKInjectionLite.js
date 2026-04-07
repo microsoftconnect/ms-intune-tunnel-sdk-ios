@@ -126,7 +126,8 @@ function mstobject() {  // eslint-disable-line no-unused-vars
             this.url = url;
             this.__logger = new MstLogger("WebSocket", this.__tag);
             this.__logger.logInfo(`constructor '${url}' - '${protocols}' - '${window.location.origin}' - '${navigator.userAgent}'`);
-            this.__post({'method': 'constructor', 'url': url, 'protocols': protocols, 'origin': window.location.origin, 'userAgent': navigator.userAgent});
+            const baseURI = document.baseURI || window.location.href || "";
+            this.__post({'method': 'constructor', 'url': url, 'protocols': protocols, 'origin': window.location.origin, 'baseURI': baseURI, 'userAgent': navigator.userAgent});
             mstobject().websockets[this.__tag] = this;
         }
 
