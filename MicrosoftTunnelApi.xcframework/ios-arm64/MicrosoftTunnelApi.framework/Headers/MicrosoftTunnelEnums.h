@@ -142,6 +142,7 @@ static const char *kCustomConfig   = "com.microsoft.tunnel.custom_configuration"
 
 // Storage Config keys
 static const char *kStorageLocation = "StorageLocation";
+static const char *kPacketTroubleshooting = "com.microsoft.tunnel.packet_troubleshooting";
 
 // @}
 

@@ -245,6 +245,27 @@ __attribute__ ((visibility ("default")))
 - (NSString * _Nonnull)getVersionString;
 
 /**
+ * Get whether packet troubleshooting is currently enabled.
+ *
+ * @return YES when packet troubleshooting capture is enabled
+ */
+- (BOOL)getPacketTroubleshootingEnabled;
+
+/**
+ * Get the current packet troubleshooting base directory.
+ *
+ * @return The current packet troubleshooting base directory, or an empty string if unavailable
+ */
+- (NSString * _Nonnull)getPacketTroubleshootingBaseDirectory;
+
+/**
+ * Get the current packet troubleshooting trace directory.
+ *
+ * @return The current packet troubleshooting trace directory, or an empty string if unavailable
+ */
+- (NSString * _Nonnull)getPacketTroubleshootingDirectory;
+
+/**
  * Get the currently active enrolled account ID for the current Tunnel instance.
  * This returns the account ID that was set via microsoftTunnelInitializeWithDelegate:logDelegate:config:activeAccountId:
  * or nil if no specific account is set or the account is no longer enrolled.
