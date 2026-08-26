@@ -22,9 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
  * @discussion This view controller is provided by the SDK for integration into consumer apps.
  * It requires iOS 15.0 or later for full functionality.
  *
- * To keep the diagnostics view updated with real-time tunnel information, call the
- * updateTunnelConfiguration: method when the tunnel configuration changes (typically
- * in your MicrosoftTunnelDelegate's onTunnelConfigurationAvailable: callback).
+ * The view automatically reads the last tunnel configuration delivered by the SDK
+ * upon its initial presentation, ensuring split tunneling and DNS details are available
+ * when the screen is first opened. For subsequent updates, you should call
+ * updateTunnelConfiguration: to ensure the displayed information remains accurate
+ * and up-to-date (typically in your MicrosoftTunnelDelegate's onTunnelConfigurationAvailable: callback).
  *
  * @code
  * MicrosoftTunnelDiagnosticsViewController *diagnostics = [[MicrosoftTunnelDiagnosticsViewController alloc] init];
